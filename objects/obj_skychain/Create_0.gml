@@ -1,0 +1,16 @@
+sons = -1;
+damage = 100;
+active = 1;
+move_towards_point(obj_heart.x + 8, obj_heart.y + 8, 0.5);
+friction = -0.075;
+timer = 0;
+con = 0;
+inv = 120;
+timepoints = 0;
+grazepoints = 3;
+target = 0;
+damage = 50;
+grazed = 0;
+grazetimer = 0;
+soundcon = 0;
+snd_play(snd_menumove);
