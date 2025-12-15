@@ -36,7 +36,7 @@ if (draw_screen)
             siner = 0;
             factor = 0;
             PHASE = 2;
-            scr_windowcaption(scr_84_get_lang_string("PROCESS_LOGO_slash_Draw_0_gml_37_0"));
+            scr_windowcaption("DELTARUNE [cq_adaptation_build]");
             global.tempflag[10] = 1;
         }
     }

@@ -1,26 +1,9 @@
-TYPE = 0;
-
-if (ossafe_file_exists("filech1_3"))
-    TYPE = 1;
-
-if (ossafe_file_exists("filech1_4"))
-    TYPE = 1;
-
-if (ossafe_file_exists("filech1_5"))
-    TYPE = 1;
-
-if (TYPE == 0)
-{
-    scr_windowcaption(scr_84_get_lang_string("DEVICE_MENU_slash_Create_0_gml_8_0"));
-    global.currentsong[0] = snd_init("AUDIO_DRONE.ogg");
-    global.currentsong[1] = mus_loop(global.currentsong[0]);
-}
-
+TYPE = 1;
 if (TYPE == 1)
 {
     instance_create(0, 0, obj_fadein);
     global.tempflag[10] = 1;
-    scr_windowcaption(scr_84_get_lang_string("DEVICE_MENU_slash_Create_0_gml_17_0"));
+    scr_windowcaption("DELTARUNE [cq_adaptation_build]");
     global.currentsong[0] = snd_init("AUDIO_STORY.ogg");
     global.currentsong[1] = mus_loop_ext(global.currentsong[0], 1, 0.95);
 }

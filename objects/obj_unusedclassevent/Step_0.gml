@@ -1,6 +1,5 @@
 if (con == 0)
 {
-    scr_windowcaption(" ");
     global.facing = 0;
     con = 1;
     alarm[4] = 180;
@@ -78,7 +77,6 @@ if (con == 17)
 
 if (con == 19)
 {
-    scr_windowcaption(scr_84_get_lang_string("obj_unusedclassevent_slash_Step_0_gml_81_0"));
     snd_play(snd_noise);
     lightsoff = 0;
     s = scr_marker(146, 70, spr_susied_plain);

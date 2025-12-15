@@ -232,10 +232,7 @@ if (con >= 50 && con < 100)
     }
     
     if (con == 54)
-    {
-        scr_windowcaption(" ");
         room_goto(room_myroom_dark);
-    }
 }
 
 if (con >= 100 && con < 150)
@@ -267,7 +264,6 @@ if (con >= 100 && con < 150)
     
     if (con == 104)
     {
-        scr_windowcaption(" ");
         global.typer = 5;
         global.fc = 0;
         global.msg[0] = scr_84_get_lang_string("obj_krisroom_slash_Step_0_gml_281_0");
@@ -278,7 +274,6 @@ if (con >= 100 && con < 150)
     if (con == 105 && !d_ex())
     {
         instance_create(0, 0, obj_persistentfadein);
-        scr_windowcaption(scr_84_get_lang_string("obj_krisroom_slash_Step_0_gml_289_0"));
         global.plot = 10;
         scr_become_dark();
         room_goto(room_dark1);

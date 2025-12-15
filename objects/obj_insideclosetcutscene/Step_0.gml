@@ -205,7 +205,6 @@ if (con == 15 && instance_exists(obj_dialoguer) == false)
 
 if (con == 17)
 {
-    scr_windowcaption(" ");
     sprite_index = spr_susiel_plain;
     scr_halt();
     

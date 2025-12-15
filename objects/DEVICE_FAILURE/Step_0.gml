@@ -104,7 +104,6 @@ if (EVENT == 8)
 
 if (EVENT == 10)
 {
-    scr_windowcaption(scr_84_get_lang_string("DEVICE_FAILURE_slash_Step_0_gml_95_0"));
     scr_tempload();
     EVENT = 11;
 }
