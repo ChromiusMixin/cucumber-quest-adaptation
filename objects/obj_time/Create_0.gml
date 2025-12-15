@@ -36,16 +36,10 @@ else
     var display_height = display_get_height();
     var display_width = display_get_width();
     window_size_multiplier = 1;
-    
-    for (var _ww = 2; _ww < 12; _ww += 1)
-    {
-        if (display_width > (640 * _ww) && display_height > (480 * _ww))
-            window_size_multiplier = _ww;
-    }
-    
+
     if (window_size_multiplier > 1 && !setfull && !global.launcher)
     {
-        window_set_size(640 * window_size_multiplier, 480 * window_size_multiplier);
+        window_set_size(854 * window_size_multiplier, 480 * window_size_multiplier);
         window_center_toggle = 1;
     }
     

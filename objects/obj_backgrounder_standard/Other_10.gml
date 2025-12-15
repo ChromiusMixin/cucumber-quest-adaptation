@@ -10,14 +10,14 @@ for (i = 0; i < 7; i += 1)
 {
     xxx = __view_get(e__VW.XView, 0);
     
-    if (xxx > (room_width - 640))
-        xxx = room_width - 640;
+    if (xxx > (room_width - 854))
+        xxx = room_width - 854;
     
     if (xxx >= 0)
         __background_set(e__BG.X, i, floor(xxx - (xxx * scrollspeed[i])));
     
-    gg = room_width - 640;
+    gg = room_width - 854;
     
-    if (xxx >= (room_width - 640))
+    if (xxx >= (room_width - 854))
         __background_set(e__BG.X, i, 0 + floor(gg - (gg * scrollspeed[i])));
 }

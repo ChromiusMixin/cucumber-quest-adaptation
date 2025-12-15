@@ -1,5 +1,8 @@
 {
-  "option_windows_display_name": "DELTARUNE Chapter 1",
+  "resourceType": "GMWindowsOptions",
+  "resourceVersion": "1.1",
+  "name": "Windows",
+  "option_windows_display_name": "DELTARUNE-cq",
   "option_windows_executable_name": "{project_name}.exe",
   "option_windows_version": "1.0.0.2",
   "option_windows_company_info": "",
@@ -28,7 +31,4 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": false,
-  "resourceType": "GMWindowsOptions",
-  "resourceVersion": "1.1",
-  "name": "Windows"
 }

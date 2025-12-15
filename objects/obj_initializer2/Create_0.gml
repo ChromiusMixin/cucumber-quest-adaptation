@@ -3,7 +3,7 @@ global.is_console = scr_is_switch_os() || (os_type == os_ps4 || os_type == os_ps
 if (!global.is_console)
     window_enable_borderless_fullscreen(true);
 
-global.debug = 0;
+global.debug = 1;
 var launch_data = scr_init_launch_parameters();
 global.launcher = launch_data.is_launcher;
 

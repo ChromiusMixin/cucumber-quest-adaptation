@@ -27,7 +27,7 @@ if (!global.is_console)
         
         if (!nowfullscreen)
         {
-            window_set_size(640 * window_size_multiplier, 480 * window_size_multiplier);
+            window_set_size(854 * window_size_multiplier, 480 * window_size_multiplier);
             alarm[2] = 1;
         }
     }
