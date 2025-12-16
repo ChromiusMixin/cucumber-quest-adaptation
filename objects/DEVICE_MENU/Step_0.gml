@@ -159,7 +159,9 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7)
                     
                     global.filechoice = MENUCOORD[0];
                     snd_free_all();
-                    room_goto(PLACE_CONTACT);
+					global.name = "KRIS"
+					global.truename = "SPEC"
+                    room_goto(room_krisroom);
                 }
             }
             

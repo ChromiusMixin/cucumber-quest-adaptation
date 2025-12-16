@@ -41,11 +41,11 @@ if (intro == 2)
 }
 
 draw_set_color(c_black);
-draw_rectangle(xx - 10, 481 + yy, xx + 700, (480 - bp) + yy, false);
+draw_rectangle(xx - 10, 481 + yy, xx + 900, (480 - bp) + yy, false);
 draw_set_color(bcolor);
-draw_rectangle(xx - 10, (480 - bp - 2) + yy, xx + 700, (480 - bp) + yy, false);
+draw_rectangle(xx - 10, (480 - bp - 2) + yy, xx + 900, (480 - bp) + yy, false);
 draw_set_color(bcolor);
-draw_rectangle(xx - 10, (480 - bp) + 34 + yy, xx + 700, (480 - bp) + 36 + yy, false);
+draw_rectangle(xx - 10, (480 - bp) + 34 + yy, xx + 900, (480 - bp) + 36 + yy, false);
 scr_charbox();
 
 if (global.bmenuno == 1 || global.bmenuno == 3 || global.bmenuno == 11 || global.bmenuno == 12)

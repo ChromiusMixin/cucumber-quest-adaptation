@@ -6,9 +6,9 @@ bpoff = -bp + bpy + yy;
 if (drawchar == 1)
 {
     draw_set_color(c_black);
-    draw_rectangle(xx - 10, (yy + 480) - bp, xx + 650, yy + 500, false);
+    draw_rectangle(xx - 10, (yy + 480) - bp, xx + 870, yy + 500, false);
     draw_set_color(c_black);
-    draw_rectangle(xx - 10, yy + tp, xx + 650, yy - 10, false);
+    draw_rectangle(xx - 10, yy + tp, xx + 870, yy - 10, false);
     scr_charbox();
     
     if (global.menuno == 0)
@@ -16,7 +16,7 @@ if (drawchar == 1)
     
     if (deschaver == 0)
     {
-        draw_sprite_ext(_spr_darkmenudesc, global.menucoord[0], xx + 20, (yy + tp) - 56, 2, 2, 0, c_white, 1);
+        draw_sprite_ext(_spr_darkmenudesc, global.menucoord[0], xx + 127, (yy + tp) - 56, 2, 2, 0, c_white, 1);
         msprite[0] = spr_darkitembt;
         msprite[1] = spr_darkequipbt;
         msprite[2] = spr_darktalkbt;
@@ -39,12 +39,12 @@ if (drawchar == 1)
                 spritemx = -100;
             
             if (i != 2)
-                draw_sprite_ext(msprite[i], off, xx + 120 + (i * 100) + spritemx, (yy + tp) - 60, 2, 2, 0, c_white, 1);
+                draw_sprite_ext(msprite[i], off, xx + 210 + (i * 100) + spritemx, (yy + tp) - 60, 2, 2, 0, c_white, 1);
         }
         
         draw_set_color(c_white);
         scr_84_set_draw_font("mainbig");
-        draw_text(xx + 520, (yy + tp) - 60, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_47_0") + string(global.gold)));
+        draw_text(xx + 627, (yy + tp) - 60, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_47_0") + string(global.gold)));
     }
 }
 
@@ -54,22 +54,22 @@ if (global.menuno == 5)
     
     if (global.lang == "ja")
     {
-        draw_rectangle(xx + 60, yy + 85, xx + 580, yy + 412, false);
-        scr_darkbox(xx + 50, yy + 75, xx + 590, yy + 422);
+        draw_rectangle(xx + 200, yy + 85, xx + 580, yy + 412, false);
+        scr_darkbox(xx + 190, yy + 75, xx + 610, yy + 422);
     }
     else
     {
-        draw_rectangle(xx + 60, yy + 90, xx + 580, yy + 410, false);
-        scr_darkbox(xx + 50, yy + 80, xx + 590, yy + 420);
+        draw_rectangle(xx + 200, yy + 90, xx + 580, yy + 410, false);
+        scr_darkbox(xx + 190, yy + 80, xx + 610, yy + 420);
     }
     
     if ((global.submenu >= 30 && global.submenu <= 33) || global.submenu == 36)
     {
-        var _xPos = (global.lang == "en") ? (xx + 170) : (xx + 150);
-        var _heartXPos = (global.lang == "en") ? (xx + 145) : (xx + 125);
-        var _selectXPos = (global.lang == "ja" && global.is_console) ? (xx + 385) : (xx + 430);
+        var _xPos = (global.lang == "en") ? (xx + 270) : (xx + 250);
+        var _heartXPos = (global.lang == "en") ? (xx + 245) : (xx + 225);
+        var _selectXPos = (global.lang == "ja" && global.is_console) ? (xx + 485) : (xx + 530);
         draw_set_color(c_white);
-        draw_text(xx + 270, yy + 100, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_74_0")));
+        draw_text(xx + 370, yy + 100, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_74_0")));
         audvol = string(round(global.flag[17] * 100)) + "%";
         musvol = string(abs(global.flag[16] * 100)) + "%";
         runoff = scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_79_0");
@@ -126,9 +126,9 @@ if (global.menuno == 5)
         else
         {
             draw_text(_xPos, yy + 255, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_93_0")));
-            draw_text(xx + 430, yy + 255, string_hash_to_newline(fullscreenoff));
+            draw_text(xx + 530, yy + 255, string_hash_to_newline(fullscreenoff));
             draw_text(_xPos, yy + 290, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_94_0")));
-            draw_text(xx + 430, yy + 290, string_hash_to_newline(runoff));
+            draw_text(xx + 530, yy + 290, string_hash_to_newline(runoff));
             draw_text(_xPos, yy + 325, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_95_0")));
             draw_text(_xPos, yy + 360, string_hash_to_newline(scr_84_get_lang_string("obj_darkcontroller_slash_Draw_0_gml_96_0")));
         }

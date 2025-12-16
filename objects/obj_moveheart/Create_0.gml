@@ -10,7 +10,7 @@ if (instance_exists(obj_heartmarker))
 }
 else
 {
-    distx = __view_get(e__VW.XView, 0) + 310;
+    distx = __view_get(e__VW.XView, 0) + 417;
     disty = __view_get(e__VW.YView, 0) + 160;
 }
 

@@ -17,22 +17,22 @@ function scr_charbox()
             xchunk = 0;
             
             if (charpos[c] == 0 && chartotal == 3)
-                xchunk = 0;
+                xchunk = 120;
             
             if (charpos[c] == 1 && chartotal == 3)
-                xchunk = 212;
+                xchunk = 332;
             
             if (charpos[c] == 2 && chartotal == 3)
-                xchunk = 424;
+                xchunk = 544;
             
             if (charpos[c] == 0 && chartotal == 2)
-                xchunk = 106;
+                xchunk = 226;
             
             if (charpos[c] == 1 && chartotal == 2)
-                xchunk = 326;
+                xchunk = 446;
             
             if (charpos[c] == 0 && chartotal == 1)
-                xchunk = 212;
+                xchunk = 332;
             
             if (gc == charpos[c])
             {

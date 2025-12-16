@@ -9,7 +9,7 @@ function scr_encountersetup(arg0)
         global.heromakey[i] = yy + 50 + (80 * i);
         global.monsterinstancetype[i] = obj_lancerboss;
         global.monstertype[i] = 1;
-        global.monstermakex[i] = xx + 540;
+        global.monstermakex[i] = xx + 660;
         global.monstermakey[i] = yy + 160 + (80 * i);
     }
     
@@ -67,7 +67,7 @@ function scr_encountersetup(arg0)
         case 4:
             global.monsterinstancetype[0] = obj_diamondenemy;
             global.monstertype[0] = 5;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 140;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -84,11 +84,11 @@ function scr_encountersetup(arg0)
         case 5:
             global.monsterinstancetype[0] = obj_diamondenemy;
             global.monstertype[0] = 5;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 110;
             global.monsterinstancetype[1] = obj_diamondenemy;
             global.monstertype[1] = 5;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 680;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_100_0");
@@ -97,11 +97,11 @@ function scr_encountersetup(arg0)
         case 6:
             global.monsterinstancetype[0] = obj_diamondenemy;
             global.monstertype[0] = 5;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 110;
             global.monsterinstancetype[1] = obj_heartenemy;
             global.monstertype[1] = 6;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 680;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_116_0");
@@ -110,7 +110,7 @@ function scr_encountersetup(arg0)
         case 7:
             global.monsterinstancetype[0] = obj_smallcheckers_enemy;
             global.monstertype[0] = 9;
-            global.monstermakex[0] = xx + 440;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 150;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -120,7 +120,7 @@ function scr_encountersetup(arg0)
         case 8:
             global.monsterinstancetype[0] = obj_clubsenemy;
             global.monstertype[0] = 16;
-            global.monstermakex[0] = xx + 400;
+            global.monstermakex[0] = xx + 540;
             global.monstermakey[0] = yy + 120;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -130,15 +130,15 @@ function scr_encountersetup(arg0)
         case 9:
             global.monsterinstancetype[0] = obj_heartenemy;
             global.monstertype[0] = 6;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_heartenemy;
             global.monstertype[1] = 6;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_heartenemy;
             global.monstertype[2] = 6;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_158_0");
             break;
@@ -146,7 +146,7 @@ function scr_encountersetup(arg0)
         case 12:
             global.monsterinstancetype[0] = obj_checkers_enemy;
             global.monstertype[0] = 10;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 120;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -156,11 +156,11 @@ function scr_encountersetup(arg0)
         case 13:
             global.monsterinstancetype[0] = obj_ponman_enemy;
             global.monstertype[0] = 11;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 110;
             global.monsterinstancetype[1] = obj_ponman_enemy;
             global.monstertype[1] = 11;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 200;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_185_0");
             global.monstertype[2] = 0;
@@ -169,15 +169,15 @@ function scr_encountersetup(arg0)
         case 14:
             global.monsterinstancetype[0] = obj_ponman_enemy;
             global.monstertype[0] = 11;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_ponman_enemy;
             global.monstertype[1] = 11;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_ponman_enemy;
             global.monstertype[2] = 11;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_206_0");
             break;
@@ -185,11 +185,11 @@ function scr_encountersetup(arg0)
         case 15:
             global.monsterinstancetype[0] = obj_clubsenemy;
             global.monstertype[0] = 7;
-            global.monstermakex[0] = xx + 400;
+            global.monstermakex[0] = xx + 560;
             global.monstermakey[0] = yy + 30;
             global.monsterinstancetype[1] = obj_heartenemy;
             global.monstertype[1] = 6;
-            global.monstermakex[1] = xx + 420;
+            global.monstermakex[1] = xx + 580;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_223_0");
@@ -198,7 +198,7 @@ function scr_encountersetup(arg0)
         case 16:
             global.monsterinstancetype[0] = obj_rabbick_enemy;
             global.monstertype[0] = 13;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 140;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -208,11 +208,11 @@ function scr_encountersetup(arg0)
         case 17:
             global.monsterinstancetype[0] = obj_rabbick_enemy;
             global.monstertype[0] = 13;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 60;
             global.monsterinstancetype[1] = obj_rabbick_enemy;
             global.monstertype[1] = 13;
-            global.monstermakex[1] = xx + 460;
+            global.monstermakex[1] = xx + 620;
             global.monstermakey[1] = yy + 180;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_250_0");
@@ -221,7 +221,7 @@ function scr_encountersetup(arg0)
         case 18:
             global.monsterinstancetype[0] = obj_bloxer_enemy;
             global.monstertype[0] = 14;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 140;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -231,11 +231,11 @@ function scr_encountersetup(arg0)
         case 19:
             global.monsterinstancetype[0] = obj_bloxer_enemy;
             global.monstertype[0] = 14;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 60;
             global.monsterinstancetype[1] = obj_bloxer_enemy;
             global.monstertype[1] = 14;
-            global.monstermakex[1] = xx + 460;
+            global.monstermakex[1] = xx + 620;
             global.monstermakey[1] = yy + 180;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_277_0");
@@ -255,7 +255,7 @@ function scr_encountersetup(arg0)
         case 21:
             global.monsterinstancetype[0] = obj_jigsawryenemy;
             global.monstertype[0] = 15;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 140;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -272,15 +272,15 @@ function scr_encountersetup(arg0)
         case 22:
             global.monsterinstancetype[0] = obj_jigsawryenemy;
             global.monstertype[0] = 15;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_jigsawryenemy;
             global.monstertype[1] = 15;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_jigsawryenemy;
             global.monstertype[2] = 15;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_324_0");
             break;
@@ -288,15 +288,15 @@ function scr_encountersetup(arg0)
         case 23:
             global.monsterinstancetype[0] = obj_jigsawryenemy;
             global.monstertype[0] = 15;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_diamondenemy;
             global.monstertype[1] = 5;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_heartenemy;
             global.monstertype[2] = 6;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_343_0");
             break;
@@ -304,11 +304,11 @@ function scr_encountersetup(arg0)
         case 24:
             global.monsterinstancetype[0] = obj_rabbick_enemy;
             global.monstertype[0] = 13;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 60;
             global.monsterinstancetype[1] = obj_diamondenemy;
             global.monstertype[1] = 5;
-            global.monstermakex[1] = xx + 460;
+            global.monstermakex[1] = xx + 620;
             global.monstermakey[1] = yy + 180;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_358_0");
@@ -323,7 +323,7 @@ function scr_encountersetup(arg0)
             global.heromakey[2] = yy + 210;
             global.monsterinstancetype[0] = obj_joker;
             global.monstertype[0] = 20;
-            global.monstermakex[0] = xx + 500;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 160;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -333,7 +333,7 @@ function scr_encountersetup(arg0)
         case 27:
             global.monsterinstancetype[0] = obj_checkers_enemy;
             global.monstertype[0] = 21;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 120;
             global.monstertype[1] = 0;
             global.monstertype[2] = 0;
@@ -344,11 +344,11 @@ function scr_encountersetup(arg0)
         case 28:
             global.monsterinstancetype[0] = obj_rudinnranger;
             global.monstertype[0] = 22;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 110;
             global.monsterinstancetype[1] = obj_rudinnranger;
             global.monstertype[1] = 22;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_414_0");
@@ -357,11 +357,11 @@ function scr_encountersetup(arg0)
         case 29:
             global.monsterinstancetype[0] = obj_headhathy;
             global.monstertype[0] = 23;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 110;
             global.monsterinstancetype[1] = obj_headhathy;
             global.monstertype[1] = 23;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_430_0");
@@ -370,15 +370,15 @@ function scr_encountersetup(arg0)
         case 30:
             global.monsterinstancetype[0] = obj_headhathy;
             global.monstertype[0] = 23;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_headhathy;
             global.monstertype[1] = 23;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_headhathy;
             global.monstertype[2] = 23;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_449_0");
             break;
@@ -399,15 +399,15 @@ function scr_encountersetup(arg0)
         case 32:
             global.monsterinstancetype[0] = obj_rabbick_enemy;
             global.monstertype[0] = 13;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_rabbick_enemy;
             global.monstertype[1] = 13;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_rabbick_enemy;
             global.monstertype[2] = 13;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_484_0");
             break;
@@ -415,15 +415,15 @@ function scr_encountersetup(arg0)
         case 33:
             global.monsterinstancetype[0] = obj_diamondenemy;
             global.monstertype[0] = 5;
-            global.monstermakex[0] = xx + 480;
+            global.monstermakex[0] = xx + 640;
             global.monstermakey[0] = yy + 20;
             global.monsterinstancetype[1] = obj_heartenemy;
             global.monstertype[1] = 6;
-            global.monstermakex[1] = xx + 500;
+            global.monstermakex[1] = xx + 660;
             global.monstermakey[1] = yy + 120;
             global.monsterinstancetype[2] = obj_diamondenemy;
             global.monstertype[2] = 5;
-            global.monstermakex[2] = xx + 460;
+            global.monstermakex[2] = xx + 620;
             global.monstermakey[2] = yy + 220;
             global.battlemsg[0] = scr_84_get_lang_string("scr_encountersetup_slash_scr_encountersetup_gml_505_0");
             break;

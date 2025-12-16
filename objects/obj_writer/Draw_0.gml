@@ -1,3 +1,5 @@
+if image_alpha <= 1
+image_alpha += 0.05
 button1 = 0;
 button2 = 0;
 button3 = 0;
@@ -34,7 +36,7 @@ if (dialoguer == 1 && formatted == 0)
     }
     else
     {
-        charline = 26;
+        charline = 39;
         writingx = x + (58 * f);
         
         if (global.lang == "ja")
@@ -173,7 +175,7 @@ if (formatted == 0)
                     }
                     else
                     {
-                        charline = 26;
+                        charline = 39;
                         writingx = x + (58 * f);
                         
                         if (global.lang == "ja")
@@ -434,7 +436,7 @@ for (n = 1; n < pos; n += 1)
                 }
                 else
                 {
-                    charline = 26;
+                    charline = 39;
                     wx = x + (58 * f);
                 }
             }

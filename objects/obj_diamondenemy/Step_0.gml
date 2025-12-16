@@ -44,7 +44,7 @@ if (global.monster[myself] == 1)
                 scr_moveheart();
             
             if (!instance_exists(obj_growtangle))
-                instance_create(__view_get(e__VW.XView, 0) + 320, __view_get(e__VW.YView, 0) + 170, obj_growtangle);
+                instance_create(__view_get(e__VW.XView, 0) + 427, __view_get(e__VW.YView, 0) + 170, obj_growtangle);
         }
     }
     

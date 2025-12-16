@@ -1,6 +1,7 @@
+image_alpha = 0
 skipme = 0;
 textsound = snd_text;
-charline = 33;
+charline = 46;
 originalcharline = charline;
 hspace = 8;
 vspace = 18;
