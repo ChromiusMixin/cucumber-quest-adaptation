@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_treetiles_tileset",
   "spriteId": {
     "name": "_decompiled_bg_treetiles_tileset",
-    "path": "sprites/_decompiled_bg_treetiles_tileset/_decompiled_bg_treetiles_tileset.yy"
+    "path": "sprites/_decompiled_bg_treetiles_tileset/_decompiled_bg_treetiles_tileset.yy",
   },
   "tileWidth": 160,
   "tileHeight": 200,
@@ -9,20 +12,20 @@
   "tileyoff": 2,
   "tilehsep": 4,
   "tilevsep": 4,
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "default",
-    "path": "texturegroups/default"
+    "path": "texturegroups/default",
   },
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
   "out_columns": 3,
   "tile_count": 8,
   "autoTileSets": [],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.00015,
   "tileAnimation": {
-    "frameData": [
+    "FrameData": [
       0,
       1,
       2,
@@ -30,20 +33,17 @@
       4,
       5,
       6,
-      7
+      7,
     ],
-    "SerialiseFrameCount": 1
+    "SerialiseFrameCount": 1,
   },
   "macroPageTiles": {
     "SerialiseWidth": 0,
     "SerialiseHeight": 0,
-    "TileSerialiseData": []
+    "TileSerialiseData": [],
   },
   "parent": {
     "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy"
+    "path": "folders/Tile Sets.yy",
   },
-  "resourceType": "GMTileSet",
-  "resourceVersion": "1.0",
-  "name": "bg_treetiles_tileset"
 }

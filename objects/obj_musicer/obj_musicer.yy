@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_musicer",
   "spriteId": {
     "name": "spr_musicer",
-    "path": "sprites/spr_musicer/spr_musicer.yy"
+    "path": "sprites/spr_musicer/spr_musicer.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_musicer",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

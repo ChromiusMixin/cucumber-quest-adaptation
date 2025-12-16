@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_jigsawbullet",
   "spriteId": {
     "name": "spr_jigsawbullet",
-    "path": "sprites/spr_jigsawbullet/spr_jigsawbullet.yy"
+    "path": "sprites/spr_jigsawbullet/spr_jigsawbullet.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_collidebullet",
-    "path": "objects/obj_collidebullet/obj_collidebullet.yy"
+    "path": "objects/obj_collidebullet/obj_collidebullet.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,44 +28,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 0,
-      "collisionObjectId": null,
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    },
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 3,
-      "collisionObjectId": null,
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    },
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 4,
-      "collisionObjectId": {
-        "name": "obj_jigsawbullet",
-        "path": "objects/obj_jigsawbullet/obj_jigsawbullet.yy"
-      },
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    }
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,},
   ],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_jigsawbullet",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

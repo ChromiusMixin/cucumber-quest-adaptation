@@ -37,3 +37,5 @@ image_yscale = 2;
 idlesprite = spr_heartenemy_idle;
 hurtsprite = spr_heartenemy_hurt;
 sparedsprite = spr_heartenemy_spared;
+datk_con = 0;
+datk_timer = 0;

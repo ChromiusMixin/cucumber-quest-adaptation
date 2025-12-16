@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_solidenemy_2",
   "spriteId": {
     "name": "spr_solidenemy_b",
-    "path": "sprites/spr_solidenemy_b/spr_solidenemy_b.yy"
+    "path": "sprites/spr_solidenemy_b/spr_solidenemy_b.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_solidenemy_2",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

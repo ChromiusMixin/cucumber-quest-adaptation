@@ -1,11 +1,11 @@
 {
-  "isDnd": false,
-  "isCompatibility": false,
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "background_get_height",
+  "isDnD": false,
+  "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Scripts.yy"
-  }
+    "path": "folders/Scripts.yy",
+  },
 }

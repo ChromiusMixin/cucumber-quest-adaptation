@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_txtsus",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.78,
@@ -9,15 +12,12 @@
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_sfx",
-    "path": "audiogroups/audio_sfx"
+    "path": "audiogroups/audio_sfx",
   },
   "soundFile": "snd_txtsus",
   "duration": 0.1294784,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_txtsus"
 }

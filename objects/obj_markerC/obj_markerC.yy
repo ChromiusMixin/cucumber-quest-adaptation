@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_markerC",
   "spriteId": {
     "name": "spr_markerC",
-    "path": "sprites/spr_markerC/spr_markerC.yy"
+    "path": "sprites/spr_markerC/spr_markerC.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_markerC",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

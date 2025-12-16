@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_solidblock",
   "spriteId": {
     "name": "spr_solidsmall",
-    "path": "sprites/spr_solidsmall/spr_solidsmall.yy"
+    "path": "sprites/spr_solidsmall/spr_solidsmall.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_solidblock",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

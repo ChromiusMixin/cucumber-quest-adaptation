@@ -35,3 +35,5 @@ image_yscale = 2;
 idlesprite = spr_diamondm_idle;
 hurtsprite = spr_diamondm_hurt;
 sparedsprite = spr_diamondm_spared;
+datk_con = 0;
+datk_timer = 0;

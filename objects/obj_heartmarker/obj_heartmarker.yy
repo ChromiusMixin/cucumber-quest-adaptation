@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_heartmarker",
   "spriteId": {
     "name": "spr_diamondbullet_form",
-    "path": "sprites/spr_diamondbullet_form/spr_diamondbullet_form.yy"
+    "path": "sprites/spr_diamondbullet_form/spr_diamondbullet_form.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_heartmarker",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_levelup",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.65,
@@ -9,15 +12,12 @@
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_sfx",
-    "path": "audiogroups/audio_sfx"
+    "path": "audiogroups/audio_sfx",
   },
   "soundFile": "snd_levelup",
   "duration": 0.9836054,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_levelup"
 }

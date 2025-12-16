@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_overworldheart",
   "spriteId": {
     "name": "spr_heart_outline2",
-    "path": "sprites/spr_heart_outline2/spr_heart_outline2.yy"
+    "path": "sprites/spr_heart_outline2/spr_heart_outline2.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_overworldheart",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

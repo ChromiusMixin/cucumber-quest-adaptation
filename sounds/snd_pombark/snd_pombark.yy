@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_pombark",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.9,
@@ -9,15 +12,12 @@
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audio_sfx",
-    "path": "audiogroups/audio_sfx"
+    "path": "audiogroups/audio_sfx",
   },
   "soundFile": "snd_pombark",
   "duration": 0.3047619,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_pombark"
 }

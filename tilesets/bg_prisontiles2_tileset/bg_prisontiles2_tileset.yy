@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_prisontiles2_tileset",
   "spriteId": {
     "name": "_decompiled_bg_prisontiles2_tileset",
-    "path": "sprites/_decompiled_bg_prisontiles2_tileset/_decompiled_bg_prisontiles2_tileset.yy"
+    "path": "sprites/_decompiled_bg_prisontiles2_tileset/_decompiled_bg_prisontiles2_tileset.yy",
   },
   "tileWidth": 40,
   "tileHeight": 40,
@@ -9,20 +12,20 @@
   "tileyoff": 2,
   "tilehsep": 4,
   "tilevsep": 4,
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "default",
-    "path": "texturegroups/default"
+    "path": "texturegroups/default",
   },
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
   "out_columns": 11,
   "tile_count": 121,
   "autoTileSets": [],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.00015,
   "tileAnimation": {
-    "frameData": [
+    "FrameData": [
       0,
       1,
       2,
@@ -143,20 +146,17 @@
       117,
       118,
       119,
-      120
+      120,
     ],
-    "SerialiseFrameCount": 1
+    "SerialiseFrameCount": 1,
   },
   "macroPageTiles": {
     "SerialiseWidth": 0,
     "SerialiseHeight": 0,
-    "TileSerialiseData": []
+    "TileSerialiseData": [],
   },
   "parent": {
     "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy"
+    "path": "folders/Tile Sets.yy",
   },
-  "resourceType": "GMTileSet",
-  "resourceVersion": "1.0",
-  "name": "bg_prisontiles2_tileset"
 }

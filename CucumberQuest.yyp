@@ -1,7 +1,7 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "DELTARUNE",
+  "name": "CucumberQuest",
   "resources": [
     {"id":{"name":"scr_debug_save_trophies","path":"scripts/scr_debug_save_trophies/scr_debug_save_trophies.yy",},"order":0,},
     {"id":{"name":"obj_switchAsyncHelper","path":"objects/obj_switchAsyncHelper/obj_switchAsyncHelper.yy",},"order":0,},

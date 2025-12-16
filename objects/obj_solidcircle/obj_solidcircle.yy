@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_solidcircle",
   "spriteId": {
     "name": "spr_solidcircle",
-    "path": "sprites/spr_solidcircle/spr_solidcircle.yy"
+    "path": "sprites/spr_solidcircle/spr_solidcircle.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_diag",
-    "path": "objects/obj_diag/obj_diag.yy"
+    "path": "objects/obj_diag/obj_diag.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_solidcircle",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

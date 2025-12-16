@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_joker_anything_ja",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1,
+  "volume": 1.0,
   "preload": true,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -9,15 +12,12 @@
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default"
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_joker_anything_ja",
   "duration": 1.632653,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_joker_anything_ja"
 }

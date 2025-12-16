@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_heroralsei",
   "spriteId": {
     "name": "spr_krisplace",
-    "path": "sprites/spr_krisplace/spr_krisplace.yy"
+    "path": "sprites/spr_krisplace/spr_krisplace.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_heroparent",
-    "path": "objects/obj_heroparent/obj_heroparent.yy"
+    "path": "objects/obj_heroparent/obj_heroparent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_heroralsei",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_sur",
   "spriteId": {
     "name": "spr_sur",
-    "path": "sprites/spr_sur/spr_sur.yy"
+    "path": "sprites/spr_sur/spr_sur.yy",
   },
   "solid": false,
   "visible": false,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_solidblock",
-    "path": "objects/obj_solidblock/obj_solidblock.yy"
+    "path": "objects/obj_solidblock/obj_solidblock.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_sur",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

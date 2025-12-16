@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_diag",
   "spriteId": {
     "name": "spr_diagonalsolid",
-    "path": "sprites/spr_diagonalsolid/spr_diagonalsolid.yy"
+    "path": "sprites/spr_diagonalsolid/spr_diagonalsolid.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_solidblock",
-    "path": "objects/obj_solidblock/obj_solidblock.yy"
+    "path": "objects/obj_solidblock/obj_solidblock.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_diag",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

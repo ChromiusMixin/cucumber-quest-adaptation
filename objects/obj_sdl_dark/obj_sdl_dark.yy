@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_sdl_dark",
   "spriteId": {
     "name": "spr_sdl_dark",
-    "path": "sprites/spr_sdl_dark/spr_sdl_dark.yy"
+    "path": "sprites/spr_sdl_dark/spr_sdl_dark.yy",
   },
   "solid": false,
   "visible": false,
@@ -10,7 +13,7 @@
   "persistent": false,
   "parentObjectId": {
     "name": "obj_solidblock",
-    "path": "objects/obj_solidblock/obj_solidblock.yy"
+    "path": "objects/obj_solidblock/obj_solidblock.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_sdl_dark",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

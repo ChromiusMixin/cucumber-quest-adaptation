@@ -4,6 +4,6 @@
   "name": "Asset_Order",
   "parent": {
     "name": "DecompilerGenerated",
-    "path": "folders/DecompilerGenerated.yy"
-  }
+    "path": "folders/DecompilerGenerated.yy",
+  },
 }

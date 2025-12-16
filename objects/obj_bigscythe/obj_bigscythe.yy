@@ -1,19 +1,22 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bigscythe",
   "spriteId": {
     "name": "jokerscythebig_mask",
-    "path": "sprites/jokerscythebig_mask/jokerscythebig_mask.yy"
+    "path": "sprites/jokerscythebig_mask/jokerscythebig_mask.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": {
     "name": "jokerscythebig_mask",
-    "path": "sprites/jokerscythebig_mask/jokerscythebig_mask.yy"
+    "path": "sprites/jokerscythebig_mask/jokerscythebig_mask.yy",
   },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_regularbullet_permanent",
-    "path": "objects/obj_regularbullet_permanent/obj_regularbullet_permanent.yy"
+    "path": "objects/obj_regularbullet_permanent/obj_regularbullet_permanent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,41 +31,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 0,
-      "collisionObjectId": null,
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    },
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 3,
-      "collisionObjectId": null,
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    },
-    {
-      "isDnD": false,
-      "eventNum": 0,
-      "eventType": 8,
-      "collisionObjectId": null,
-      "resourceType": "GMEvent",
-      "resourceVersion": "1.0",
-      "name": ""
-    }
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_bigscythe",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }

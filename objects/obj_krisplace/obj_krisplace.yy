@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_krisplace",
   "spriteId": {
     "name": "spr_krisplace",
-    "path": "sprites/spr_krisplace/spr_krisplace.yy"
+    "path": "sprites/spr_krisplace/spr_krisplace.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +27,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_krisplace",
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy"
-  }
+    "path": "folders/Objects.yy",
+  },
 }
