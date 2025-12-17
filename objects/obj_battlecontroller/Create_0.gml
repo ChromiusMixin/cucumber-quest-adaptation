@@ -1,5 +1,5 @@
 if (global.flag[9] == 1)
-    global.batmusic[1] = mus_loop_ext(global.batmusic[0], 0.85, 1);
+    global.batmusic[1] = mus_loop_ext(global.batmusic[0], 1, 1);
 
 victory = 0;
 victoried = 0;
