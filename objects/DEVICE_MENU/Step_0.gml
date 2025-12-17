@@ -161,7 +161,8 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7)
                     snd_free_all();
 					global.name = "KRIS"
 					global.truename = "SPEC"
-                    room_goto(room_krisroom);
+					scr_become_dark()
+                    room_goto(room_test_field);
                 }
             }
             

@@ -28,15 +28,16 @@ function scr_encountersetup(arg0)
             break;
         
         case 1:
-            global.monsterinstancetype[0] = obj_placeholderenemy;
-            global.monstertype[0] = 1;
-            global.monstermakex[0] = xx + 480;
+            global.monsterinstancetype[0] = obj_diamondenemy;
+            global.monstertype[0] = 5;
+            global.monstermakex[0] = xx + 660;
             global.monstermakey[0] = yy + 110;
-            global.monsterinstancetype[1] = obj_placeholderenemy;
-            global.monstertype[1] = 1;
-            global.monstermakex[1] = xx + 500;
+            global.monsterinstancetype[1] = obj_diamondenemy;
+            global.monstertype[1] = 5;
+            global.monstermakex[1] = xx + 680;
             global.monstermakey[1] = yy + 200;
             global.monstertype[2] = 0;
+			global.battlemsg[0] = "* Two placeholder Rudinns appeared."
             break;
         
         case 2:

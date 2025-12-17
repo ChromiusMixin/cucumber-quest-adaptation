@@ -20,10 +20,10 @@ usprite = spr_susieu_dark;
 dsprite = spr_susied_dark;
 rsprite = spr_susier_dark;
 lsprite = spr_susiel_dark;
-runup = 1107;
-rundown = 1103;
-runright = 1098;
-runleft = 1097;
+runup = spr_ralseifloat_up_ch1;
+rundown = spr_ralseifloat_down_ch1;
+runright = spr_ralseifloat_right_ch1;
+runleft = spr_ralseifloat_left_ch1;
 
 if (global.plot >= 240)
 {

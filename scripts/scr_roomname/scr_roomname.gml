@@ -56,6 +56,9 @@ function scr_roomname(arg0)
     if (arg0 == 126)
         roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_19_0");
     
+	if (arg0 == 147)
+        roomname = "Debug Kingdom - Test"
+	
     if (arg0 == 111)
         roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_20_0");
     

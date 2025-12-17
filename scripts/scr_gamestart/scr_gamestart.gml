@@ -15,7 +15,7 @@ function scr_gamestart()
     global.time = 0;
     global.fighting = 0;
     global.char[0] = 1;
-    global.char[1] = 0;
+    global.char[1] = 3;
     global.char[2] = 0;
     global.gold = 0;
     global.xp = 0;

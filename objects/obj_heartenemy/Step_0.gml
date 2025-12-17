@@ -120,7 +120,7 @@ if (global.monster[myself] == 1)
         if (datk_con >= 8)
         {
             with (datk_mark)
-                x += ((other.x - x) / 5);
+                x += ((other.x - x) / 10);
         }
         
         if (datk_con == 8)

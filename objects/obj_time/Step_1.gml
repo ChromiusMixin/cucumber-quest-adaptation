@@ -32,6 +32,13 @@ if (scr_debug())
         screen_save(screen_name);
         screenshot_number += 1;
     }
+	if keyboard_check_pressed(ord("H"))
+	{
+		scr_become_dark()
+		scr_losechar()
+		global.plot = 10
+		room_goto(room_dark1)
+	}
 }
 
 if (keyboard_check(vk_escape))
@@ -171,7 +178,7 @@ else if (border_fade_in)
 
 if (scr_debug())
 {
-    if (keyboard_check_pressed(192))
+    if (keyboard_check_pressed(ord("G")))
     {
         if (room_speed == 30)
             room_speed = 200;
@@ -179,7 +186,7 @@ if (scr_debug())
             room_speed = 60;
     }
     
-    if (keyboard_check_pressed(vk_numpad3))
+    if (keyboard_check_pressed(ord("F")))
     {
         if (room_speed == 30)
             room_speed = 5;

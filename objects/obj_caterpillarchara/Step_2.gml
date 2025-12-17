@@ -127,17 +127,17 @@ if (x == (remx[target] - 6) || y == (remy[target] - 16))
 {
     if (global.plot >= 240)
     {
-        runup = 1104;
-        rundown = 1105;
-        runright = 1095;
-        runleft = 1093;
+        runup = spr_susierun_up;
+        rundown = spr_susierun_down;
+        runright = spr_susierun_right;
+        runleft = spr_susierun_left;
     }
     else
     {
-        runup = 1104;
-        rundown = 1106;
-        runright = 1096;
-        runleft = 1094;
+        runup = spr_susierun_up;
+        rundown = spr_susierun_down_ch1;
+        runright = spr_susierun_right_ch1;
+        runleft = spr_susierun_left_ch1;
     }
 }
 

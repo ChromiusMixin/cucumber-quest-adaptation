@@ -1769,7 +1769,7 @@ if (scr_debug())
         room_speed = 120;
     
     if (keyboard_check_pressed(ord("L")))
-        ossafe_savedata_load();
+        scr_load();
     
     if (keyboard_check_pressed(ord("R")))
         game_restart_true();

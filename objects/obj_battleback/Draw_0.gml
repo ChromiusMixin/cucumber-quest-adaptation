@@ -13,8 +13,8 @@ if (destroy == 0)
         image_alpha += 0.05;
 }
 
-draw_background_tiled_ext(bg_battleback1, round(-100 + siner), round(-100 + siner), 1, 1, image_blend, image_alpha / 2);
-draw_background_tiled_ext(bg_battleback1, round(-200 - siner2), round(-210 - siner2), 1, 1, image_blend, image_alpha);
+draw_background_tiled_ext(bg_battleback1, round(-100 + siner), round(-100), 1, 1, image_blend, image_alpha / 2);
+draw_background_tiled_ext(bg_battleback1, round(-200 + siner2), round(-220), 1, 1, image_blend, image_alpha);
 
 if (siner >= 100)
     siner -= 100;
