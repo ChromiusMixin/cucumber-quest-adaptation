@@ -49,6 +49,7 @@ acttimer = 0;
 defendtimer = 0;
 itemed = 0;
 tu = 0;
+damage_resisted = false;
 
 if (object_index == obj_herokris)
 {

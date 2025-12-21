@@ -137,6 +137,7 @@ selnoise = 0;
 laznoise = 0;
 damagenoise = 0;
 grazenoise = 0;
+defendnoise = 0
 bcolor = merge_color(c_purple, c_black, 0.7);
 bcolor = merge_color(bcolor, c_dkgray, 0.5);
 tp = 0;

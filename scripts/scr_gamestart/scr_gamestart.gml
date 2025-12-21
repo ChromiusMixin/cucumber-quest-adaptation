@@ -89,6 +89,7 @@ function scr_gamestart()
     global.hp[1] = 90;
     global.maxhp[1] = 90;
     global.at[1] = 10;
+	global.df[1] = 15
     global.charweapon[2] = 2;
     global.hp[2] = 110;
     global.maxhp[2] = 110;

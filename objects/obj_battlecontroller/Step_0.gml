@@ -822,6 +822,11 @@ if (laznoise == 1)
     snd_play(snd_laz_c);
     laznoise = 0;
 }
+if (defendnoise == 1)
+{
+	snd_play(snd_bell)
+	defendnoise = 0
+}
 
 onebuffer -= 1;
 twobuffer -= 1;

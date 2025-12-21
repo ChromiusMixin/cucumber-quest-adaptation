@@ -8,6 +8,7 @@ dmgnoise = 0;
 instance_create(x + 10, y + 10, obj_grazebox);
 boundaryup = 0;
 disableslow = 0;
+defendnoise = false
 
 if (button2_h())
     disableslow = 1;

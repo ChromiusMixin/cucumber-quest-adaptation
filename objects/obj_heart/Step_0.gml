@@ -237,6 +237,13 @@ if ((y + py) >= (((__view_get(e__VW.YView, 0) + 320) - sprite_height) + boundary
 x += px;
 y += py;
 
+if (defendnoise == true)
+{
+	snd_stop(snd_bell)
+	snd_play(snd_bell)
+	defendnoise = false
+}
+
 if (dmgnoise == 1)
 {
     dmgnoise = 0;

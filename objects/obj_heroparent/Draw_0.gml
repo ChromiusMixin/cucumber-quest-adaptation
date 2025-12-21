@@ -204,10 +204,18 @@ if (global.hp[global.char[myself]] > 0)
         
         if (global.faceaction[myself] != 4)
         {
+		if (damage_resisted == false)
+		{
             specdraw = 1;
             draw_sprite_ext(hurtsprite, hurtindex, (x - 20) + (hurtindex * 10), y, 2, 2, 0, image_blend, image_alpha);
         }
-        else
+		}
+		if (damage_resisted == true)
+		{
+            specdraw = 1;
+            draw_sprite_ext(defendsprite, 5, (x - 20) + (hurtindex * 10), y, 2, 2, 0, image_blend, image_alpha);
+        }
+        if (global.faceaction[myself] == 4)
         {
             specdraw = 1;
             thissprite = defendsprite;

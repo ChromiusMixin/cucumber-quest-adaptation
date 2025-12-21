@@ -34,7 +34,7 @@ function scr_spell(arg0, arg1)
             break;
         
         case 2:
-            healnum = global.battlemag[arg1] * 5;
+            healnum = round(global.battlemag[arg1] * 5 * random_range(0.96, 1.04));
             scr_heal(star, healnum);
             global.charinstance[star].healnum = healnum;
             

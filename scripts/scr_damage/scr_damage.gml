@@ -1,6 +1,7 @@
 function scr_damage()
 {
     var debug_inv = 0;
+	var resisted = false
     
     if (variable_global_exists("chemg_god_mode"))
         debug_inv = global.chemg_god_mode;
@@ -25,28 +26,39 @@ function scr_damage()
         }
         
         chartarget = 3;
-        tdamage = damage;
+        tdamage = floor(damage * random_range(0.96, 1.04));
         
         if (target < 3)
         {
-            tdamage = ceil(tdamage - (global.battledf[target] * 3));
+            tdamage = floor(tdamage - (global.battledf[target] * 3 * random_range(0.96, 1.04)));
             chartarget = global.char[target];
             
             if (global.charaction[target] == 10)
-                tdamage = ceil((2 * tdamage) / 3);
+                tdamage = floor((2 * tdamage) / 3);
             
-            if (tdamage < 1)
-                tdamage = 1;
+            if (tdamage < 0)
+            {
+				tdamage = 0;
+				resisted = true
+			}
         }
         
-        if (!instance_exists(obj_shake))
-            instance_create(0, 0, obj_shake);
-        
+		if (resisted == false)
+		{
+			if (!instance_exists(obj_shake))
+				instance_create(0, 0, obj_shake);
+		}
         with (global.charinstance[target])
         {
             hurt = 1;
             hurttimer = 0;
         }
+		
+		if (tdamage == 0)
+		{
+			with (global.charinstance[target])
+				damage_resisted = true
+		}
         
         hpdiff = tdamage;
         
@@ -58,9 +70,17 @@ function scr_damage()
         
         doomtype = -1;
         
-        with (obj_heart)
+        if resisted = false
+		{
+		with (obj_heart)
             dmgnoise = 1;
-        
+		}
+		else if resisted = true
+        {
+			with (obj_battlecontroller)
+				defendnoise = 1
+		}
+		
         if (target < 3)
         {
             if (global.hp[chartarget] <= 0)

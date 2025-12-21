@@ -28,7 +28,7 @@ if (cancelattack == 0)
         }
     }
     
-    dm.damage = damage;
+    dm.damage = round(damage * random_range(0.96, 1.04));
     global.hittarget[global.chartarget[myself]] += 1;
     global.monsterhp[global.chartarget[myself]] -= damage;
     
