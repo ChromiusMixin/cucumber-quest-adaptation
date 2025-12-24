@@ -16,8 +16,7 @@ battleheart.image_speed = 0;
 battlealpha = 0;
 becamebattle = 0;
 darkmode = global.darkzone;
-stepsound1 = snd_nosound
-stepsound2 = snd_nosound
+stepsound = snd_nosound
 
 if (darkmode == 1)
 {

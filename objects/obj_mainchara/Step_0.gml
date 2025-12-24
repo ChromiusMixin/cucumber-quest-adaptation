@@ -518,30 +518,27 @@ if (fun == 0)
     }
 }
 if (global.flag[31] == 0)
-{
-	stepsound1 = snd_step1
-	stepsound2 = snd_step2
-}
+	stepsound = snd_step1
 
 if (global.flag[31] == 1)
-{
-	stepsound1 = snd_nosound
-	stepsound2 = snd_nosound
-}
+	stepsound = snd_nosound
 
 if (global.flag[31] == 2)
-{
-	stepsound1 = snd_grassstep1
-	stepsound2 = snd_grassstep2
-}
-		
+	stepsound = snd_grassstep
+
+if (runmove == 0)
+snd_pitch(stepsound, (random_range(0.88, 0.92)))
+
+else if (runmove == 1)
+snd_pitch(stepsound, (random_range(1.05, 1.15)))
+
 if (runmove == 0)
 {
     if (stepping == 1)
     {
         if (image_index == 1 && stepped == 0)
         {
-                snd_play(stepsound1);
+                snd_play(stepsound);
                 stepped = 1;
         }
         else if (image_index == 0 || image_index == 2)
@@ -551,7 +548,7 @@ if (runmove == 0)
         else if (image_index == 3 && stepped == 0)
         {
             stepped = 1;
-            snd_play(stepsound2);
+            snd_play(stepsound);
         }
     }
 }
@@ -561,7 +558,7 @@ else if (runmove == 1)
     {
         if (image_index == 0 && stepped == 0)
         {
-            snd_play(stepsound1);
+            snd_play(stepsound);
             stepped = 1;
         }
         else if (image_index == 1 || image_index == 2 || image_index == 4 || image_index == 5)
@@ -571,7 +568,7 @@ else if (runmove == 1)
         else if (image_index == 3 && stepped == 0)
         {
             stepped = 1;
-            snd_play(stepsound2);
+            snd_play(stepsound);
         }
     }
 }

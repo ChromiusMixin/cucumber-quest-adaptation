@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_grassstep1",
+  "name": "snd_grassstep",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_grassstep1.wav",
+  "soundFile": "snd_grassstep.wav",
   "duration": 0.075938,
   "parent": {
     "name": "Sounds",
