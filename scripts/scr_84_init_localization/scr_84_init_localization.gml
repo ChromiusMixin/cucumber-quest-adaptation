@@ -41,13 +41,11 @@ function scr_84_init_localization()
             ds_map_destroy(global.lang_map);
             ds_map_destroy(global.font_map);
             ds_map_destroy(global.chemg_sprite_map);
-            ds_map_destroy(global.chemg_sound_map);
         }
         
         global.lang_map = ds_map_create();
         global.font_map = ds_map_create();
         global.chemg_sprite_map = ds_map_create();
-        global.chemg_sound_map = ds_map_create();
         scr_84_lang_load();
         scr_ascii_input_names();
         global.chemg_last_get_font = "";
@@ -79,11 +77,6 @@ function scr_84_init_localization()
             ds_map_add(sm, "spr_thrashlogo", spr_ja_thrashlogo);
             ds_map_add(sm, "spr_thrashstats", spr_ja_thrashstats);
             ds_map_add(sm, "spr_fieldmuslogo", spr_ja_fieldmuslogo);
-            var sndm = global.chemg_sound_map;
-            ds_map_add(sndm, "snd_joker_anything", snd_joker_anything_ja);
-            ds_map_add(sndm, "snd_joker_chaos", snd_joker_chaos_ja);
-            ds_map_add(sndm, "snd_joker_metamorphosis", snd_joker_metamorphosis_ja);
-            ds_map_add(sndm, "snd_joker_neochaos", snd_joker_neochaos_ja);
         }
         else
         {
@@ -112,11 +105,6 @@ function scr_84_init_localization()
             ds_map_add(sm, "spr_thrashlogo", spr_thrashlogo);
             ds_map_add(sm, "spr_thrashstats", spr_thrashstats);
             ds_map_add(sm, "spr_fieldmuslogo", spr_fieldmuslogo);
-            var sndm = global.chemg_sound_map;
-            ds_map_add(sndm, "snd_joker_anything", snd_joker_anything);
-            ds_map_add(sndm, "snd_joker_chaos", snd_joker_chaos);
-            ds_map_add(sndm, "snd_joker_metamorphosis", snd_joker_metamorphosis);
-            ds_map_add(sndm, "snd_joker_neochaos", snd_joker_neochaos);
         }
     }
 }

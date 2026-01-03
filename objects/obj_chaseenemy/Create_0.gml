@@ -156,39 +156,3 @@ if (room == room_forest_area4)
     if (global.flag[506] >= 1)
         alertcon = -1;
 }
-
-if (room == room_cc_1f)
-{
-    pacetype = 9;
-    chasetype = 4;
-    moveradius = 160;
-    sprite_index = spr_daimond_knight_idle;
-    myencounter = 28;
-    touchsprite = spr_daimond_knight_idle;
-    touchflag = 507;
-    
-    if (global.flag[507] == 1)
-        alertcon = -1;
-}
-
-if (room == room_cc_3f)
-{
-    eraser = 1;
-    ignoresolid = 1;
-    chasetype = 4;
-    pacetype = 9;
-    radius = 165;
-    moveradius = 160;
-    
-    if (x >= (room_width / 2))
-        moveradius = -160;
-    
-    sprite_index = spr_hathyx_overworld;
-    myencounter = 30;
-    touchsprite = spr_hathyx_overworld;
-    offscreen_frozen = 0;
-    touchflag = 508;
-    
-    if (global.flag[508] == 1)
-        alertcon = -1;
-}

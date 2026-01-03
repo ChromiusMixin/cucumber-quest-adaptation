@@ -158,33 +158,6 @@ if (room == room_field_boxpuzzle)
     }
 }
 
-if (room == room_cc_kingbattle)
-{
-    if (global.plot < 240)
-        instance_destroy();
-    
-    sprite_index = spr_ralseid;
-    dtsprite = spr_ralseid;
-    utsprite = spr_ralseiu;
-    rtsprite = spr_ralseir;
-    ltsprite = spr_ralseil;
-    y += sprite_height;
-}
-
-if (room == room_cc_throneroom)
-{
-    if (global.plot < 240)
-        instance_destroy();
-    
-    sprite_index = spr_lancer_dt;
-    dtsprite = spr_lancer_dt;
-    utsprite = spr_lancer_ut;
-    rtsprite = spr_lancer_rt;
-    ltsprite = spr_lancer_lt;
-    y += sprite_height;
-    depthbonus = -250;
-}
-
 if (room == room_forest_area1)
 {
     sprite_index = spr_susier_dark;

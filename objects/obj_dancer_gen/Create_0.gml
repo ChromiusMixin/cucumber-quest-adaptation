@@ -97,18 +97,9 @@ if (room == room_forest_dancers1)
     }
 }
 
-if (room == room_cc_4f)
-{
-    areax1[0] = 260;
-    areay1[0] = 40;
-    areax2[0] = 1120;
-    areay2[0] = 820;
-    areas = 1;
-}
-
 tile_fade = 0;
 
-if (room == room_forest_dancers1 || room == room_cc_4f)
+if (room == room_forest_dancers1)
 {
     alpha_changed = 0;
     tile_fade = 1;

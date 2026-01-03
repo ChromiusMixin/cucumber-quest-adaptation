@@ -32,20 +32,6 @@ if (room == room_diner)
     depthcancel = 1;
 }
 
-if (room == room_cc_clover)
-    sprite_index = spr_cc_boombox;
-
-if (room == room_cc_6f)
-    sprite_index = spr_smallchecker_front;
-
-if (room == room_cc_throneroom)
-{
-    if (global.plot < 240)
-        instance_destroy();
-    
-    sprite_index = spr_smallchecker_front;
-}
-
 if (room == room_field_maze)
 {
     sprite_index = spr_jigsawry_clobbered;

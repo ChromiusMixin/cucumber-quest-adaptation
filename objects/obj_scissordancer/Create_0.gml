@@ -10,14 +10,6 @@ global.charinstance[2] = global.cinstance[1];
 con = 0;
 vspeed = -3;
 specturn = 0;
-
-if (room == room_cc_4f)
-{
-    specturn = 1;
-    vspeed = 0;
-    hspeed = 3;
-}
-
 bullet = instance_create(x, y, obj_overworldbulletparent);
 bullet.sprite_index = spr_scissordancer_precise;
 

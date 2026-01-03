@@ -20,7 +20,7 @@ if (global.flag[itemflag] == 1)
     if (room == room_field_maze)
         global.msg[0] = scr_84_get_lang_string("obj_treasure_room_slash_Other_10_gml_19_0");
     
-    if (room == room_forest_dancers1 || room == room_cc_4f)
+    if (room == room_forest_dancers1)
     {
         if (scr_havechar(3) && extratext == 1)
         {

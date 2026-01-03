@@ -73,21 +73,6 @@ if (room == room_diner)
         global.msg[0] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_72_0");
 }
 
-if (room == room_cc_clover)
-    global.msg[0] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_78_0");
-
-if (room == room_cc_6f)
-{
-    global.msg[0] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_83_0");
-    global.msg[1] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_84_0");
-}
-
-if (room == room_cc_throneroom)
-{
-    global.msg[0] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_89_0");
-    global.msg[1] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_90_0");
-}
-
 if (room == room_field_maze)
 {
     global.msg[0] = scr_84_get_lang_string("obj_npc_room_animated_slash_Other_10_gml_95_0");

@@ -9,31 +9,6 @@ if (global.darkzone == 1)
     image_yscale = 2;
 }
 
-if (room == room_cc_prison_cells)
-{
-    sprite_index = spr_ironshackle;
-    image_index = 0;
-    
-    if (global.flag[105] == 1)
-        image_index = 1;
-}
-
-if (room == room_cc_prison2)
-{
-    sprite_index = spr_npc_originalstarwalker;
-    
-    if (global.flag[254] == 0)
-        instance_destroy();
-}
-
-if (room == room_cc_throneroom)
-{
-    if (x >= 220 && x <= 400)
-        sprite_index = spr_darkthrone;
-    else
-        sprite_index = spr_darkmoney;
-}
-
 if (room == room_flowershop_2f)
 {
     sprite_index = spr_flowercontainer;

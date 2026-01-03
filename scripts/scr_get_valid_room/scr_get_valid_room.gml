@@ -7,7 +7,7 @@ function scr_get_valid_room(arg0, arg1, arg2 = 0)
     var valid_rooms;
     
     if (chapter == 1)
-        valid_rooms = [new scr_valid_room(room_test_field, 0), new scr_valid_room(room_krisroom, 0), new scr_valid_room(room_dark1a, 11), new scr_valid_room(room_dark_eyepuzzle, 11), new scr_valid_room(room_castle_town, 16), new scr_valid_room(room_field_start, 33), new scr_valid_room(room_field_shop1, 42), new scr_valid_room(room_field_checkers3, 55), new scr_valid_room(room_field_checkers7, 55), new scr_valid_room(room_forest_savepoint1, 60), new scr_valid_room(room_forest_savepoint2, 75), new scr_valid_room(room_forest_savepoint_relax, 75), new scr_valid_room(room_forest_savepoint3, 120), new scr_valid_room(room_forest_fightsusie, 130), new scr_valid_room(room_cc_prison_to_elevator, 156), new scr_valid_room(room_cc_1f, 165), new scr_valid_room(room_cc_5f, 165), new scr_valid_room(room_cc_throneroom, 175), new scr_valid_room(room_cc_prison_prejoker, 156), new scr_valid_room(room_field_maze, 0)];
+        valid_rooms = [new scr_valid_room(room_test_field, 0), new scr_valid_room(room_krisroom, 0), new scr_valid_room(room_dark1a, 11), new scr_valid_room(room_dark_eyepuzzle, 11), new scr_valid_room(room_castle_town, 16), new scr_valid_room(room_field_start, 33), new scr_valid_room(room_field_shop1, 42), new scr_valid_room(room_field_checkers3, 55), new scr_valid_room(room_field_checkers7, 55), new scr_valid_room(room_forest_savepoint1, 60), new scr_valid_room(room_forest_savepoint2, 75), new scr_valid_room(room_forest_savepoint_relax, 75), new scr_valid_room(room_forest_savepoint3, 120), new scr_valid_room(room_forest_fightsusie, 130), new scr_valid_room(room_field_maze, 0)];
     
     var is_valid = false;
     

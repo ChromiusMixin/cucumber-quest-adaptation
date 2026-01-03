@@ -92,12 +92,6 @@ if (frozen == 0)
         if (pacetype == 8)
             vspeed = -sin(pacetimer / 50) * 6.25;
         
-        if (pacetype == 9)
-        {
-            hspeed = sin(pacetimer / (pacespeed * 30)) * (moveradius / 40);
-            pacespeed = 1.6;
-        }
-        
         if (pacetype == 10)
         {
             if (pacecon2 == 0)

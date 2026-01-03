@@ -58,10 +58,10 @@ dsprite = spr_krisd;
 rsprite = spr_krisr;
 usprite = spr_krisu;
 lsprite = spr_krisl;
-rundown = 1109;
-runright = 1115;
-runup = 1111;
-runleft = 1113;
+rundown = spr_krisrun_down_light;
+runright = spr_krisrun_right_light;
+runup = spr_krisrun_up_light;;
+runleft = spr_krisrun_left_light;
 
 if (global.darkzone == 1)
 {
@@ -69,10 +69,10 @@ if (global.darkzone == 1)
     rsprite = spr_krisr_dark;
     lsprite = spr_krisl_dark;
     usprite = spr_krisu_dark;
-    rundown = 1108;
-    runright = 1114;
-    runup = 1110;
-    runleft = 1112;
+    rundown = spr_krisrun_down;
+    runright = spr_krisrun_right;
+    runup = spr_krisrun_up;
+    runleft = spr_krisrun_left;
 }
 
 fun = 0;

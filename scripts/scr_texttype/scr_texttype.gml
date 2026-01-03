@@ -118,14 +118,6 @@ function scr_texttype()
             scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_txtlan, 16, 36, 1);
             break;
         
-        case 33:
-            scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_dadtxt, 16, 36, 1);
-            break;
-        
-        case 35:
-            scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_txtjok, 16, 36, 1);
-            break;
-        
         case 36:
             scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_nosound, 16, 36, 1);
             break;
@@ -158,11 +150,6 @@ function scr_texttype()
         
         case 47:
             scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_txtsus, 16, 28, 1);
-            extra_ja_vspace = 2;
-            break;
-        
-        case 48:
-            scr_textsetup(scr_84_get_font("mainbig"), c_white, x, y, 33, 0, 2, snd_dadtxt, 16, 28, 1);
             extra_ja_vspace = 2;
             break;
         

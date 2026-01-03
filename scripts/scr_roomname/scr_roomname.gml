@@ -44,23 +44,8 @@ function scr_roomname(arg0)
     if (arg0 == 97)
         roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_15_0");
     
-    if (arg0 == 107)
-        roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_16_0");
-    
-    if (arg0 == 114)
-        roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_17_0");
-    
-    if (arg0 == 123)
-        roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_18_0");
-    
-    if (arg0 == 126)
-        roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_19_0");
-    
-	if (arg0 == 147)
+	if (arg0 == 121)
         roomname = "Debug Kingdom - Test"
-	
-    if (arg0 == 111)
-        roomname = scr_84_get_lang_string("scr_roomname_slash_scr_roomname_gml_20_0");
     
     if (arg0 == 56)
     {

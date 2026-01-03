@@ -83,33 +83,6 @@ if (room == room_forest_thrashmaker)
 {
 }
 
-if (room == room_cc_prison_cells)
-{
-    global.flag[231] += 1;
-    global.msc = 300;
-    scr_text(global.msc);
-}
-
-if (room == room_cc_prison2)
-{
-    global.msg[0] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_161_0");
-    global.msg[1] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_162_0");
-}
-
-if (room == room_cc_throneroom)
-{
-    if (sprite_index == spr_darkthrone)
-    {
-        global.msg[0] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_169_0");
-        
-        with (obj_event_manager)
-            trigger_event(UnknownEnum.Value_0, UnknownEnum.Value_25);
-    }
-    
-    if (sprite_index == spr_darkmoney)
-        global.msg[0] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_173_0");
-}
-
 if (room == room_flowershop_2f)
     global.msg[0] = scr_84_get_subst_string(scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_179_0"), colortxt);
 

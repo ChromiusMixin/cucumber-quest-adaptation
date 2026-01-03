@@ -37,12 +37,6 @@ if (room == room_town_north)
 if (room == room_flowershop_1f)
     room_goto(room_town_north);
 
-if (room == room_cc_prisonlancer)
-    room_goto(room_cc_prison_cells);
-
-if (room == room_cc_prison_cells)
-    room_goto(room_cc_prisonlancer);
-
 if (room == room_forest_secret1)
     room_goto(room_forest_dancers1);
 

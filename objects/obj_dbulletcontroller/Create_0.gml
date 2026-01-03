@@ -2,7 +2,6 @@ btimer = 198;
 timermax = 24;
 difficulty = 0.5;
 type = 1;
-joker = 0;
 side = 1;
 damage = 100;
 grazepoints = 1;
