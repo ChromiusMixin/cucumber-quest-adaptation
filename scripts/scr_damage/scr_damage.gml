@@ -10,6 +10,14 @@ function scr_damage()
     {
         scr_damage_cache();
         
+		var __element = 0;
+        
+        if (variable_instance_exists(id, "element"))
+        {
+            if (is_real(element))
+                __element = element;
+        }
+		
         if (target < 3)
         {
             if (global.hp[global.char[target]] <= 0)
@@ -98,6 +106,13 @@ function scr_damage()
                     doomtype = 4;
                     global.hp[chartarget] = 0;
                     scr_dead(target);
+                }
+				if (tdamage > (global.maxhp[chartarget] * 2))
+                {
+                        doomtype = 5;
+                        hpdiff = round(global.hp[chartarget] + 999);
+                        global.hp[chartarget] = -999;
+                        scr_dead(target);
                 }
             }
             

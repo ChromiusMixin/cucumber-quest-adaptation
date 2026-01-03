@@ -94,7 +94,7 @@ function scr_monstersetup()
         global.monstername[myself] = scr_84_get_lang_string("scr_monstersetup_slash_scr_monstersetup_gml_103_0");
         global.monstermaxhp[myself] = 120;
         global.monsterhp[myself] = 120;
-        global.monsterat[myself] = 5;
+        global.monsterat[myself] = 35;
         global.monsterdf[myself] = 0;
         global.monsterexp[myself] = 0;
         global.monstergold[myself] = 30;
