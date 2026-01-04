@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_schooldesk",
-  "spriteId": {
-    "name": "spr_classdesk",
-    "path": "sprites/spr_classdesk/spr_classdesk.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

@@ -15,11 +15,7 @@ automash_timer = 0;
 
 if (global.flag[6] == 1)
     skippable = 0;
-
-f = 1;
-
-if (global.darkzone == 1)
-    f = 2;
+f = 2;
 
 scr_texttype();
 autoaster = 1;

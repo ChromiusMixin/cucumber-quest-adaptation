@@ -2,39 +2,19 @@ draw_self();
 
 if (button1_p() && scr_debug())
 {
-    if (global.darkzone == 0)
-    {
-        draw_set_color(c_red);
+    draw_set_color(c_red);
         
-        if (global.facing == 1)
-            draw_rectangle(x + (sprite_width / 2), y + 6 + (sprite_height / 2), x + sprite_width + 13, y + sprite_height, true);
+    if (global.facing == 1)
+        draw_rectangle(x + (sprite_width / 2), y + 12 + (sprite_height / 2), x + sprite_width + 26, y + sprite_height, true);
         
-        if (global.facing == 3)
-            draw_rectangle(x + (sprite_width / 2), y + 6 + (sprite_height / 2), x - 13, y + sprite_height, true);
+    if (global.facing == 3)
+        draw_rectangle(x + (sprite_width / 2), y + 12 + (sprite_height / 2), x - 26, y + sprite_height, true);
         
-        if (global.facing == 0)
-            draw_rectangle(x + 4, y + 28, (x + sprite_width) - 4, y + sprite_height + 15, true);
+    if (global.facing == 0)
+        draw_rectangle(x + 4, y + 56, (x + sprite_width) - 8, y + sprite_height + 30, true);
         
-        if (global.facing == 2)
-            draw_rectangle(x + 3, (y + sprite_height) - 5, (x + sprite_width) - 5, y + 5, true);
-    }
-    
-    if (global.darkzone == 1)
-    {
-        draw_set_color(c_red);
-        
-        if (global.facing == 1)
-            draw_rectangle(x + (sprite_width / 2), y + 12 + (sprite_height / 2), x + sprite_width + 26, y + sprite_height, true);
-        
-        if (global.facing == 3)
-            draw_rectangle(x + (sprite_width / 2), y + 12 + (sprite_height / 2), x - 26, y + sprite_height, true);
-        
-        if (global.facing == 0)
-            draw_rectangle(x + 4, y + 56, (x + sprite_width) - 8, y + sprite_height + 30, true);
-        
-        if (global.facing == 2)
-            draw_rectangle(x + 3, (y + sprite_height) - 10, (x + sprite_width) - 10, y + 10, true);
-    }
+    if (global.facing == 2)
+        draw_rectangle(x + 3, (y + sprite_height) - 10, (x + sprite_width) - 10, y + 10, true);
 }
 
 if (battlemode == 1)

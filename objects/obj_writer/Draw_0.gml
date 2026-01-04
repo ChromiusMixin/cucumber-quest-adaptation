@@ -475,15 +475,10 @@ for (n = 1; n < pos; n += 1)
         {
             if (nextchar2 == "0")
             {
-                global.typer = 5;
-                
-                if (global.darkzone == 1)
-                {
-                    global.typer = 6;
+                global.typer = 6;
                     
-                    if (global.fighting == 1)
-                        global.typer = 4;
-                }
+                if (global.fighting == 1)
+                    global.typer = 4;
                 
                 scr_texttype();
             }
@@ -526,15 +521,10 @@ for (n = 1; n < pos; n += 1)
             
             if (nextchar2 == "S")
             {
-                global.typer = 10;
-                
-                if (global.darkzone == 1)
-                {
-                    global.typer = 30;
-                    
-                    if (global.fighting == 1)
-                        global.typer = 47;
-                }
+				global.typer = 30;
+				
+				if (global.fighting == 1)
+                    global.typer = 47;
                 
                 scr_texttype();
             }

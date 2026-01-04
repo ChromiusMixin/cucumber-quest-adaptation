@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_npc_room_animated",
-  "spriteId": {
-    "name": "spr_npc_icemascot_fake",
-    "path": "sprites/spr_npc_icemascot_fake/spr_npc_icemascot_fake.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

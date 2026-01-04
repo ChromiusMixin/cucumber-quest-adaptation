@@ -33,17 +33,10 @@ press_u = 0;
 px = 0;
 py = 0;
 wallcheck = 0;
-wspeed = 1.5;
-bwspeed = 1.5;
+bwspeed = 2;
+wspeed = 2;
 hc = 0;
 vc = 0;
-
-if (darkmode == 1)
-{
-    bwspeed = 2;
-    wspeed = 2;
-}
-
 run = 0;
 runtimer = 0;
 subxspeed = 0;
@@ -54,27 +47,14 @@ walkanim = 0;
 walkbuffer = 0;
 walktimer = 0;
 image_speed = 0;
-dsprite = spr_krisd;
-rsprite = spr_krisr;
-usprite = spr_krisu;
-lsprite = spr_krisl;
-rundown = spr_krisrun_down_light;
-runright = spr_krisrun_right_light;
-runup = spr_krisrun_up_light;;
-runleft = spr_krisrun_left_light;
-
-if (global.darkzone == 1)
-{
-    dsprite = spr_krisd_dark;
-    rsprite = spr_krisr_dark;
-    lsprite = spr_krisl_dark;
-    usprite = spr_krisu_dark;
-    rundown = spr_krisrun_down;
-    runright = spr_krisrun_right;
-    runup = spr_krisrun_up;
-    runleft = spr_krisrun_left;
-}
-
+dsprite = spr_krisd_dark;
+rsprite = spr_krisr_dark;
+usprite = spr_krisu_dark;
+lsprite = spr_krisl_dark;
+rundown = spr_krisrun_down;
+runright = spr_krisrun_right;
+runup = spr_krisrun_up;;
+runleft = spr_krisrun_left;
 fun = 0;
 runmove = 0;
 

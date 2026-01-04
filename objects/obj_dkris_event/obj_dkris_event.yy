@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_dkris_event",
-  "spriteId": {
-    "name": "spr_dkris_dl",
-    "path": "sprites/spr_dkris_dl/spr_dkris_dl.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

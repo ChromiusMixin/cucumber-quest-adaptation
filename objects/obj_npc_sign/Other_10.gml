@@ -83,24 +83,6 @@ if (room == room_forest_thrashmaker)
 {
 }
 
-if (room == room_flowershop_2f)
-    global.msg[0] = scr_84_get_subst_string(scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_179_0"), colortxt);
-
-if (room == room_town_north)
-{
-    global.msg[0] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_184_0");
-    global.msg[1] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_185_0");
-}
-
-if (room == room_beach)
-{
-    global.msc = 192;
-    scr_text(global.msc);
-}
-
-if (room == room_town_krisyard)
-    global.msg[0] = scr_84_get_lang_string("obj_npc_sign_slash_Other_10_gml_196_0");
-
 read += 1;
 myinteract = 3;
 mydialoguer = instance_create(0, 0, obj_dialoguer);

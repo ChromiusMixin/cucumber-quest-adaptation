@@ -1,7 +1,7 @@
 function scr_gamestart()
 {
     global.chapter = 1;
-    global.darkzone = 0;
+    global.darkzone = 1;
     global.filechoice = 0;
     global.plot = 0;
     global.truename = "";
@@ -118,7 +118,7 @@ function scr_gamestart()
     global.item[10] = 0;
     global.item[11] = 0;
     global.item[12] = 0;
-    global.keyitem[0] = 1;
+    global.keyitem[0] = 0;
     global.keyitem[1] = 0;
     global.keyitem[2] = 0;
     global.keyitem[3] = 0;

@@ -1,13 +1,7 @@
 scr_depth();
 image_speed = 0;
-darkmode = global.darkzone;
-
-if (darkmode == 1)
-{
-    image_xscale = 2;
-    image_yscale = 2;
-}
-
+image_xscale = 2;
+image_yscale = 2;
 walk = 0;
 fun = 0;
 runmove = 0;

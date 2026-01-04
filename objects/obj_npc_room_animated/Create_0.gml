@@ -17,21 +17,6 @@ if (room == room_dark1)
         instance_destroy();
 }
 
-if (room == room_town_mid)
-{
-    if (x >= 320)
-        sprite_index = spr_npc_icemascot_fake;
-    else
-        sprite_index = spr_npc_icemascot2;
-}
-
-if (room == room_diner)
-{
-    sprite_index = spr_npc_greenfire;
-    depth = 4000;
-    depthcancel = 1;
-}
-
 if (room == room_field_maze)
 {
     sprite_index = spr_jigsawry_clobbered;

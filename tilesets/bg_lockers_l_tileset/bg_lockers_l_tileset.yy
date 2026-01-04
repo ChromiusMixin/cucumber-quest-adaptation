@@ -2,10 +2,7 @@
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
   "name": "bg_lockers_l_tileset",
-  "spriteId": {
-    "name": "_decompiled_bg_lockers_l_tileset",
-    "path": "sprites/_decompiled_bg_lockers_l_tileset/_decompiled_bg_lockers_l_tileset.yy",
-  },
+  "spriteId": null,
   "tileWidth": 60,
   "tileHeight": 100,
   "tilexoff": 2,
