@@ -55,6 +55,40 @@ rundown = spr_krisrun_down;
 runright = spr_krisrun_right;
 runup = spr_krisrun_up;;
 runleft = spr_krisrun_left;
+if (global.char[0] == 1)
+{
+	dsprite = spr_krisd_dark;
+	rsprite = spr_krisr_dark;
+	usprite = spr_krisu_dark;
+	lsprite = spr_krisl_dark;
+	rundown = spr_krisrun_down;
+	runright = spr_krisrun_right;
+	runup = spr_krisrun_up;;
+	runleft = spr_krisrun_left;
+}
+if (global.char[0] == 2)
+{
+    dsprite = spr_susied_dark;
+    rsprite = spr_susier_dark;
+    lsprite = spr_susiel_dark;
+    usprite = spr_susieu_dark;
+	rundown = spr_susierun_down_ch1;
+	runright = spr_susierun_right_ch1;
+	runup = spr_susierun_up;
+	runleft = spr_susierun_left_ch1;
+}
+    
+if (global.char[0] == 3)
+{
+    dsprite = spr_ralseid;
+    rsprite = spr_ralseir;
+    lsprite = spr_ralseil;
+    usprite = spr_ralseiu;
+	rundown = spr_ralseifloat_down_ch1
+	runright = spr_ralseifloat_right_ch1
+	runup = spr_ralseifloat_up_ch1
+	runleft = spr_ralseifloat_left_ch1
+}
 fun = 0;
 runmove = 0;
 

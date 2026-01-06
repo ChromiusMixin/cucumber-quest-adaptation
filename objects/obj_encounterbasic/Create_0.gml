@@ -15,7 +15,12 @@ with (global.cinstance[1])
     visible = 0;
 
 count = 0;
-c[0] = scr_dark_marker(obj_mainchara.x, obj_mainchara.y, spr_krisr_dark);
+if (global.char[0] == 1)
+    c[0] = scr_dark_marker(obj_mainchara.x, obj_mainchara.y, spr_krisr_dark);
+if (global.char[0] == 2)
+    c[0] = scr_dark_marker(obj_mainchara.x - 6, obj_mainchara.y - 8, spr_susier_wall);
+if (global.char[0] == 3)
+    c[0] = scr_dark_marker(obj_mainchara.x - 4, obj_mainchara.y - 6, spr_ralseir);
 
 if (instance_exists(global.cinstance[0]))
 {

@@ -53,6 +53,25 @@ for (var i = 0; i < 3; i += 1)
     {
         havechar[0] = 1;
         charpos[0] = i;
+		        
+        if (i > 0)
+        {
+            global.cinstance[i - 1] = instance_create(obj_mainchara.x - 4, obj_mainchara.y - 12, obj_caterpillarchara);
+            global.cinstance[i - 1].target = i * 24;
+            
+            with (global.cinstance[i - 1])
+            {
+				name = "kris";
+                usprite = spr_krisu_dark;
+                dsprite = spr_krisd_dark;
+                rsprite = spr_krisr_dark;
+                lsprite = spr_krisl_dark;
+				runup = spr_krisrun_up;
+				rundown = spr_krisrun_down;
+				runright = spr_krisrun_right;
+				runleft = spr_krisrun_left;
+            }
+        }
     }
     
     if (global.char[i] == 2)
@@ -74,11 +93,12 @@ for (var i = 0; i < 3; i += 1)
         
         if (i > 0)
         {
-            global.cinstance[i - 1] = instance_create(obj_mainchara.x - 4, obj_mainchara.y - 12, obj_caterpillarchara);
+            global.cinstance[i - 1] = instance_create(obj_mainchara.x - 2, obj_mainchara.y - 12, obj_caterpillarchara);
             global.cinstance[i - 1].target = i * 24;
             
             with (global.cinstance[i - 1])
             {
+                name = "ralsei";
                 usprite = spr_ralseiu;
                 dsprite = spr_ralseid;
                 rsprite = spr_ralseir;

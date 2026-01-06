@@ -9,6 +9,7 @@ dir = 0;
 walkbuffer = 0;
 walktimer = 0;
 blushtimer = 0;
+name = "susie"
 target = 24;
 usprite = spr_susieu_dark;
 dsprite = spr_susied_dark;
@@ -47,3 +48,8 @@ for (i = 0; i < 50; i += 1)
 depth = obj_mainchara.depth + 5;
 mywidth = sprite_width;
 myheight = sprite_height;
+xoffset = 0;
+yoffset = 0;
+init = 0;
+forget = 0;
+ignoredepth = 0;

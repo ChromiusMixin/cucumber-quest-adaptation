@@ -1,10 +1,26 @@
-scr_depth();
-depth += 5;
+if (!init)
+{
+    ignoredepth = 0;
+    init = 1;
+}
+
+if (!ignoredepth)
+{
+    scr_depth();
+    depth += 5;
+    
+    if (name == "ralsei")
+        depth -= 80;
+    
+    if (name == "susie")
+        depth -= 60;
+}
 nowx = x;
 nowy = y;
 moved = 0;
 walk = 0;
 runmove = 0;
+slided = 0;
 
 if (obj_mainchara.x != remx[0])
     moved = 1;
