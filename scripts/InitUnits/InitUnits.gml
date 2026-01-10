@@ -42,4 +42,4 @@ global.Units =
 
 
 global.Party = [global.Units[0],global.Units[1]]
-global.Troop = [Sephiroth]
+global.Troop = [Dess]

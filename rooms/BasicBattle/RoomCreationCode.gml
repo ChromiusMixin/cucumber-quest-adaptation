@@ -1,4 +1,4 @@
-global.bgm = LSA
+global.bgm = CQBatt
 global.volume = 0.35 // 0.35
 audio_stop_sound(global.bgm)
 audio_play_sound(global.bgm,3,1,global.volume)

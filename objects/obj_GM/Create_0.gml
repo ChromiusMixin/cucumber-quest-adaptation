@@ -19,14 +19,14 @@ global.SkillActive = 0
 global.Enemies = [];
 global.LivingPlayers = [];
 
-for (i = 0; i < array_length(global.Party); ++i) //Spawn Players
+for (var i = 0; i < array_length(global.Party); ++i) //Spawn Players
 {
 	
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 
 global.TurnCountMax+= 1
-array_push(global.Players, instance_create_layer(vx+250+(i*20),y+240+(i*100),"Tokens",global.Party[i].BattleObj));
+array_push(global.Players, instance_create_layer(vx+275+(i*20),vy+view_get_hport(0)/2+(i*100),"Tokens",global.Party[i].BattleObj));
 global.Players[i].depth = global.Players[i].depth-(i*10)
 
 }
@@ -35,12 +35,13 @@ global.Players[i].depth = global.Players[i].depth-(i*10)
 
 //Initialize Boss
 
-for (i = 0; i < array_length(global.Troop); ++i) //Spawn Enemies
+for (var i = 0; i < array_length(global.Troop); ++i) //Spawn Enemies
 {
 global.ENTurnCountMax+= 1
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
-array_push(global.Enemies, instance_create_layer(vx+view_get_wport(0)-250+(i*10),y+150+(i*100),"Tokens",global.Troop[i]));
+var ts = array_length(global.Troop)-1
+array_push(global.Enemies, instance_create_layer(vx+view_get_wport(0)-275+(i*10),(vy-(ts*30)+view_get_hport(0)/2)+((i-1)*100),"Tokens",global.Troop[i]));
 
 }
 //Default Enemy Turncoiunt
