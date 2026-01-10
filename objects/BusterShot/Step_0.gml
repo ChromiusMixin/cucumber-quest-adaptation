@@ -2,7 +2,7 @@
 // You can write your code in this editor
 direction += 3.5 * sign( angle_difference( point_direction(x,y, Target.x, Target.y), direction) );
 image_angle = direction;
-speed = 25
+speed = 40
 
 
 

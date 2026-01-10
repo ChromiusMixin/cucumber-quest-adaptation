@@ -7,7 +7,8 @@ global.Units =
 			NameShort: "Kris",
 			Name: "Kris (Chapter 1)",
 			DisplaySpr: KrisIdle,
-			BattleObj: Dakota,
+			BattleObj: Kris,
+			Icon: Kriscon,
 			IdleTxt: {
 						a: "...",
 						b: "...?",
@@ -40,5 +41,5 @@ global.Units =
 
 
 
-global.Party = [global.Units[0],global.Units[1],global.Units[2]]
+global.Party = [global.Units[0],global.Units[1]]
 global.Troop = [Sephiroth]

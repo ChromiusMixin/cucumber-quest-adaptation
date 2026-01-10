@@ -1,11 +1,12 @@
 /// @description Initialize Stats
 // You can write your code in this editor
-Name = "Kris"
+ID = instance_number(Kris)-1
+Name = global.Party[ID].NameShort
 LV = 5
-HP = 228+(LV*12);
-MP = 347+(LV*3);
-MHP = HP;
-MMP = MP;
+MHP = 228+(LV*12);
+MMP = 347+(LV*3);
+HP = MHP;
+MP = MMP;
 STR = 6+(LV*4)
 AC = 0; //Not active
 Menu1 = 0; //1 = Attack, 2 = Magic, 3 = Guard, 4 = Synergy
@@ -77,11 +78,11 @@ function EndTurn()
 			{
 			if global.CurrentPlayer == array_length(global.Players)-1
 				{
-					GM.CurrentPlayer = 0
+					obj_GM.CurrentPlayer = 0
 				}
 				else
 				{
-				GM.CurrentPlayer += 1
+				obj_GM.CurrentPlayer += 1
 				}
 			}
 }

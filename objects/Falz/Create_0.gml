@@ -90,11 +90,11 @@ function EndTurn()
 			{
 			if global.CurrentPlayer == array_length(global.Players)-1
 				{
-					GM.CurrentPlayer = 0
+					obj_GM.CurrentPlayer = 0
 				}
 				else
 				{
-				GM.CurrentPlayer += 1
+				obj_GM.CurrentPlayer += 1
 				}
 			}
 }

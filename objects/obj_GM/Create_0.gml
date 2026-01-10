@@ -2,9 +2,9 @@
 // You can write your code in this editor
 
 
-if !instance_exists(Turnwheel)
+if !instance_exists(obj_Turnwheel)
 	{
-instance_create_layer(320,0,"UI2",Turnwheel)
+instance_create_layer(view_get_wport(0)/2,view_get_hport(0)-view_get_hport(0),"UI2",obj_Turnwheel)
 	}
 
 
@@ -26,7 +26,7 @@ var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 
 global.TurnCountMax+= 1
-array_push(global.Players, instance_create_layer(x+100+(i*20),y+240+(i*100),"Tokens",global.Party[i].BattleObj));
+array_push(global.Players, instance_create_layer(vx+250+(i*20),y+240+(i*100),"Tokens",global.Party[i].BattleObj));
 global.Players[i].depth = global.Players[i].depth-(i*10)
 
 }
@@ -40,7 +40,7 @@ for (i = 0; i < array_length(global.Troop); ++i) //Spawn Enemies
 global.ENTurnCountMax+= 1
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
-array_push(global.Enemies, instance_create_layer(x+475+(i*10),y+150+(i*100),"Tokens",global.Troop[i]));
+array_push(global.Enemies, instance_create_layer(vx+view_get_wport(0)-250+(i*10),y+150+(i*100),"Tokens",global.Troop[i]));
 
 }
 //Default Enemy Turncoiunt
@@ -142,7 +142,7 @@ function close_menu()
 
 function endphase()
 {
-	instance_create_layer(0,0,"UI2",Turnchange)
+	instance_create_layer(0,0,"UI2",obj_Turnchange)
 
 	CurrentPlayer = 0;
 	if global.Phase == 1
@@ -162,7 +162,7 @@ function MagicMenu()
 	for (i = 0; i < global.Players[CurrentPlayer].MagicOptions; ++i)
 		{
 
-		array_push(global.Options, instance_create_layer(100+(i*20),200+(i*45),"UI",Button));
+		array_push(global.Options, instance_create_layer(view_get_hport(0)+(i*20),200+(i*45),"UI",Button));
 
 		}
 	instance_create_layer(100,200,"UI2",SelectorMenu)

@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if GM.Movetype < 0
+if obj_GM.Movetype < 0
 	{
-		var Target = global.Enemies[GM.CurrentOption]
+		var Target = global.Enemies[obj_GM.CurrentOption]
 		draw_text_scribble(Target.x-45,Target.y-Target.sprite_height,"[8b0][fa_center][pin_center][scale,0.75]"+string(Target.Name)+" LVL. "+string(Target.LV))
 		draw_sprite_ext(HPbarfill,-1,Target.x-50,Target.y+3,(Target.HP/Target.MHP)*2.5,5,-3,c_orange,1)
 		draw_sprite_ext(HPbarfill,-1,Target.x-50,Target.y,(Target.HP/Target.MHP)*2.5,5,-3,c_yellow,1)

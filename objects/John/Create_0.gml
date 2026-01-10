@@ -57,11 +57,11 @@ function EndTurn()
 			{
 			if global.CurrentPlayer == array_length(global.Players)-1
 				{
-					GM.CurrentPlayer = 0
+					obj_GM.CurrentPlayer = 0
 				}
 				else
 				{
-				GM.CurrentPlayer += 1
+				obj_GM.CurrentPlayer += 1
 				}
 			}
 }
@@ -73,8 +73,8 @@ function NormalAttack()
 		EndTurn()
 		ChangeAnim(NormalAtk)
 		PlayAttackSound()
-		global.Enemies[GM.CurrentOption].state = 5
-		global.Enemies[GM.CurrentOption].state = 3
+		global.Enemies[obj_GM.CurrentOption].state = 5
+		global.Enemies[obj_GM.CurrentOption].state = 3
 		show_debug_message("Attacked!!!!!!!!!!!!")
 	}
 function SwitchChar(obj)

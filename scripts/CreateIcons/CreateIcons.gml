@@ -4,7 +4,8 @@ function CreateIcons(){
 
 for (var i = 0; i < array_length(global.Players); ++i) //Spawn Icons
 {
-array_push(global.PlayerIcons, instance_create_layer(320+(i*125),435,"UI2",PlayerIcon));
+var parsize = array_length(global.Party)
+array_push(global.PlayerIcons, instance_create_layer(view_get_wport(0)-100-(parsize*100)+(i*125),view_get_hport(0)-35,"UI2",obj_PlayerIcon));
 }
 
 //for (var i = 0; i < array_length(global.Enemies); ++i) //Spawn Icons (Boss)

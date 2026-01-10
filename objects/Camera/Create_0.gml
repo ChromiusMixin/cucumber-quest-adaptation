@@ -9,3 +9,5 @@ FollowTarget = 0
 
 OffsetX = 0
 OffsetY = 0
+
+Active = 0

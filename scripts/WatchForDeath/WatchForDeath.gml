@@ -24,8 +24,8 @@ if DOWN = 1
 				EndTurn()
 				if instance_exists(UI)
 					{
-					UI.x = global.Players[GM.CurrentPlayer].x + global.Players[GM.CurrentPlayer].MenuOffsetX
-					UI.y = global.Players[GM.CurrentPlayer].y + global.Players[GM.CurrentPlayer].MenuOffsetY
+					UI.x = global.Players[obj_GM.CurrentPlayer].x + global.Players[obj_GM.CurrentPlayer].MenuOffsetX
+					UI.y = global.Players[obj_GM.CurrentPlayer].y + global.Players[obj_GM.CurrentPlayer].MenuOffsetY
 					}
 			}
 	}

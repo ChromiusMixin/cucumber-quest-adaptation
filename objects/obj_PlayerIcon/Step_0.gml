@@ -3,7 +3,7 @@
 
 
 
-if GM.CurrentPlayer == PlayerID && global.Phase == 1
+if obj_GM.CurrentPlayer == PlayerID && global.Phase == 1
 	{
 y = lerp(y,ystart-50,0.1)
 	}

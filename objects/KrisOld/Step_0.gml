@@ -17,7 +17,7 @@ MP = clamp(MP,0,MMP)
 WatchForDeath()
 
 //Skill Menu Initialize
-if GM.MenuActive == 1 && AC == 1
+if obj_GM.MenuActive == 1 && AC == 1
 	{
 		with global.Options[0]
 		{
@@ -41,25 +41,25 @@ if GM.MenuActive == 1 && AC == 1
 		}
 	}
 
-if AC = 1 && GM.CurrentOption == 0
+if AC = 1 && obj_GM.CurrentOption == 0
 	{
 		Movetype = 1
 		global.MPCost = 16
 	}
 	
-if AC = 1 && GM.CurrentOption == 1
+if AC = 1 && obj_GM.CurrentOption == 1
 	{
 		Movetype = -1
 		global.MPCost = 0
 	}
 	
-if AC = 1 && GM.CurrentOption == 2
+if AC = 1 && obj_GM.CurrentOption == 2
 	{
 		Movetype = 1
 		global.MPCost = 24
 	}
 	
-if AC = 1 && GM.CurrentOption == 3
+if AC = 1 && obj_GM.CurrentOption == 3
 	{
 		Movetype = -1
 		global.MPCost = 36
