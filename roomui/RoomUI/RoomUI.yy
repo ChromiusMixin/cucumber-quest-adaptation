@@ -1,0 +1,17 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[
+    {"$GMRUILayer":"v1","%Name":"UI3","alignItems":2,"children":[],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"UI3","nodeColour":4282939378,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"ATB",
+    "path":"ATB.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}

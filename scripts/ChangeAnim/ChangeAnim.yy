@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ChangeAnim",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChangeAnim",
+  "parent":{
+    "name":"BattleMgmt",
+    "path":"folders/Scripts/BattleMgmt.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

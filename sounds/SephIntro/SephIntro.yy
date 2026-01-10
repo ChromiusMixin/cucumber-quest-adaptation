@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SephIntro",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.1320863,
+  "exportDir":"",
+  "name":"SephIntro",
+  "parent":{
+    "name":"SEPHIROTH???",
+    "path":"folders/Sounds/CharacterSpecificStuff/SEPHIROTH???.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SephIntro.wav",
+  "volume":0.4,
+}

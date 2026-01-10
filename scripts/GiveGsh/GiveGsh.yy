@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GiveGsh",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GiveGsh",
+  "parent":{
+    "name":"Falz",
+    "path":"folders/Scripts/CharacterScripts/Falz.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

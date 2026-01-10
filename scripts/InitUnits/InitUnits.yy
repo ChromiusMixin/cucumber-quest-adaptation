@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"InitUnits",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InitUnits",
+  "parent":{
+    "name":"BattleMgmt",
+    "path":"folders/Scripts/BattleMgmt.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

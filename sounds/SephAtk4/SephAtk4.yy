@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SephAtk4",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.41417232,
+  "exportDir":"",
+  "name":"SephAtk4",
+  "parent":{
+    "name":"AtkSnds",
+    "path":"folders/Sounds/CharacterSpecificStuff/SEPHIROTH???/AtkSnds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SephAtk4.wav",
+  "volume":0.6,
+}

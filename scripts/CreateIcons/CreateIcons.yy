@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CreateIcons",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CreateIcons",
+  "parent":{
+    "name":"BattleMgmt",
+    "path":"folders/Scripts/BattleMgmt.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

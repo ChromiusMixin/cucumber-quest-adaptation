@@ -1,0 +1,2 @@
+Enelist = [Sephiroth]
+Song = shatli

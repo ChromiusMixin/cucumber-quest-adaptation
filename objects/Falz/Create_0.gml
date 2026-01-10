@@ -1,0 +1,162 @@
+/// @description Initialize Stats
+// You can write your code in this editor
+Name = "Falz"
+LV = 5
+HP = 200+(LV*12);
+MP = 347+(LV*3);
+MHP = HP;
+MMP = MP;
+STR = 6+(LV*4)
+AC = 0; //Not active
+Menu1 = 0; //1 = Attack, 2 = Magic, 3 = Guard, 4 = Synergy
+Target = self
+Menu2 = 0; //Magic Menu
+Menu3 = 0; //Synergy Menu
+MenuOffsetX = 20;
+MenuOffsetY = -30;
+MagicOptions = 4;
+SynOptions = 3;
+holdanim = 0
+Icon = Falzcon
+Delay = 2
+Flash = 0
+SkillID = 0
+PlayerID = 0
+Movetype = -1
+BaseDepth = depth
+//Unique Shit
+ReadyingNormal = 0
+Hittime = 25
+Attacking = 0
+Dmg = 0
+DmgRdc = 0
+DmgColor = #ff4f75
+Stance = 0 // 0 = Neutral, 1 = Carving, 2 = Cleaving
+stancetext = "Neutral"
+VP = 0
+Jumping = 0
+AiTime = 0
+
+function ResetJump()
+{
+	JVelX = -36
+	JVelY = -6
+}
+
+ResetJump()
+//Generic Animations
+NormalAtk = KrisPreAtk;
+Idle = FalzIdle;
+Cast = KrisSkill;
+Hurt = KrisHurt;
+DeathSpr = KrisDown;
+GuardStart = KrisGuardStart;
+Guard = KrisGuard;
+AttackSound = UndertaleSwing;
+HitSound = UndertaleDMG;
+HurtSnd = UTHurt;
+
+
+InitStatusEffects()
+
+function PlayAttackSound()
+{
+	audio_play_sound(AttackSound,1,0)
+}
+
+function SetFrame(FrameNumber)
+	{
+		image_index = FrameNumber
+	}
+	
+	
+	
+function ChangeAnim(AnimName)
+	{
+		sprite_index = AnimName
+		image_index = 0
+	}
+
+
+//Unique Animations
+VectorShot = IbVShot;
+
+
+
+function EndTurn()
+{
+	global.TurnCount -= 1
+			if global.TurnCount > 0
+			{
+			if global.CurrentPlayer == array_length(global.Players)-1
+				{
+					GM.CurrentPlayer = 0
+				}
+				else
+				{
+				GM.CurrentPlayer += 1
+				}
+			}
+}
+
+
+
+function SpawnQTE()
+	{
+		QTE = instance_create_layer(x+200,y-125,"UI2",KrisTiming)
+	}
+
+function NormalAttack()
+	{
+		if SkillID < 1
+			{
+		Hittime = 25
+		holdanim = 1
+		ReadyingNormal = 1
+		SpawnQTE()
+		KrisTiming.State = KrisTiming.StateOpen
+		global.SkillActive = 1
+		ChangeAnim(NormalAtk)
+		show_debug_message("Readying Swing")
+			}
+		if SkillID == 1 || SkillID == 3
+			{
+				Attacking = 1
+				Hittime = 25
+				global.SkillActive = 1
+				ChangeAnim(Cast)
+				audio_play_sound(UTSpell,0,0)
+			}
+		if SkillID == 2
+			{
+				Attacking = 1
+				Hittime = 450
+				global.SkillActive = 1
+				Camera.FollowPlayer = 1
+				ChangeAnim(FalzVivisect)
+			}
+		if SkillID == 4
+			{
+				Attacking = 1
+				Hittime = 250
+				global.SkillActive = 1
+				ChangeAnim(KrisXSlash)
+				ReadyingNormal = 0
+			}
+				
+	}
+	
+
+function TrueAtk()
+	{
+		PlayAttackSound()
+		QTE.State = KrisTiming.StateClose
+		Attacking = 1
+		ChangeAnim(KrisAtk)
+			
+	}
+function SwitchChar(obj)
+	{
+		instance_change(obj,1)
+	}
+	

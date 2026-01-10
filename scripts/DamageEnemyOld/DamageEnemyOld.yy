@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DamageEnemyOld",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DamageEnemyOld",
+  "parent":{
+    "name":"BattleMgmt",
+    "path":"folders/Scripts/BattleMgmt.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

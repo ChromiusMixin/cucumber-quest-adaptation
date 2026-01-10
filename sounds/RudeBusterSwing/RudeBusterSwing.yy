@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"RudeBusterSwing",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.9533787,
+  "exportDir":"",
+  "name":"RudeBusterSwing",
+  "parent":{
+    "name":"Susie",
+    "path":"folders/Sounds/CharacterSpecificStuff/UndertaleFellas/Susie.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"RudeBusterSwing.wav",
+  "volume":1.0,
+}

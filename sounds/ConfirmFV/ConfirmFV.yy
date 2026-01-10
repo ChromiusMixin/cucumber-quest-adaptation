@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ConfirmFV",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.4,
+  "exportDir":"",
+  "name":"ConfirmFV",
+  "parent":{
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ConfirmFV.ogg",
+  "volume":1.0,
+}

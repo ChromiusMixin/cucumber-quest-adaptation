@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"OppaTobyStyle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":339.14777,
+  "exportDir":"",
+  "name":"OppaTobyStyle",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"OppaTobyStyle.mp3",
+  "volume":1.0,
+}

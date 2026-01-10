@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"MeltyHeavyHit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.6245805,
+  "exportDir":"",
+  "name":"MeltyHeavyHit",
+  "parent":{
+    "name":"CombatSounds",
+    "path":"folders/Sounds/CombatSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"MeltyHeavyHit.wav",
+  "volume":0.5,
+}

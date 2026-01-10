@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SephBant1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.2880045,
+  "exportDir":"",
+  "name":"SephBant1",
+  "parent":{
+    "name":"Banter",
+    "path":"folders/Sounds/CharacterSpecificStuff/SEPHIROTH???/Banter.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SephBant1.wav",
+  "volume":0.4,
+}
