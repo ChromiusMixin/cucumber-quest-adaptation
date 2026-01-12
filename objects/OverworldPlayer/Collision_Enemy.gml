@@ -8,5 +8,15 @@ if Encountering != 1
 		Encountering = 1
 		Foe = other
 		Foe.caught = 1
+		if !instance_exists(WhiteFade)
+		{
+			instance_create_depth(x,y,-9999,WhiteFade)
+			WhiteFade.state = WhiteFade.stateFadeIn
+		}
+		else
+		{
+			
+			WhiteFade.state = WhiteFade.stateFadeIn
+		}
 	}
 	

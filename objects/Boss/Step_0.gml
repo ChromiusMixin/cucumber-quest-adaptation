@@ -16,9 +16,9 @@ if HP <= 0
 		
 		layer_set_visible("UI", 0)
 		layer_set_visible("UI2", 0)
-		Camera.FollowPlayer = 2
-		Camera.x = lerp(Camera.x,xstart-320,0.2)
-		Camera.y = lerp(Camera.y,ystart-240,0.2)
+		obj_Camera.FollowPlayer = 2
+		obj_Camera.x = lerp(obj_Camera.x,xstart-320,0.2)
+		obj_Camera.y = lerp(obj_Camera.y,ystart-240,0.2)
 		Fade.stateFadeIn()
 		
 	}

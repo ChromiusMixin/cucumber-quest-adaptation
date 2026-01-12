@@ -132,7 +132,7 @@ function NormalAttack()
 				Attacking = 1
 				Hittime = 450
 				global.SkillActive = 1
-				Camera.FollowPlayer = 1
+				obj_Camera.FollowPlayer = 1
 				ChangeAnim(FalzVivisect)
 			}
 		if SkillID == 4

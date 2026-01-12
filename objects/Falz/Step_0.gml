@@ -123,7 +123,7 @@ if Attacking == 1
 				{
 					DmgSet(150-DmgRdc)
 					global.SkillActive = 0
-					Camera.FollowPlayer = 0
+					obj_Camera.FollowPlayer = 0
 					holdanim = 0
 					DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)
 					Stance = 1
@@ -159,7 +159,7 @@ if Attacking == 1
 			holdanim = 1
 			Jumping = 1
 			audio_play_sound(TP,0,0,3)
-			Camera.OffsetY = -20
+			obj_Camera.OffsetY = -20
 			x = Target.x+70
 			y = Target.y-Target.sprite_height+45
 			DmgSet(100+irandom(35))

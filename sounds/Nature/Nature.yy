@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Nature",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":158.84625,
+  "exportDir":"",
+  "name":"Nature",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Nature.ogg",
+  "volume":1.0,
+}

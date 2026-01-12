@@ -31,6 +31,7 @@ if Encountering = 1 && EncounterTimer != TimerMax
 		var vx = camera_get_view_x(view_camera[0])
 		var vy = camera_get_view_y(view_camera[0])
 			instance_create_depth(vx,vy,0,obj_GM)
+			audio_stop_sound(global.bgm)
 			audio_play_sound(Foe.Song,0,1,0.5)
 			Fighting = 1
 		}

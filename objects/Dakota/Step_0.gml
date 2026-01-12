@@ -56,7 +56,7 @@ if Attacking == 1
 		if Hittime <= 0 && SkillID < 1
 				{
 					global.SkillActive = 0
-					Camera.FollowPlayer = 0
+					obj_Camera.FollowPlayer = 0
 					holdanim = 0
 					DmgSet(60+DmgRdc)
 					DamageEnemy(Target,Dmg,HitSound,HeavySpark,0,-50,DmgColor,,,c_black)

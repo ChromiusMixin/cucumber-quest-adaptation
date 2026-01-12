@@ -1,3 +1,4 @@
+
 Name = "Sephiroth"
 LV = 25
 HP = 6400

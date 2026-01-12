@@ -10,9 +10,9 @@ if sprite_index == FalzVivisect
 				Jumping = 0
 				x = xstart
 				y = ystart
-				Camera.FollowPlayer = 0
-				Camera.OffsetX = 0
-				Camera.OffsetY = 0
+				obj_Camera.FollowPlayer = 0
+				obj_Camera.OffsetX = 0
+				obj_Camera.OffsetY = 0
 				depth = BaseDepth
 				Attacking = 0
 				holdanim = 0

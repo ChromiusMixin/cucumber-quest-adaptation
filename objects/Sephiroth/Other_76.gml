@@ -16,7 +16,7 @@ if event_data[? "event_type"] == "sprite event" // or you can check "sprite even
         break;        
 		
 		case "EndTPOut":
-			Camera.FollowTarget = 1
+			obj_Camera.FollowTarget = 1
 			ChangeAnim(SephirothAtk)
         break;
 		
@@ -64,7 +64,7 @@ if event_data[? "event_type"] == "sprite event" // or you can check "sprite even
         break;
 		
 		case "TeleportBack":
-		Camera.FollowTarget = 0
+		obj_Camera.FollowTarget = 0
 			x = xstart
 			y = ystart
 			ChangeAnim(SephirothTPIn)

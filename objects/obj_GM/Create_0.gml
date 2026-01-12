@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+instance_deactivate_all(true)
+instance_activate_object(WhiteFade)
+if instance_exists(WhiteFade)
+WhiteFade.state = WhiteFade.stateFadeOut
+instance_create_depth(x,y,-200,Fade)
 
 if !instance_exists(obj_Turnwheel)
 	{
@@ -24,10 +29,10 @@ for (var i = 0; i < array_length(global.Party); ++i) //Spawn Players
 	
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
-
+var ts = array_length(global.Party)-1
 global.TurnCountMax+= 1
-array_push(global.Players, instance_create_layer(vx+275+(i*20),vy+view_get_hport(0)/2+(i*100),"Tokens",global.Party[i].BattleObj));
-global.Players[i].depth = global.Players[i].depth-(i*10)
+array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj));
+global.Players[i].depth = global.Players[i].depth-((i+1)*10)
 
 }
 
@@ -41,7 +46,8 @@ global.ENTurnCountMax+= 1
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Troop)-1
-array_push(global.Enemies, instance_create_layer(vx+view_get_wport(0)-275+(i*10),(vy-(ts*30)+view_get_hport(0)/2)+((i-1)*100),"Tokens",global.Troop[i]));
+array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),(vy-(ts*30)+view_get_hport(0)/2)+((i-1)*100),1,global.Troop[i]));
+global.Enemies[i].depth = global.Enemies[i].depth-((i+1)*10)
 
 }
 //Default Enemy Turncoiunt
@@ -124,13 +130,13 @@ global.TargettedPlayer = global.Players[CurrentOption];
 
 global.Phase = 1 //1 = Player Phase, -1 = Enemy Phase
 
-cam = instance_create_layer(x,y,"CameraWork",Camera)
+cam = instance_create_layer(x,y,"CameraWork",obj_Camera)
 
 function create_menu(x,y)
 	{
 		if global.Players[CurrentPlayer].DOWN != 1
 			{
-		instance_create_layer(x,y,"UI",UI);
+		instance_create_depth(x,y,-100,UI);
 			}
 		
 	}
@@ -175,7 +181,7 @@ function ChooseTargetBasic()
 
 	CurrentOption = 0;
 	instance_create_layer(global.Players[CurrentPlayer].x,global.Players[CurrentPlayer].y,"UI2",Selector)
-	instance_create_layer(x,y,"UI2",EnStatus)
+	instance_create_depth(x,y,-200,obj_EnStatus)
 	instance_destroy(UI)
 	Targetting = 1;
 }
@@ -185,7 +191,7 @@ function ExitBasicTarget()
 	CurrentOption = 0;
 	Targetting = 0;
 	instance_destroy(Selector)
-	instance_destroy(EnStatus)
+	instance_destroy(obj_EnStatus)
 	if global.TurnCount > 0 && global.SkillActive == 0
 		{
 	create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)

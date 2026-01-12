@@ -82,7 +82,7 @@ if Attacking == 1
 		if Hittime <= 0 && SkillID = 0
 				{
 					global.SkillActive = 0
-					Camera.FollowPlayer = 0
+					obj_Camera.FollowPlayer = 0
 					holdanim = 0
 					DmgSet(100-DmgRdc)
 					DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)

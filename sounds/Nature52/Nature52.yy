@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Nature52",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":192.0,
+  "exportDir":"",
+  "name":"Nature52",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Nature52.wav",
+  "volume":1.0,
+}

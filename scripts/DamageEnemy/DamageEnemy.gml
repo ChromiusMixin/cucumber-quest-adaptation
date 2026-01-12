@@ -28,8 +28,8 @@ function DamageEnemy(Target, Amount, HitSound = UndertaleDMG,Hitspark = Basespar
 			}
 	
 		Target.HP -= round(Amount)
-		var DmgNo = instance_create_layer(Target.x+random_range(-10,15),Target.y-40-(instance_number(DamageCount)*30),"UI2",DamageCount)
-		instance_create_layer(Target.x+SparkX,Target.y+SparkY,"VFX",Hitspark)
+		var DmgNo = instance_create_depth(Target.x+random_range(-10,15),Target.y-40-(instance_number(obj_DamageCount)*30),-500,obj_DamageCount)
+		instance_create_depth(Target.x+SparkX,Target.y+SparkY,Target.depth-300,Hitspark)
 		with DmgNo
 			{
 				dmg = round(abs(Amount))

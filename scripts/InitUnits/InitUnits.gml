@@ -7,13 +7,31 @@ global.Units =
 			NameShort: "Kris",
 			Name: "Kris (Chapter 1)",
 			DisplaySpr: KrisIdle,
-			BattleObj: Kris,
+			BattleObj: obj_BattleChar,
 			Icon: Kriscon,
+			DmgColor: #85e9ff,
 			IdleTxt: {
 						a: "...",
 						b: "...?",
 						c: "Hm.",
-					}
+					 },
+			Anims: {
+					NormalAtk: KrisPreAtk,
+					Idle: KrisIdle,
+					Hurt: KrisHurt,
+					DeathSpr: KrisDown,
+					GuardStart: KrisGuardStart,
+					Guard: KrisGuard,
+				},
+			Snds: {
+					AttackSound: UndertaleSwing,
+					HitSound: UndertaleDMG,
+					HurtSnd: UTHurt,
+				
+				}
+					
+
+					
 		},
 		{
 			NameShort: "Susie",
@@ -41,5 +59,5 @@ global.Units =
 
 
 
-global.Party = [global.Units[0],global.Units[1]]
+global.Party = [global.Units[0],global.Units[1],global.Units[2]]
 global.Troop = [Dess]

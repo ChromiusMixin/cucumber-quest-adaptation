@@ -12,7 +12,7 @@
 function DamageEnemyOld(Target, Amount, HitSound = UndertaleDMG,Hitspark = Basespark,SparkX = 0, SparkY = 0, Color = c_white,Font = Font1,OutlineOn = 1, OutlineColor = c_navy,OutlineDist = 1,DamageType = 1)
 	{
 		Target.HP -= round(Amount)
-		var DmgNo = instance_create_layer(Target.x+random_range(-10,15),Target.y-40-(instance_number(DamageCount)*30),"UI2",DamageCount)
+		var DmgNo = instance_create_layer(Target.x+random_range(-10,15),Target.y-40-(instance_number(obj_DamageCount)*30),"UI2",obj_DamageCount)
 		instance_create_layer(Target.x+SparkX,Target.y+SparkY,"VFX",Hitspark)
 		font_enable_effects(Font, true, {
 		    outlineEnable: OutlineOn,

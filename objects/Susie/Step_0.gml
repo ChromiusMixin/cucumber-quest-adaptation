@@ -76,7 +76,7 @@ if Attacking == 1
 				{
 					DmgSet(200-DmgRdc)
 					global.SkillActive = 0
-					Camera.FollowPlayer = 0
+					obj_Camera.FollowPlayer = 0
 					holdanim = 0
 					DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)
 					Target.state = 5

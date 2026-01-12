@@ -11,7 +11,7 @@
   "option_windows_description_info":"A GameMaker Game",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,
-  "option_windows_display_name":"Tinsel Hearts",
+  "option_windows_display_name":"CCQ",
   "option_windows_enable_steam":false,
   "option_windows_executable_name":"Deltasonaphor Reload.exe",
   "option_windows_icon":"${base_options_dir}/windows/icons/icon.ico",
