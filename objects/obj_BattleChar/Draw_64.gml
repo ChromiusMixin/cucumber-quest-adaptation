@@ -4,29 +4,35 @@
 
 //draw_text(x+60,y,string(SkillID))
 
-if AC = 1 && obj_GM.CurrentOption == 0
+if AC = 1
 	{
-	draw_set_font(Undertale)
-	draw_text_ext(320,150,string(global.MPCost)+" MP.    Increase 1 Ally's Defense Level by 1",24,200 )
-	ResetText()
-	}
-if AC = 1 && obj_GM.CurrentOption == 1
-	{
-	draw_set_font(Undertale)
-	draw_text_ext(320,150,string(global.MPCost)+" MP.   Not Implemented.",24,200 )
-	ResetText()
+		scribble("[8b0][scale,1][fa_left]"+string(global.Options[obj_GM.CurrentOption].Desc)).draw(100,120)
+		
 	}
 
-if AC = 1 && obj_GM.CurrentOption == 2
-	{
-	draw_set_font(Undertale)
-	draw_text_ext(320,150,string(global.MPCost)+" MP.    Increase All Allies Defense Level by 1",24,200 )
-	ResetText()
-	}
+//if AC = 1 && obj_GM.CurrentOption == 0
+//	{
+//	draw_set_font(Undertale)
+//	draw_text_ext(320,150,string(global.MPCost)+" MP.    Increase 1 Ally's Defense Level by 1",24,200 )
+//	ResetText()
+//	}
+//if AC = 1 && obj_GM.CurrentOption == 1
+//	{
+//	draw_set_font(Undertale)
+//	draw_text_ext(320,150,string(global.MPCost)+" MP.   Not Implemented.",24,200 )
+//	ResetText()
+//	}
 
-if AC = 1 && obj_GM.CurrentOption == 3
-	{
-	draw_set_font(Undertale)
-	draw_text_ext(320,150,string(global.MPCost)+" MP.    Slash a Target twice with a slightly higher damage Average.",24,200 )
-	ResetText()
-	}
+//if AC = 1 && obj_GM.CurrentOption == 2
+//	{
+//	draw_set_font(Undertale)
+//	draw_text_ext(320,150,string(global.MPCost)+" MP.    Increase All Allies Defense Level by 1",24,200 )
+//	ResetText()
+//	}
+
+//if AC = 1 && obj_GM.CurrentOption == 3
+//	{
+//	draw_set_font(Undertale)
+//	draw_text_ext(320,150,string(global.MPCost)+" MP.    Slash a Target twice with a slightly higher damage Average.",24,200 )
+//	ResetText()
+//	}

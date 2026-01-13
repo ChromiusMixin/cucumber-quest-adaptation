@@ -16,58 +16,35 @@ MP = clamp(MP,0,MMP)
 
 WatchForDeath()
 
-//Skill Menu Initialize
-if obj_GM.MenuActive == 1 && AC == 1
-	{
-		with global.Options[0]
-		{
-			Spell = "Rakukaja"
-			Fnt = Menufont
-		}
-		with global.Options[1]
-		{
-			Spell = "Hassou Tobi"
-			Fnt = Menufont
-		}
-		with global.Options[2]
-		{
-			Spell = "Marakukaja"
-			Fnt = Menufont
-		}
-		with global.Options[3]
-		{
-			Spell = "X Slash"
-			Fnt = Menufont
-		}
-	}
+////Skill Menu Initialize
+//if obj_GM.MenuActive == 1 && AC == 1
+//	{
+//		with global.Options[0]
+//		{
+//			Spell = "Rakukaja"
+//			Fnt = Menufont
+//		}
+//		with global.Options[1]
+//		{
+//			Spell = "Hassou Tobi"
+//			Fnt = Menufont
+//		}
+//		with global.Options[2]
+//		{
+//			Spell = "Marakukaja"
+//			Fnt = Menufont
+//		}
+//		with global.Options[3]
+//		{
+//			Spell = "X Slash"
+//			Fnt = Menufont
+//		}
+//	}
 
-if AC = 1 && obj_GM.CurrentOption == 0
+if AC = 1
 	{
-		Movetype = 1
-		global.MPCost = 16
+		global.MPCost = global.Options[obj_GM.CurrentOption].Cost
 	}
-	
-if AC = 1 && obj_GM.CurrentOption == 1
-	{
-		Movetype = -1
-		global.MPCost = 0
-	}
-	
-if AC = 1 && obj_GM.CurrentOption == 2
-	{
-		Movetype = 1
-		global.MPCost = 24
-	}
-	
-if AC = 1 && obj_GM.CurrentOption == 3
-	{
-		Movetype = -1
-		global.MPCost = 36
-	}
-
-
-
-
 if ReadyingNormal == 1
 	{
 		Delay -= 1

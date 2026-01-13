@@ -166,10 +166,10 @@ function endphase()
 
 function MagicMenu()
 {
-	for (i = 0; i < global.Players[CurrentPlayer].MagicOptions; ++i)
+	for (var i = 0; i < global.Players[CurrentPlayer].MagicOptions; ++i)
 		{
 
-		array_push(global.Options, instance_create_layer(view_get_hport(0)+(i*20),200+(i*45),"UI",Button));
+		array_push(global.Options, instance_create_depth(view_get_hport(0)+250-(i*40),200+(i*65),depth-(10*(i+1)),obj_skButton));
 
 		}
 	instance_create_layer(100,200,"UI2",SelectorMenu)
@@ -204,7 +204,7 @@ function CloseMagicMenu()
 {
 	CurrentOption = 0;
 	instance_destroy(SelectorMenu)
-	instance_destroy(Button)
+	instance_destroy(obj_skButton)
 	create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
 	
 	global.Options = [];

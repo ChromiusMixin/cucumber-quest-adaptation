@@ -15,7 +15,8 @@ Menu2 = 0; //Magic Menu
 Menu3 = 0; //Synergy Menu
 MenuOffsetX = 20;
 MenuOffsetY = -30;
-MagicOptions = 4;
+Skills = global.Party[ID].Skills
+MagicOptions = variable_struct_names_count(Skills)
 SynOptions = 3;
 holdanim = 0
 Icon = global.Party[ID].Icon
@@ -34,15 +35,19 @@ DmgColor = global.Party[ID].DmgColor
 
 
 //Generic Animations
-NormalAtk = global.Party[ID].Anims.NormalAtk
-Idle = global.Party[ID].Anims.Idle
-Hurt = global.Party[ID].Anims.Hurt
-DeathSpr = global.Party[ID].Anims.DeathSpr
-GuardStart = global.Party[ID].Anims.GuardStart
-Guard = global.Party[ID].Anims.Guard
-AttackSound = global.Party[ID].Snds.AttackSound
-HitSound = global.Party[ID].Snds.HitSound
-HurtSnd = global.Party[ID].Snds.HurtSnd
+Anims = global.Party[ID].Anims
+Snds = global.Party[ID].Snds
+NormalAtk = Anims.NormalAtk
+NormalEnd = Anims.NormalEnd
+Cast = Anims.Cast
+Idle = Anims.Idle
+Hurt = Anims.Hurt
+DeathSpr = Anims.DeathSpr
+GuardStart = Anims.GuardStart
+Guard = Anims.Guard
+AttackSound = Snds.AttackSound
+HitSound = Snds.HitSound
+HurtSnd = Snds.HurtSnd
 
 
 InitStatusEffects()
@@ -66,10 +71,11 @@ function ChangeAnim(AnimName)
 	}
 
 
-//Unique Animations
-VectorShot = IbVShot;
-
-
+function NormalAttack(user = self, targ = Target)
+{
+	global.SkillActive = 1
+	instance_create_depth(x,y,depth,obj_skBasicAtk,{User: user, Target: targ})
+}
 
 function EndTurn()
 {
@@ -89,52 +95,10 @@ function EndTurn()
 
 
 
-function SpawnQTE()
-	{
-		QTE = instance_create_layer(x+200,y-125,"UI2",KrisTiming)
-	}
 
-function NormalAttack()
-	{
-		if SkillID < 1
-			{
-		Hittime = 25
-		holdanim = 1
-		ReadyingNormal = 1
-		SpawnQTE()
-		KrisTiming.State = KrisTiming.StateOpen
-		global.SkillActive = 1
-		ChangeAnim(NormalAtk)
-		show_debug_message("Readying Swing")
-			}
-		if SkillID == 1 || SkillID == 3
-			{
-				Attacking = 1
-				Hittime = 25
-				global.SkillActive = 1
-				ChangeAnim(KrisSkill)
-				audio_play_sound(UTSpell,0,0)
-			}
-		if SkillID == 4
-			{
-				Attacking = 1
-				Hittime = 250
-				global.SkillActive = 1
-				ChangeAnim(KrisXSlash)
-				ReadyingNormal = 0
-			}
-				
-	}
 	
 
-function TrueAtk()
-	{
-		PlayAttackSound()
-		QTE.State = KrisTiming.StateClose
-		Attacking = 1
-		ChangeAnim(KrisAtk)
-			
-	}
+
 function SwitchChar(obj)
 	{
 		instance_change(obj,1)

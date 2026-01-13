@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_number(Button) == 0 && Targetting != 1 && global.Phase > 0 && global.TurnCount > 0 && global.SkillActive == 0
+if instance_number(obj_skButton) == 0 && Targetting != 1 && global.Phase > 0 && global.TurnCount > 0 && global.SkillActive == 0
 {
 
 audio_play_sound(ConfirmFV,0,0)

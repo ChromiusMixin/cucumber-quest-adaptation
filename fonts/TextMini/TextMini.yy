@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"TextMini",
-  "AntiAlias":1,
+  "AntiAlias":0,
   "applyKerning":0,
   "ascender":13,
   "ascenderOffset":0,
@@ -107,7 +107,7 @@
     "124":{"character":124,"h":16,"offset":0,"shift":3,"w":2,"x":198,"y":2,},
     "125":{"character":125,"h":16,"offset":0,"shift":6,"w":5,"x":191,"y":2,},
     "126":{"character":126,"h":16,"offset":0,"shift":8,"w":7,"x":217,"y":38,},
-    "9647":{"character":9647,"h":16,"offset":3,"shift":16,"w":10,"x":226,"y":38,},
+    "9647":{"character":9647,"h":16,"offset":3,"shift":16,"w":9,"x":226,"y":38,},
   },
   "hinting":0,
   "includeTTF":false,

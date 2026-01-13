@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Button",
+  "%Name":"obj_skBasicAtk",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":90,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Button",
+  "name":"obj_skBasicAtk",
   "overriddenProperties":[],
   "parent":{
-    "name":"UiObjects",
-    "path":"folders/Objects/UiObjects.yy",
+    "name":"SkillManagers",
+    "path":"folders/Objects/PlayerTokens/SkillManagers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"MenuItem",
-    "path":"sprites/MenuItem/MenuItem.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

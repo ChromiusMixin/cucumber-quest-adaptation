@@ -2,10 +2,10 @@
 // You can write your code in this editor
 if holdanim == 0 && DFND == 0
 		{
-				ChangeAnim(Idle)
+				ChangeAnim(Anims.Idle)
 		}
 
 if holdanim == 0 && DFND == 1
 		{
-				ChangeAnim(Guard)
+				ChangeAnim(Anims.Guard)
 		}

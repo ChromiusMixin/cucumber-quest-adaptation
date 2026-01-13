@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if instance_number(Button) > 0 || Targetting = 1
+if instance_number(obj_skButton) > 0 || Targetting = 1
 	{
 		audio_play_sound(CurTickFV,0,0)
 	}
