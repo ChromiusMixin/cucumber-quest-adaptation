@@ -2,7 +2,7 @@
 // You can write your code in this editor
 image_yscale = 0
 y += 50
-Timer = instance_create_layer(x+360,y,"UI2",KrisTimingBar)
+Timer = instance_create_layer(x+260,y,"UI2",KrisTimingBar)
 
 
 Dist = 0

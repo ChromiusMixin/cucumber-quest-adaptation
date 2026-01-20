@@ -4,11 +4,12 @@
 if MenuActive != 1 && Targetting != 1 && global.Phase > 0 && instance_number(UI) > 0
 	{
 		//NormalAttack();
+		
 			audio_play_sound(ConfirmFV,0,0)
 			ChooseTargetBasic()
 			with global.Players[CurrentPlayer]
 				{
-					SkillID = 0
+					SkQueue = BaseAtk.obj
 				}
 	}
 	

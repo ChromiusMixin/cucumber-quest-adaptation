@@ -8,6 +8,6 @@ if ID = 0
 	}
 
 draw_self()
-scribble("[8b0][scale,1][fa_left]"+string(Spell)).draw(x-sprite_width/2+50,y-sprite_height/2-25)
-scribble("[8b0][scale,1][fa_left]"+string(Cost)).draw(x+sprite_width/2,y-sprite_height/2-25)
+scribble("[8b0][scale,2][fa_left]"+string(Spell)).shadow(c_black,1).draw(x-sprite_width/2+50,y-sprite_height/2-25)
+scribble("[8b0][scale,2][fa_left]"+string(Cost)).draw(x+sprite_width/2,y-sprite_height/2-25)
 

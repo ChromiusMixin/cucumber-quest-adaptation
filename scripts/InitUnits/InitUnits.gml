@@ -6,10 +6,17 @@ global.Units =
 		{
 			NameShort: "Kris",
 			Name: "Kris (Chapter 1)",
-			DisplaySpr: KrisIdle,
+			DisplaySpr: KrisPort,
 			BattleObj: obj_BattleChar,
+			BattleObjEn: obj_EnBattleChar,
 			Icon: Kriscon,
 			DmgColor: #85e9ff,
+			BHP: 228,
+			BMP: 347,
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						targettype : 1,
+					},		
 			IdleTxt: {
 						a: "...",
 						b: "...?",
@@ -37,10 +44,10 @@ global.Units =
 							{
 								Name: "X Slash",
 								Desc: "Slash twice with a higher average.",
-								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
 								Cost: 36,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: -1, //Target Enemy
+								SkillObj: obj_skBasicXSlash,
 							},
 						Hasstou:
 							{
@@ -48,17 +55,17 @@ global.Units =
 								Desc: "Slash with everything you've got.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 42,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: -1,
+								SkillObj: obj_skBasicHasso,
 							},
 						Raku:
 							{
 								Name: "Rakukaja",
 								Desc: "Increase an Ally's Defense by 1 Stage.",
-								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								CostType: 0, // 0 = MP 1 = HP 2 = EP 
 								Cost: 16,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1, // Target Allies
+								SkillObj: obj_skRakukaja,
 							},
 						Maraku:
 							{
@@ -66,8 +73,8 @@ global.Units =
 								Desc: "Increase The Party's Defense by 1 Stage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 24,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skMarakukaja,
 							},
 									
 					},
@@ -75,15 +82,22 @@ global.Units =
 		{
 			NameShort: "Susie",
 			Name: "Susie (Chapter 2)",
-			DisplaySpr: SusieIdle,
+			DisplaySpr: SusiePort,
 			BattleObj: obj_BattleChar,
+			BattleObjEn: obj_EnBattleChar,
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						targettype : -1,
+					},		
 			IdleTxt: {
 						a: "Kris?! Kris, where the hell are we?!",
-						b: "Seems like we're in some kind of.",
+						b: "Seems like we're in some kind of test zone...",
 						c: "Damn, I'm kinda cravin' some cheese.",
 					},
 			Icon: SusieCon,
-			DmgColor: #85e9ff,
+			DmgColor: #f797ed,
+			BHP: 450,
+			BMP: 175,
 			IdleTxt: {
 						a: "...",
 						b: "...?",
@@ -107,41 +121,41 @@ global.Units =
 				
 				},
 			Skills:	{
-						XSlash:
+						Taruka:
 							{
-								Name: "X Slash",
-								Desc: "Slash twice with a higher average.",
+								Name: "Tarukaja",
+								Desc: "Raise an Ally's attack power by one stage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 10,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skTarukaja,
 							},
-						Hasstou:
+						Mataruka:
 							{
-								Name: "Hassotobi",
-								Desc: "Slash with everything you've got.",
+								Name: "Matarukaja",
+								Desc: "Raise entire Party's attack power by one stage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 10,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skMatarukaja,
 							},
-						Raku:
+						PowChg:
 							{
-								Name: "Rakukaja",
-								Desc: "Increase an Ally's Defense by 1 Stage.",
+								Name: "Power Charge",
+								Desc: "Your next attack will do 2.5x damage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 10,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skCharge,
 							},
-						Maraku:
+						Marakuka:
 							{
-								Name: "Marakukaja",
-								Desc: "Increase The Party's Defense by 1 Stage.",
+								Name: "Rude Buster",
+								Desc: "Susie's Signature Technique, does massive Slashing Damage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 10,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skRudeBuster,
 							},
 									
 					},
@@ -149,15 +163,22 @@ global.Units =
 		{
 			NameShort: "Ralsei",
 			Name: "Ralsei (Chapter 2)",
-			DisplaySpr: RalseiIdle,
+			DisplaySpr: RalseiPort,
 			BattleObj: obj_BattleChar,
+			BattleObjEn: obj_EnBattleChar,
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						TargetType : -1,
+					},		
+			BHP: 228,
+			BMP: 347,
 			IdleTxt: {
 						a: "Ah..this isn't quite a dark world but...I'll be your guide all the same!",
 						b: "After this is all wrapped up, we should have a tea party!",
 						c: "I'm not really used to all this fighting..",
 					},
 			Icon: Ralseicon,
-			DmgColor: #85e9ff,
+			DmgColor: #b0ffd5,
 			IdleTxt: {
 						a: "...",
 						b: "...?",
@@ -180,41 +201,41 @@ global.Units =
 				
 				},
 			Skills:	{
-						XSlash:
+						HealPray:
 							{
-								Name: "X Slash",
-								Desc: "Slash twice with a higher average.",
+								Name: "Heal Prayer",
+								Desc: "Heal a target for 53% of their HP",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 36,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skHealPrayer,
 							},
-						Hasstou:
+						QuadHeal:
 							{
-								Name: "Hassotobi",
-								Desc: "Slash with everything you've got.",
+								Name: "Quad Heal",
+								Desc: "Heal the entire party for 40% of their HP",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 42,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: 1,
+								SkillObj: obj_skQuadHeal,
 							},
-						Raku:
+						Tarun:
 							{
-								Name: "Rakukaja",
-								Desc: "Increase an Ally's Defense by 1 Stage.",
+								Name: "Tarunda",
+								Desc: "Reduce an enemy's attack power by 1 stage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 16,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: -1,
+								SkillObj: obj_skTarunda,
 							},
-						Maraku:
+						Matarun:
 							{
-								Name: "Marakukaja",
-								Desc: "Increase The Party's Defense by 1 Stage.",
+								Name: "Matarunda",
+								Desc: "Reduce the enemy party's attack power by 1 stage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 24,
-								TargetType: 0,
-								SkillObj: obj_skBasicAtk,
+								TargetType: -1,
+								SkillObj: obj_skMatarunda,
 							},
 									
 					},
@@ -224,4 +245,4 @@ global.Units =
 
 
 global.Party = [global.Units[0],global.Units[1],global.Units[2]]
-global.Troop = [Dess]
+global.Troop = [global.Units[0]]

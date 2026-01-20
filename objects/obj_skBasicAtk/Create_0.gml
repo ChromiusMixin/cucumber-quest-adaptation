@@ -20,17 +20,27 @@ function NormalAttack()
 
 		Hittime = 25
 		User.holdanim = 1
+		if global.Phase = 1
+		{
 		ReadyingNormal = 1
 		SpawnQTE()
 		QTE.State = QTE.StateOpen
 		with User ChangeAnim(NormalAtk)
+		}
+else
+	{
+		TrueAtk()
+	}
 		show_debug_message("Readying Swing")
 	}
 
 function TrueAtk()
 	{
 		with User PlayAttackSound()
+		if variable_instance_exists(self,"QTE")
+		{
 		QTE.State = QTE.StateClose
+		}
 		Attacking = 1
 		with User
 			{

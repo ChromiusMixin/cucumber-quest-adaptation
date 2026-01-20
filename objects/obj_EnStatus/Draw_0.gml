@@ -4,10 +4,10 @@
 if obj_GM.Movetype < 0
 	{
 		var Target = global.Enemies[obj_GM.CurrentOption]
-		draw_text_scribble(Target.x-45,Target.y-Target.sprite_height,"[8b0][fa_center][pin_center][scale,0.75]"+string(Target.Name)+" LVL. "+string(Target.LV))
+		scribble("[8b0][fa_center][pin_center][scale,2]"+string(Target.Name)+" LVL. "+string(Target.LV)).draw(Target.x-45,Target.y-Target.sprite_height-45,)
 		draw_sprite_ext(HPbarfill,-1,Target.x-50,Target.y+3,(Target.HP/Target.MHP)*2.5,5,-3,c_orange,1)
 		draw_sprite_ext(HPbarfill,-1,Target.x-50,Target.y,(Target.HP/Target.MHP)*2.5,5,-3,c_yellow,1)
-		draw_text_scribble(Target.x-45,Target.y,"[8b0][fa_center][pin_center][scale,0.8]"+string(Target.HP))
+		draw_text_scribble(Target.x-45,Target.y,"[8b0][fa_center][pin_center][scale,1]"+string(Target.HP))
 		
 		if Target.RKJA > 0
 			{

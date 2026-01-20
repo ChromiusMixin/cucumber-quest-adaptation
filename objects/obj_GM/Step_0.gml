@@ -48,10 +48,46 @@ if DelayTimer > 0 && global.TurnCount < 1 // Put a little buffer between things 
 //  }
 //}
 
-if global.Phase == -1
+if instance_exists(obj_Turnchange)
 	{
 		CurrentPlayer = 0;
+		if global.Phase = 1
+		{
+			global.TurnCount = global.TurnCountMax
+		}
+		else
+		{
+			global.TurnCount = global.ENTurnCountMax
+		}
+	}
+if global.Phase == -1
+	{
 		instance_destroy(UI)
+	
+	if global.TurnCount > 0 && !instance_exists(obj_Turnchange) && global.SkillActive = 0
+		{
+		with global.Enemies[CurrentPlayer]
+			{
+				if DOWN != 1
+				{
+				Target = global.Players[irandom(array_length(global.Players)-1)]
+				UseSkill(,,,)
+				}
+				else
+				{
+					EndTurn()
+				}
+			}
+		if CurrentPlayer < array_length(global.Enemies)-1
+			{
+				show_debug_message("Current Enemy: " + string(CurrentPlayer))
+			}
+			else
+			{
+			}
+			
+		}
+		
 	}
 
 

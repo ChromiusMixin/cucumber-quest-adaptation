@@ -21,7 +21,7 @@ Menu = -1
 Anim = sprite_index
 
 //Set Pausemenu
-PauseMenu = instance_create_layer(x,y,layer,MenuUI)
+PauseMenu = instance_create_depth(x,y,-999,MenuUI)
 PauseMenu.Owner = self
 
 Foe = -1

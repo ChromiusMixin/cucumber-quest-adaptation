@@ -6,7 +6,7 @@
 
 if AC = 1
 	{
-		scribble("[8b0][scale,1][fa_left]"+string(global.Options[obj_GM.CurrentOption].Desc)).draw(100,120)
+		scribble("[8b0][scale,2][fa_left]"+string(global.Options[obj_GM.CurrentOption].Desc)).draw(100,120)
 		
 	}
 
