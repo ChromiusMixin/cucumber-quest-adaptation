@@ -148,13 +148,13 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skCharge,
 							},
-						Marakuka:
+						RudeBust:
 							{
 								Name: "Rude Buster",
-								Desc: "Susie's Signature Technique, does massive Slashing Damage.",
+								Desc: "Susie's Signature Technique.\nDoes massive Slashing Damage.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP
 								Cost: 10,
-								TargetType: 1,
+								TargetType: -1,
 								SkillObj: obj_skRudeBuster,
 							},
 									
