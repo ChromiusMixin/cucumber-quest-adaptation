@@ -7,7 +7,14 @@ Hittime -=1
 if Hittime = 0
 	{
 
-			with User DmgSet(random_range(150,169))
+			if User.Teamside = 1
+			{
+				with User DmgSet(random_range(150,169))
+			}
+			else
+			{
+				with User DmgSet(random_range(20,30))
+			}
 			obj_Camera.FollowPlayer = 0
 			User.holdanim = 0
 			with User DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)

@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-self[$ "Target"] ??= "self"
-Imgtime = 1
-Timer = Imgtime
-Dmg = 0
-Dmgcolor = 0
+if global.Enemies[global.CurrentPlayer].id = Parent.id 
+	{
+		
+	}

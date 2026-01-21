@@ -6,8 +6,8 @@ if Hittime = 0
 	{
 		with User
 		{
-			for (var i = 0; i < array_length(global.Enemies); ++i) {
-			    with global.Enemies[i] 
+			for (var i = 0; i < array_length(other.Enemies); ++i) {
+			    with other.Enemies[i] 
 					{
 					TRKJ = clamp(TRKJ-1,-3,3)
 					SpawnFX(TarundaFXO,x,y)

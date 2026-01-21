@@ -68,28 +68,31 @@ if global.Phase == -1
 		{
 		with global.Enemies[CurrentPlayer]
 			{
+			var keys = variable_struct_get_names(Skills)
+			var ID = irandom(array_length(keys)-1)
+			var SkillKey = keys[ID]
+			var Skill = Skills[$ SkillKey]	
 				if DOWN != 1
 				{
-				Target = global.Players[irandom(array_length(global.Players)-1)]
-				UseSkill(,,,)
+					if Skill.TargetType = -1
+					{
+					Target = global.Players[irandom(array_length(global.Players)-1)]
+					UseSkill(,Skill.SkillObj,,)
+					}
+					else
+					{
+					Target = global.Enemies[irandom(array_length(global.Enemies)-1)]
+					UseSkill(,Skill.SkillObj,,)
+					}
 				}
 				else
 				{
 					EndTurn()
 				}
 			}
-		if CurrentPlayer < array_length(global.Enemies)-1
-			{
-				show_debug_message("Current Enemy: " + string(CurrentPlayer))
-			}
-			else
-			{
-			}
-			
 		}
 		
 	}
-
 
 
 if global.TurnCount < 1 && DelayTimer == 0 && global.Phase == 1

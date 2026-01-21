@@ -34,12 +34,17 @@ function NormalAttack()
 function FireProj()
 	{
 		    if !instance_exists(BusterShot){
-			var Projectile = instance_create_depth(x,y-50,depth,BusterShot)
+			var Projectile = instance_create_depth(x,y-50,depth,BusterShot,{Target: User.Target})
 			with User DmgSet(325)
 			Projectile.Dmg = User.Dmg
 			Projectile.Dmgcolor = DmgColor
 			audio_play_sound(RudeBusterSwing,0,0)
 			User.holdanim = 0
+			if global.Phase = -1
+				{
+					Projectile.direction = 160
+				}
+				
 			}
 	}
 

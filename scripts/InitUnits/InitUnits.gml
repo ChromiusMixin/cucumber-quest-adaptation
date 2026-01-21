@@ -8,7 +8,7 @@ global.Units =
 			Name: "Kris (Chapter 1)",
 			DisplaySpr: KrisPort,
 			BattleObj: obj_BattleChar,
-			BattleObjEn: obj_EnBattleChar,
+			EnemyAI: KrisAI,
 			Icon: Kriscon,
 			DmgColor: #85e9ff,
 			BHP: 228,
@@ -84,7 +84,7 @@ global.Units =
 			Name: "Susie (Chapter 2)",
 			DisplaySpr: SusiePort,
 			BattleObj: obj_BattleChar,
-			BattleObjEn: obj_EnBattleChar,
+			EnemyAI: KrisAI,
 			BaseAtk: {
 						obj : obj_skBasicAtk,
 						targettype : -1,
@@ -165,7 +165,7 @@ global.Units =
 			Name: "Ralsei (Chapter 2)",
 			DisplaySpr: RalseiPort,
 			BattleObj: obj_BattleChar,
-			BattleObjEn: obj_EnBattleChar,
+			EnemyAI: KrisAI,
 			BaseAtk: {
 						obj : obj_skBasicAtk,
 						TargetType : -1,

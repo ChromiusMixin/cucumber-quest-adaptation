@@ -4,6 +4,15 @@ self[$ "User"] ??= "noone"
 self[$ "target"] ??= "noone"
 Name = "Matarunda"
 
+if User.Teamside = 1
+{
+	Enemies = global.Enemies
+}
+else
+{
+	Enemies = global.Players
+}
+
 Hittime = 25
 ReadyingNormal = 0
 DmgColor = User.DmgColor

@@ -3,4 +3,4 @@
 rotation = 0
 global.TurnCountMax = 0
 global.TurnCount = 0
-global.ENTurnCountMax = 1
+global.ENTurnCountMax = 0
