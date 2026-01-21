@@ -8,7 +8,16 @@ for (var i = 0; i < array_length(Team); ++i) {
 			    with Team[i] 
 					{
 					if DOWN != 1
-					DamageEnemy(self,-MHP*0.4,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+					{
+						if Teamside = 1
+						{
+							DamageEnemy(self,-MHP*0.4,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+						}
+						else
+						{
+							DamageEnemy(self,-MHP*0.04,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+						}
+					}
 					Flash = 1
 					}
 				if i == array_length(Team)-1

@@ -4,7 +4,15 @@ Hittime -= 1
 
 if Hittime = 0
 	{
-				DamageEnemy(Target,-Target.MHP*0.53,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+				if User.Teamside = 1
+				{
+					DamageEnemy(Target,-Target.MHP*0.53,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+				}
+				else
+				{
+					DamageEnemy(Target,-Target.MHP*0.05,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+				}
+				
 				if variable_instance_exists(Target,"Flash")
 					{
 						Target.Flash = 1

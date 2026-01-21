@@ -26,9 +26,9 @@ if instance_number(UI) > 0 && global.TurnCount > 0 && global.Phase > 0 && Menubu
 		close_menu()
 		with global.Players[CurrentPlayer]
 			{
-				ChangeAnim(GuardStart)
 				DFND = 1
 				EndTurn()
+				ChangeAnim(GuardStart)
 			}
 		if global.TurnCount > 0
 			{
