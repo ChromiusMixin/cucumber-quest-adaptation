@@ -23,6 +23,8 @@ global.Options = [];
 global.SkillActive = 0
 global.Enemies = [];
 global.LivingPlayers = [];
+Fighting = 1
+
 
 for (var i = 0; i < array_length(global.Party); ++i) //Spawn Players
 {

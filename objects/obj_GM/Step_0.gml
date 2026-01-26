@@ -23,10 +23,10 @@ UpdateHealthValues()
 global.CurrentPlayer = CurrentPlayer;
 
 
-if Targetting != 1
-	{
-Skill = CurrentOption
-	}
+//if Targetting != 1
+//	{
+//Skill = CurrentOption
+//	}
 
 
 
@@ -77,12 +77,12 @@ if global.Phase == -1
 					if Skill.TargetType = -1
 					{
 					Target = global.Players[irandom(array_length(global.Players)-1)]
-					UseSkill(,Skill.SkillObj,,)
+					UseSkill(,Skill.SkillObj,)
 					}
 					else
 					{
 					Target = global.Enemies[irandom(array_length(global.Enemies)-1)]
-					UseSkill(,Skill.SkillObj,,)
+					UseSkill(,Skill.SkillObj,)
 					}
 				}
 				else
