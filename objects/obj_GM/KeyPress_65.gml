@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if MenuActive != 1 && Targetting != 1 && global.Phase > 0 && instance_number(UI) > 0
+if MenuActive != 1 && Targetting != 1 && global.Phase > 0 && instance_number(UI) > 0 && Fighting == 1
 	{
 		//NormalAttack();
 		

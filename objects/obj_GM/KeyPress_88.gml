@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if instance_number(obj_skButton) > 0
+if instance_number(obj_skButton) > 0 && Fighting == 1
 {
 	audio_play_sound(DeSelFV,0,0)
 	Fade.state = Fade.stateFadeOut
@@ -13,7 +13,7 @@ if instance_number(obj_skButton) > 0
 	Menubuffer = 3
 }
 
-if Targetting == 1
+if Targetting == 1 && Fighting == 1
 	{
 		audio_play_sound(DeSelFV,0,0)
 		ExitBasicTarget()
@@ -21,7 +21,7 @@ if Targetting == 1
 		Menubuffer = 3
 	}
 
-if instance_number(UI) > 0 && global.TurnCount > 0 && global.Phase > 0 && Menubuffer == 0
+if instance_number(UI) > 0 && global.TurnCount > 0 && global.Phase > 0 && Menubuffer == 0 && Fighting == 1
 	{
 		close_menu()
 		with global.Players[CurrentPlayer]
@@ -29,10 +29,6 @@ if instance_number(UI) > 0 && global.TurnCount > 0 && global.Phase > 0 && Menubu
 				DFND = 1
 				EndTurn()
 				ChangeAnim(GuardStart)
-			}
-		if global.TurnCount > 0
-			{
-		create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
 			}
 		audio_play_sound(ConfirmFV,0,0)
 	}

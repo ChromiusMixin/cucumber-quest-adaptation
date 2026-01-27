@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if array_length(global.Enemies) == 0 && Fighting = 1
+	{
+		instance_create_depth(x,y,-10000,obj_Victory)
+		Fighting = 0
+	}
 // Example code for toggling fullscreen with a key press
 if (keyboard_check_pressed(vk_f1)) // vk_f1 can be replaced with any desired key
 {
@@ -35,7 +40,7 @@ if Menubuffer > 0
 		Menubuffer -= 1
 	}
 
-if DelayTimer > 0 && global.TurnCount < 1 // Put a little buffer between things happening
+if DelayTimer > 0 && global.TurnCount < 1 && Fighting = 1 // Put a little buffer between things happening
 	{
 		DelayTimer -= 1
 	}
