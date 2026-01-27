@@ -11,7 +11,7 @@ global.Units =
 			EnemyAI: KrisAI,
 			Icon: Kriscon,
 			DmgColor: #85e9ff,
-			BHP: 5, //228
+			BHP: 228,
 			BMP: 347,
 			BaseAtk: {
 						obj : obj_skBasicAtk,
@@ -170,7 +170,7 @@ global.Units =
 						obj : obj_skBasicAtk,
 						TargetType : -1,
 					},		
-			BHP: 5, //228
+			BHP: 228,
 			BMP: 347,
 			IdleTxt: {
 						a: "Ah..this isn't quite a dark world but...I'll be your guide all the same!",
