@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+self[$ "OffsetY"] ??= "0" // 1 = Player Side, -1 = Enemy Side
+
 
 instance_deactivate_all(true)
 instance_activate_object(WhiteFade)
@@ -26,6 +28,7 @@ global.LivingPlayers = [];
 Fighting = 1
 
 
+
 for (var i = 0; i < array_length(global.Party); ++i) //Spawn Players
 {
 	
@@ -35,7 +38,8 @@ var ts = array_length(global.Party)-1
 global.TurnCountMax+= 1
 array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj,{MHP: global.Party[i].BHP,MMP: global.Party[i].BMP,Skills: global.Party[i].Skills,BaseAtk: global.Party[i].BaseAtk,Anims: global.Party[i].Anims,Snds: global.Party[i].Snds,Icon: global.Party[i].Icon,DmgColor: global.Party[i].DmgColor,Name: global.Party[i].NameShort,Teamside: 1}));
 global.Players[i].depth = global.Players[i].depth-((i+1)*10)
-
+global.Players[i].y += OffsetY
+global.Players[i].ystart += OffsetY
 }
 
 
@@ -53,6 +57,9 @@ array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10)
 //AI.Parent = global.Enemies[i]
 global.Enemies[i].depth = global.Enemies[i].depth-((i+1)*10)
 global.Enemies[i].image_xscale *=-1
+global.Enemies[i].y += OffsetY
+global.Enemies[i].ystart += OffsetY
+
 }
 //Default Enemy Turncoiunt
 global.ENTurnCountMax += 0

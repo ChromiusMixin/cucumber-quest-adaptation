@@ -5,7 +5,7 @@
 //draw_sprite_ext(TurnDivider,0,x,y,2,2,-rotation*0.5,c_white,0.5)
 //draw_sprite_ext(TurnDivider,0,x,y,3,3,rotation*0.25,c_white,0.5)
 
-draw_text(x,y,"Turns: "+string(global.TurnCount));
+//draw_text(x,y,"Turns: "+string(global.TurnCount));
 
 for (var i = 0; i < 4; ++i) {
     //instance_create_layer(100,0,"UI2",FullTurnIcon)

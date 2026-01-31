@@ -35,7 +35,17 @@ function FireProj()
 	{
 		    if !instance_exists(BusterShot){
 			var Projectile = instance_create_depth(x,y-50,depth,BusterShot,{Target: User.Target})
-			with User DmgSet(325)
+			with User 
+			{
+				if Teamside = 1
+				{
+					DmgSet(325)
+				}
+				else
+				{
+					DmgSet(125)
+				}
+			}
 			Projectile.Dmg = User.Dmg
 			Projectile.Dmgcolor = DmgColor
 			audio_play_sound(RudeBusterSwing,0,0)

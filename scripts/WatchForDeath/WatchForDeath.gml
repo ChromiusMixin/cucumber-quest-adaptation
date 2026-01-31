@@ -19,7 +19,7 @@ if DOWN = 1
 		if sprite_index != DeathSpr
 		ChangeAnim(DeathSpr)
 		HP = 0
-		if global.CurrentPlayer = PlayerID && global.Phase > 0
+		if global.CurrentPlayer = PlayerID && global.Phase > 0 && obj_GM.Fighting = 1
 			{
 				EndTurn()
 				if instance_exists(UI)

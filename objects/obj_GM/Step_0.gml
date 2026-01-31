@@ -3,9 +3,25 @@
 
 if array_length(global.Enemies) == 0 && Fighting = 1
 	{
-		instance_create_depth(x,y,-10000,obj_Victory)
 		Fighting = 0
 	}
+	
+if Fighting = 0
+	{
+		if instance_exists(MenuUI)
+		{
+			instance_destroy(MenuUI)
+		}
+		audio_sound_gain(BGM,0,1025)
+		if audio_sound_get_gain(BGM) <= 0.5
+			{
+				if !instance_exists(obj_Victory)
+					{
+						instance_create_depth(x,y,-10000,obj_Victory)
+					}
+			}
+	}
+
 // Example code for toggling fullscreen with a key press
 if (keyboard_check_pressed(vk_f1)) // vk_f1 can be replaced with any desired key
 {

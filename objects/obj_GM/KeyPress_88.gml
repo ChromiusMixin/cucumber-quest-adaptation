@@ -13,7 +13,7 @@ if instance_number(obj_skButton) > 0 && Fighting == 1
 	Menubuffer = 3
 }
 
-if Targetting == 1 && Fighting == 1
+if Targetting == 1 && Fighting == 1 && global.Phase > 0
 	{
 		audio_play_sound(DeSelFV,0,0)
 		ExitBasicTarget()
