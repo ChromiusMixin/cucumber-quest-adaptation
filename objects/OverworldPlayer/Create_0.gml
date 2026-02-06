@@ -17,6 +17,7 @@ Vmv = 1
 
 Talk = 0
 Menu = -1
+Rooming = 0
 
 Anim = sprite_index
 

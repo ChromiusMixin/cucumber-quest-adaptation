@@ -5,5 +5,6 @@ Removetime -= 1
 if Removetime <= 0
 	{
 		layer_sequence_destroy(Seq)
+		layer_destroy(templayer)
 		instance_destroy()
 	}

@@ -5,5 +5,5 @@ Enelist[2].BHP = 4000
 //Enelist[0].BHP = 5
 //Enelist[1].BHP = 5
 //Enelist[2].BHP = 5
-Song = P4BLIKE
+Song = CQBatt
 BG = global.BattleBacks.Marx

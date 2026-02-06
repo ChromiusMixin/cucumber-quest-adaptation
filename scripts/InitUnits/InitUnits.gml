@@ -273,6 +273,10 @@ global.Mobs =
 					HurtSnd: UTHurt,
 				
 				},
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						TargetType : -1,
+					},		
 			Skills:	{
 						XSlash:
 							{
@@ -449,6 +453,80 @@ global.Mobs =
 								Cost: 10,
 								TargetType: -1,
 								SkillObj: obj_skRudeBuster,
+							},
+									
+					},
+		}, 
+		// End of Enemy
+		
+	RoaringKnight:
+	{
+			NameShort: "The Knight",
+			Name: "???",
+			DisplaySpr: KrisPort,
+			BattleObj: obj_BattleChar,
+			EnemyAI: KnightAI,
+			Icon: Kriscon,
+			DmgColor: c_white,
+			BHP: 70000,
+			BMP: 999999,	
+			Anims: {
+					NormalAtk: KrisPreAtk,
+					NormalEnd: KrisAtk,
+					Cast: KrisSkill,
+					Idle: KnightIdle,
+					Hurt: KnightHurt,
+					DeathSpr: KrisDown,
+					GuardStart: KrisGuardStart,
+					Guard: KrisGuard,
+					XSlash: KrisXSlash,
+				},
+			Snds: {
+					AttackSound: UndertaleSwing,
+					HitSound: UndertaleDMG,
+					HurtSnd: UTHurt,
+				
+				},
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						TargetType : -1,
+					},		
+			Skills:	{
+						XSlash:
+							{
+								Name: "X Slash",
+								Desc: "Slash twice with a higher average.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
+								Cost: 36,
+								TargetType: -1, //Target Enemy
+								SkillObj: obj_skBasicXSlash,
+							},
+						Hasstou:
+							{
+								Name: "Hassotobi",
+								Desc: "Slash with everything you've got.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 42,
+								TargetType: -1,
+								SkillObj: obj_skBasicHasso,
+							},
+						Raku:
+							{
+								Name: "Rakukaja",
+								Desc: "Increase an Ally's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP 
+								Cost: 16,
+								TargetType: 1, // Target Allies
+								SkillObj: obj_skRakukaja,
+							},
+						Maraku:
+							{
+								Name: "Marakukaja",
+								Desc: "Increase The Party's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 24,
+								TargetType: 1,
+								SkillObj: obj_skMarakukaja,
 							},
 									
 					},

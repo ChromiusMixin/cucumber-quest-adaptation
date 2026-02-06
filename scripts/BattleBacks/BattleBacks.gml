@@ -5,13 +5,13 @@ global.BattleBacks =
 {
 	DeltaStyle:
 		{
-			PlayOffs: 30,
+			PlayOffs: 0, //Y Offset Of Player and Enemy Team
 			Backs: 
 			[
-			{img: BlackColor,xpos: 0,ypos: 0,xscroll: 2,yscroll: 2,xscale: 1, yscale: 1,opac: 1,col: c_white,tile: 1},
-			{img: Grid,xpos: 0,ypos: 0.25,xscroll: 0.25,yscroll: 1,xscale: 1, yscale: 1,opac: 0.5,col: c_white, tile: 1},			
-			{img: Grid,xpos: 0,ypos: 0.5,xscroll: 0.5,yscroll: 1,xscale: 1, yscale: 1,opac: 1,col: c_white, tile: 1},
-			{img: BlackColor,xpos: 0,ypos: 0,xscroll: 2,yscroll: 2,xscale: 1, yscale: 1,opac: 0.35,col: c_white,tile: 1},
+			{img: BlackColor,xpos: 0,ypos: 0,xscroll: 2,yscroll: 2,xscale: 1, yscale: 1,opac: 1,col: c_white,tile: 1}, 
+			{img: Grid,xpos: 0,ypos: 0,xscroll: -0.5,yscroll: -0.5,xscale: 1, yscale: 1,opac: 0.5,col: c_white, tile: 1},			
+			{img: Grid,xpos: 0,ypos: 0,xscroll: 0.5,yscroll: 0.5,xscale: 1, yscale: 1,opac: 1,col: c_white, tile: 1},
+			{img: BlackColor,xpos: 0,ypos: 0,xscroll: 2,yscroll: 2,xscale: 1, yscale: 1,opac: 0.5,col: c_white,tile: 1},
 			]
 			
 		},

@@ -53,8 +53,8 @@ var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Troop)-1
 array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Troop[i].BattleObj,{MHP: global.Troop[i].BHP,MMP: global.Troop[i].BMP,Skills: global.Troop[i].Skills,BaseAtk: global.Troop[i].BaseAtk,Anims: global.Troop[i].Anims,Snds: global.Troop[i].Snds,Icon: global.Troop[i].Icon,DmgColor: global.Troop[i].DmgColor,Name: global.Troop[i].NameShort,Teamside: -1}));
-//var AI = instance_create_depth(global.Enemies[i].x,global.Enemies[i].y,global.Enemies[i].depth,global.Troop[i].EnemyAI)
-//AI.Parent = global.Enemies[i]
+var AI = instance_create_depth(global.Enemies[i].x,global.Enemies[i].y,global.Enemies[i].depth,global.Troop[i].EnemyAI)
+AI.Parent = global.Enemies[i].id
 global.Enemies[i].depth = global.Enemies[i].depth-((i+1)*10)
 global.Enemies[i].image_xscale *=-1
 global.Enemies[i].y += OffsetY

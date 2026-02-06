@@ -32,7 +32,7 @@ if Encountering = 1 && EncounterTimer != TimerMax
 		var vy = camera_get_view_y(view_camera[0])
 		var gm = instance_create_depth(vx,vy,0,obj_GM,{OffsetY:Foe.BG.PlayOffs})
 			audio_stop_sound(global.bgm)
-		with gm BGM = audio_play_sound(other.Foe.Song,0,1,1)
+		with gm BGM = audio_play_sound(other.Foe.Song,0,1)
 		with gm OSTVol = audio_sound_get_gain(BGM)
 		if variable_instance_exists(Foe,"BG")
 			{
@@ -52,7 +52,7 @@ var xmv = Rmv - Lmv
 var ymv = Umv - Dmv
 
 
-if Talk == 0  && Encountering != 1
+if Talk == 0  && Encountering != 1 && Rooming != 1
 	{
 			if Pse == 1 
 				{
@@ -77,4 +77,9 @@ if Talk == 0 && Menu = -1 && Encountering != 1
 	if Vspd*ymv > 0 && Hspd*xmv == 0 && Anim != UpSpr ChangeAnim(UpSpr)
 	if Vspd*ymv < 0 && Hspd*xmv == 0 && Anim != DownSpr ChangeAnim(DownSpr)	
 	
+	}
+
+if Rooming = 1 && Transition.phase = 1
+	{
+		room_goto(Roommove)
 	}

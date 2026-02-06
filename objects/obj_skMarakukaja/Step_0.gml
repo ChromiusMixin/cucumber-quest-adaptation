@@ -10,7 +10,7 @@ if Hittime = 0
 			    with other.Team[i]
 					{
 						RKJA = clamp(RKJA+1,-3,3)
-						SpawnFX(RakukajaFXO,x,y)
+						SpawnFX(RakukajaFXO,x,y,depth-1)
 					}
 						if i = array_length(other.Team)-1
 							{

@@ -9,6 +9,10 @@ for (var i = 0; i < array_length(BG); ++i) {
 		{
 			draw_sprite_tiled_ext(BG[i].img,0,BG[i].xpos,BG[i].ypos,BG[i].xscale,BG[i].yscale,BG[i].col,BG[i].opac)
 		}
+		else
+		{
+			draw_sprite_ext(BG[i].img,0,BG[i].xpos,BG[i].ypos,BG[i].xscale,BG[i].yscale,0,BG[i].col,BG[i].opac)
+		}
 		BG[i].xpos += BG[i].xscroll
 		BG[i].ypos += BG[i].yscroll
 }
