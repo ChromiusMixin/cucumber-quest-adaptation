@@ -480,11 +480,12 @@ global.Mobs =
 					GuardStart: KrisGuardStart,
 					Guard: KrisGuard,
 					XSlash: KrisXSlash,
+					SwdDrop: KnightDropSword,
 				},
 			Snds: {
 					AttackSound: UndertaleSwing,
 					HitSound: UndertaleDMG,
-					HurtSnd: UTHurt,
+					HurtSnd: KnightDmg1,
 				
 				},
 			BaseAtk: {
@@ -499,34 +500,7 @@ global.Mobs =
 								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
 								Cost: 36,
 								TargetType: -1, //Target Enemy
-								SkillObj: obj_skBasicXSlash,
-							},
-						Hasstou:
-							{
-								Name: "Hassotobi",
-								Desc: "Slash with everything you've got.",
-								CostType: 0, // 0 = MP 1 = HP 2 = EP
-								Cost: 42,
-								TargetType: -1,
-								SkillObj: obj_skBasicHasso,
-							},
-						Raku:
-							{
-								Name: "Rakukaja",
-								Desc: "Increase an Ally's Defense by 1 Stage.",
-								CostType: 0, // 0 = MP 1 = HP 2 = EP 
-								Cost: 16,
-								TargetType: 1, // Target Allies
-								SkillObj: obj_skRakukaja,
-							},
-						Maraku:
-							{
-								Name: "Marakukaja",
-								Desc: "Increase The Party's Defense by 1 Stage.",
-								CostType: 0, // 0 = MP 1 = HP 2 = EP
-								Cost: 24,
-								TargetType: 1,
-								SkillObj: obj_skMarakukaja,
+								SkillObj: obj_skSnowFall,
 							},
 									
 					},
@@ -536,5 +510,5 @@ global.Mobs =
 		
 }
 
-global.Party = [global.Units[0],global.Units[1],global.Units[2]]
+global.Party = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
 global.Troop = [global.Units[0]]

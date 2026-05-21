@@ -41,6 +41,7 @@ Hittime = 25
 Attacking = 0
 Dmg = 0
 DmgRdc = 0
+WkHit = 1
 
 
 //Generic Animations
@@ -95,10 +96,37 @@ function UseSkill(user = self, skill = SkQueue, targ = Target)
 	instance_create_depth(x,y,depth,skill,{User: user, Target: targ})
 }
 
+
 function EndTurn()
 {
-	global.TurnCount -= 1
-			if global.TurnCount > 0
+	
+	if WkHit = 0 
+	{
+		instance_destroy(global.TurnCount[array_length(global.TurnCount)-1])
+		array_delete(global.TurnCount,array_length(global.TurnCount)-1,1)
+	}
+	else
+	{
+		var func = function (turn,turn2)
+		{
+
+			
+			return (turn.LIFE > 1)	
+		}
+			
+		var fullstar = array_find_index(global.TurnCount,func)
+		if fullstar == -1
+			{
+				instance_destroy(global.TurnCount[array_length(global.TurnCount)-1])
+				array_delete(global.TurnCount,array_length(global.TurnCount)-1,1)
+			}
+			else
+			{
+			global.TurnCount[fullstar].LIFE = 1
+			}
+	}
+		
+			if array_length(global.TurnCount) > 0
 			{
 				if Teamside = 1
 					{

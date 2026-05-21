@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"EnemyAIs",
-    "path":"folders/Objects/EnemyAIs.yy",
+    "path":"folders/Objects/EnemySpecificStuff/EnemyAIs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,4 +1,4 @@
-global.bgm = Nature52
+global.bgm = tnshr
 if !audio_is_playing(global.bgm)
 	{
 	audio_stop_all()

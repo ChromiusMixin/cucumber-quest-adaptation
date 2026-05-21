@@ -25,7 +25,7 @@ else
 			death.sprite_index = DeathSpr
 			death.image_xscale *=-1
 			array_delete(global.Enemies,array_find_index(global.Enemies,findself),1)
-			AfterImage(x,y,0,0,0.8)
+			AfterImage(x,y,0,0,0.8,)
 			global.ENTurnCountMax-=1
 			instance_destroy()
 		}

@@ -18,3 +18,4 @@ for (var i = 0; i < array_length(BG); ++i) {
 }
 
 draw_sprite_tiled(BlackBar,0,x,y-35)
+

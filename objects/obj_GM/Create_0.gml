@@ -25,6 +25,7 @@ global.Options = [];
 global.SkillActive = 0
 global.Enemies = [];
 global.LivingPlayers = [];
+global.AiOverride = 0
 Fighting = 1
 
 
@@ -118,7 +119,22 @@ UpdateIcons()
 
 
 
-global.TurnCount = global.TurnCountMax
+global.TurnCount = []
+function RefilTurns()
+{
+	if global.Phase = 1 && array_length(global.TurnCount) != global.TurnCountMax
+	{
+		for (var i = 0; i < global.TurnCountMax; ++i) {
+			global.TurnCount[i] = instance_create_depth((view_get_hport(0)/2)+(i*100),100,depth-9999,obj_Turn)
+		}
+	}
+	else if array_length(global.TurnCount) != global.ENTurnCountMax
+	{
+		for (var i = 0; i < global.ENTurnCountMax; ++i) {
+			global.TurnCount[i] = instance_create_depth((view_get_hport(0))-(i*100),100,depth-9999,obj_Turn)
+		}
+	}
+}
 
 CurrentPlayer = 0;
 CurrentEnemy = 0;
@@ -159,7 +175,7 @@ function close_menu()
 		instance_destroy(UI)
 		
 	}
-
+RefilTurns()
 function endphase()
 {
 	instance_create_layer(0,0,"UI2",obj_Turnchange)
@@ -206,7 +222,7 @@ function ExitBasicTarget()
 	Targetting = 0;
 	instance_destroy(Selector)
 	instance_destroy(obj_EnStatus)
-	if global.TurnCount > 0 && global.SkillActive == 0
+	if array_length(global.TurnCount) > 0 && global.SkillActive == 0
 		{
 	create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
 		}

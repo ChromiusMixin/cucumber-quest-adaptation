@@ -56,7 +56,7 @@ if Menubuffer > 0
 		Menubuffer -= 1
 	}
 
-if DelayTimer > 0 && global.TurnCount < 1 && Fighting = 1 // Put a little buffer between things happening
+if DelayTimer > 0 && array_length(global.TurnCount) < 1 && Fighting = 1 // Put a little buffer between things happening
 	{
 		DelayTimer -= 1
 	}
@@ -72,20 +72,13 @@ if DelayTimer > 0 && global.TurnCount < 1 && Fighting = 1 // Put a little buffer
 if instance_exists(obj_Turnchange)
 	{
 		CurrentPlayer = 0;
-		if global.Phase = 1
-		{
-			global.TurnCount = global.TurnCountMax
-		}
-		else
-		{
-			global.TurnCount = global.ENTurnCountMax
-		}
+		RefilTurns()
 	}
 if global.Phase == -1
 	{
 		instance_destroy(UI)
 	
-	if global.TurnCount > 0 && !instance_exists(obj_Turnchange) && global.SkillActive = 0
+	if array_length(global.TurnCount) > 0 && !instance_exists(obj_Turnchange) && global.SkillActive = 0
 		{
 		with global.Enemies[CurrentPlayer]
 			{
@@ -116,13 +109,13 @@ if global.Phase == -1
 	}
 
 
-if global.TurnCount < 1 && DelayTimer == 0 && global.Phase == 1
+if array_length(global.TurnCount) < 1 && DelayTimer == 0 && global.Phase == 1
 	{
 		endphase()
 		DelayTimer = 30
 	}
 
-if global.TurnCount < 1 && DelayTimer == 0 && global.Phase == -1
+if array_length(global.TurnCount) < 1 && DelayTimer == 0 && global.Phase == -1
 	{
 		for (var i = 0; i < array_length(global.Players); ++i) 
 		{
@@ -135,7 +128,7 @@ if global.TurnCount < 1 && DelayTimer == 0 && global.Phase == -1
 		DelayTimer = 30
 	}
 
-if global.Phase == 1 && global.TurnCount > 0 && global.SkillActive == 0 && instance_number(UI) == 0 && instance_number(SelectorMenu) == 0 && Targetting == 0
+if global.Phase == 1 && array_length(global.TurnCount) > 0 && global.SkillActive == 0 && instance_number(UI) == 0 && instance_number(SelectorMenu) == 0 && Targetting == 0
 	{
 			create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
 	}

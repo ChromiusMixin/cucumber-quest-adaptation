@@ -10,5 +10,7 @@ if LIFE == 2
 	}
 	else
 	{
+		if timer%10 = 1
 		sprite_index = htspr
 	}
+

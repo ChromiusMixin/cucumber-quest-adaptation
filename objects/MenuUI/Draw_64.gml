@@ -19,6 +19,7 @@ if Owner.Encountering != 1
 		{
 			bbscale = lerp(bbscale,1,0.2)
 			Menu1.x = lerp(Menu1.x,(scr_w-scr_w),0.2)
+			Menu1.Active = 1
 			PartyDisplay.x = lerp(PartyDisplay.x,scr_w-500,0.2)
 			Fade.state = Fade.stateFadeIn
 		}
@@ -26,6 +27,7 @@ if Owner.Encountering != 1
 		{
 			bbscale = lerp(bbscale,0,0.2)
 			Menu1.x = lerp(Menu1.x,(scr_w*-1),0.2)
+			Menu1.Active = 0
 			PartyDisplay.x = lerp(PartyDisplay.x,scr_w,0.2)
 			Fade.state = Fade.stateFadeOut
 		}

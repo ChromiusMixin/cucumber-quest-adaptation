@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_number(obj_skButton) == 0 && Targetting != 1 && global.Phase > 0 && global.TurnCount > 0 && global.SkillActive == 0 && Fighting == 1 && global.Players[CurrentPlayer].DOWN != 1
+if instance_number(obj_skButton) == 0 && Targetting != 1 && global.Phase > 0 && array_length(global.TurnCount) > 0 && global.SkillActive == 0 && Fighting == 1 && global.Players[CurrentPlayer].DOWN != 1
 {
 
 audio_play_sound(ConfirmFV,0,0)

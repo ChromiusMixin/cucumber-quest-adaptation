@@ -27,6 +27,13 @@ if FollowPlayer == 0 && FollowTarget == 0
 			x = lerp(x,global.Players[global.CurrentPlayer].x-(view_wport/2)+150,0.1)
 			y = lerp(y,global.Players[global.CurrentPlayer].y-(view_hport/2),0.1)
 		}
+	
+	if global.Phase == -1 && obj_GM.Targetting == 0
+		{
+			x = lerp(x,global.Enemies[obj_GM.CurrentPlayer].x-(view_wport/2)+150,0.1)
+			y = lerp(y,global.Enemies[obj_GM.CurrentPlayer].y-(view_hport/2),0.1)
+		}
+	
 
 }
 if FollowPlayer == 1 && global.Phase == 1
