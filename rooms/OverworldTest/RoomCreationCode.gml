@@ -1,4 +1,4 @@
-global.bgm = tnshr
+global.bgm = mus_tnshr
 if !audio_is_playing(global.bgm)
 	{
 	audio_stop_all()

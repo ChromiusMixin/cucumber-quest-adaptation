@@ -6,33 +6,8 @@ Hittime -=1
 
 if Hittime = 0
 	{
-
-			if User.Teamside = 1
 			{
-				with User DmgSet(random_range(150,169))
-			}
-			else
-			{
-				with User DmgSet(random_range(20,30))
-			}
-			obj_Camera.FollowPlayer = 0
-			User.holdanim = 0
-			with User DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)
-			User.Target.state = 5
-			User.Target.state = 3
-			show_debug_message("Attacked!!!!!!!!!!!!")
-			CurHits+= 1
-			Hittime = 25
-			if CurHits != MaxHits
-			{
-				with User 
-				{
-					ChangeAnim(NormalEnd)
-					PlayAttackSound()
-				}
-			}
-			if CurHits = MaxHits
-			{
+				Sbox.Close = 1
 				global.SkillActive = 0
 				with User EndTurn()
 				Hittime = 25

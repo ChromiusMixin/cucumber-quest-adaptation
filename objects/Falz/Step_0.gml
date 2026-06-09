@@ -158,7 +158,7 @@ if Attacking == 1
 			depth = Target.depth-20
 			holdanim = 1
 			Jumping = 1
-			audio_play_sound(TP,0,0,3)
+			audio_play_sound(snd_TP,0,0,3)
 			obj_Camera.OffsetY = -20
 			x = Target.x+70
 			y = Target.y-Target.sprite_height+45
@@ -167,7 +167,7 @@ if Attacking == 1
 				{
 					Dmg = Dmg*2.5
 				}
-			DamageEnemy(Target,Dmg*(1+(VP/100)),MeltyHeavySlice,Coolslice,,-50,DmgColor,"DTRF",,c_black)
+			DamageEnemy(Target,Dmg*(1+(VP/100)),snd_MeltyHeavySlice,Coolslice,,-50,DmgColor,"DTRF",,c_black)
 			VP = 0
 			Stance = 0
 			}
@@ -192,7 +192,7 @@ if Attacking == 1
 						if i = array_length(global.Players)-1
 							{
 						global.SkillActive = 0
-						audio_play_sound(StatUp,0,0)
+						audio_play_sound(snd_StatUp,0,0)
 						EndTurn()
 						Attacking = 0
 						Hittime = 25

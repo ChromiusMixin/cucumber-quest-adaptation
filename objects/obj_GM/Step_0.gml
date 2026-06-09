@@ -1,16 +1,30 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if array_length(global.Enemies) == 0 && Fighting = 1
+global.TurnCountMax = array_length(global.LivingPlayers)
+
+if array_length(global.Enemies) == 0 && array_length(global.LivingPlayers) > 0 && Fighting = 1
 	{
 		Fighting = 0
+		Won = 1
 	}
 	
+if array_length(global.LivingPlayers) == 0 && Fighting = 1
+	{
+		Fighting = 0
+		Loss = 1
+	}
+
 if Fighting = 0
 	{
-		if instance_exists(MenuUI)
+		if global.SkillActive = 0
 		{
-			instance_destroy(MenuUI)
+		instance_destroy(obj_Turn)
+		}
+		if instance_exists(UI)
+		{
+			instance_destroy(UI)
+			
 		}
 		audio_sound_gain(BGM,0,1025)
 		if audio_sound_get_gain(BGM) <= 0.5
@@ -69,12 +83,12 @@ if DelayTimer > 0 && array_length(global.TurnCount) < 1 && Fighting = 1 // Put a
 //  }
 //}
 
-if instance_exists(obj_Turnchange)
-	{
-		CurrentPlayer = 0;
-		RefilTurns()
-	}
-if global.Phase == -1
+//if instance_exists(obj_Turnchange)
+//	{
+//		CurrentPlayer = 0;
+//		RefilTurns()
+//	}
+if global.Phase == -1 && Fighting = 1
 	{
 		instance_destroy(UI)
 	
@@ -90,7 +104,7 @@ if global.Phase == -1
 				{
 					if Skill.TargetType = -1
 					{
-					Target = global.Players[irandom(array_length(global.Players)-1)]
+					Target = global.LivingPlayers[irandom(array_length(global.LivingPlayers)-1)]
 					UseSkill(,Skill.SkillObj,)
 					}
 					else
@@ -128,9 +142,9 @@ if array_length(global.TurnCount) < 1 && DelayTimer == 0 && global.Phase == -1
 		DelayTimer = 30
 	}
 
-if global.Phase == 1 && array_length(global.TurnCount) > 0 && global.SkillActive == 0 && instance_number(UI) == 0 && instance_number(SelectorMenu) == 0 && Targetting == 0
+if global.Phase == 1 && array_length(global.TurnCount) > 0 && global.SkillActive == 0 && instance_number(UI) == 0 && instance_number(SelectorMenu) == 0 && Targetting == 0 && Fighting = 1
 	{
-			create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
+			create_menu(global.LivingPlayers[CurrentPlayer].x+global.LivingPlayers[CurrentPlayer].MenuOffsetX,global.LivingPlayers[CurrentPlayer].y+global.LivingPlayers[CurrentPlayer].MenuOffsetY)
 	}
 
 

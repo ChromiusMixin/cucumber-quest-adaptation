@@ -38,8 +38,8 @@ Hurt = HemoHurt;
 DeathSpr = HemoDown;
 GuardStart = KrisGuardStart;
 Guard = KrisGuard;
-AttackSound = UndertaleSwing;
-HitSound = UndertaleDMG;
+AttackSound = snd_UndertaleSwing;
+HitSound = snd_UndertaleDMG;
 HurtSnd = UTHurt;
 
 

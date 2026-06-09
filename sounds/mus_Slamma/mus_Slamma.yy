@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_Slamma",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":243.74857,
+  "exportDir":"",
+  "name":"mus_Slamma",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_Slamma.mp3",
+  "volume":1.0,
+}

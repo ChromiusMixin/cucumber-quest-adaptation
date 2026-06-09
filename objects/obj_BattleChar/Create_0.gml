@@ -10,6 +10,8 @@ self[$ "Skills"] ??= "global.Units[0].Skills"
 self[$ "BaseAtk"] ??= "global.Units[0].BaseAtk"
 self[$ "DmgColor"] ??= "global.Units[0].DmgColor"
 self[$ "Icon"] ??= "global.Units[0].Icon"
+self[$ "Res"] ??= "global.Units[0].Res"
+
 
 ID = 0
 //Name = global.Party[ID].NameShort
@@ -41,7 +43,7 @@ Hittime = 25
 Attacking = 0
 Dmg = 0
 DmgRdc = 0
-WkHit = 1
+Res = Res
 
 
 //Generic Animations
@@ -100,37 +102,46 @@ function UseSkill(user = self, skill = SkQueue, targ = Target)
 function EndTurn()
 {
 	
-	if WkHit = 0 
+	if obj_GM.WkHit = 0 
 	{
+		if array_length(global.TurnCount) > 0
+		{
 		instance_destroy(global.TurnCount[array_length(global.TurnCount)-1])
 		array_delete(global.TurnCount,array_length(global.TurnCount)-1,1)
+		}
 	}
 	else
 	{
-		var func = function (turn,turn2)
+		var func = function (turn)
 		{
 
 			
 			return (turn.LIFE > 1)	
 		}
 			
-		var fullstar = array_find_index(global.TurnCount,func)
+		if array_length(global.TurnCount) > 0
+		var fullstar = array_find_index(global.TurnCount,func,-1,-infinity)
 		if fullstar == -1
 			{
+				if array_length(global.TurnCount) > 0
+				{
+				
 				instance_destroy(global.TurnCount[array_length(global.TurnCount)-1])
 				array_delete(global.TurnCount,array_length(global.TurnCount)-1,1)
+				}
 			}
 			else
 			{
 			global.TurnCount[fullstar].LIFE = 1
 			}
+		obj_GM.WkHit = 0
 	}
 		
 			if array_length(global.TurnCount) > 0
 			{
 				if Teamside = 1
 					{
-						if global.CurrentPlayer == array_length(global.Players)-1
+						if obj_GM.CurrentPlayer == array_length(global.LivingPlayers)-1
 							{
 								obj_GM.CurrentPlayer = 0
 							}
@@ -141,7 +152,7 @@ function EndTurn()
 					}
 				else
 					{
-						if global.CurrentPlayer == array_length(global.Enemies)-1
+						if obj_GM.CurrentPlayer == array_length(global.Enemies)-1
 							{
 								obj_GM.CurrentPlayer = 0
 							}

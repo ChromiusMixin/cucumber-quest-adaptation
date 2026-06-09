@@ -17,8 +17,8 @@ if Hittime = 0
 			obj_Camera.FollowPlayer = 0
 			User.holdanim = 0
 			with User DamageEnemy(Target,Dmg,HitSound,Slicespark,,-50,DmgColor,"DTRF",,c_black,2)
-			User.Target.state = 5
-			User.Target.state = 3
+			//User.Target.state = 5
+			//User.Target.state = 3
 			show_debug_message("Attacked!!!!!!!!!!!!")
 			CurHits+= 1
 			Hittime = Mhit

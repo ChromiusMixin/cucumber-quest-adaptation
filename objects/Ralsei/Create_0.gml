@@ -37,8 +37,8 @@ Idle = RalseiIdle;
 Hurt = RalseiHurt;
 GuardStart = RalseiGuardStart;
 Guard = RalseiGuard;
-AttackSound = UndertaleSwing;
-HitSound = UndertaleDMG;
+AttackSound = snd_UndertaleSwing;
+HitSound = snd_UndertaleDMG;
 HurtSnd = UTHurt;
 
 InitStatusEffects()

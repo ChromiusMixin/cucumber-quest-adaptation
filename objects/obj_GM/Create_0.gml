@@ -27,7 +27,9 @@ global.Enemies = [];
 global.LivingPlayers = [];
 global.AiOverride = 0
 Fighting = 1
-
+Loss = 0
+Won = 0
+WkHit = 0
 
 
 for (var i = 0; i < array_length(global.Party); ++i) //Spawn Players
@@ -37,7 +39,7 @@ var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Party)-1
 global.TurnCountMax+= 1
-array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj,{MHP: global.Party[i].BHP,MMP: global.Party[i].BMP,Skills: global.Party[i].Skills,BaseAtk: global.Party[i].BaseAtk,Anims: global.Party[i].Anims,Snds: global.Party[i].Snds,Icon: global.Party[i].Icon,DmgColor: global.Party[i].DmgColor,Name: global.Party[i].NameShort,Teamside: 1}));
+array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj,{MHP: global.Party[i].BHP,MMP: global.Party[i].BMP,Skills: global.Party[i].Skills,BaseAtk: global.Party[i].BaseAtk,Anims: global.Party[i].Anims,Snds: global.Party[i].Snds,Icon: global.Party[i].Icon,DmgColor: global.Party[i].DmgColor,Name: global.Party[i].NameShort,Teamside: 1,Res: global.Party[i].Res}));
 global.Players[i].depth = global.Players[i].depth-((i+1)*10)
 global.Players[i].y += OffsetY
 global.Players[i].ystart += OffsetY
@@ -53,7 +55,7 @@ global.ENTurnCountMax+= 1
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Troop)-1
-array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Troop[i].BattleObj,{MHP: global.Troop[i].BHP,MMP: global.Troop[i].BMP,Skills: global.Troop[i].Skills,BaseAtk: global.Troop[i].BaseAtk,Anims: global.Troop[i].Anims,Snds: global.Troop[i].Snds,Icon: global.Troop[i].Icon,DmgColor: global.Troop[i].DmgColor,Name: global.Troop[i].NameShort,Teamside: -1}));
+array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Troop[i].BattleObj,{MHP: global.Troop[i].BHP,MMP: global.Troop[i].BMP,Skills: global.Troop[i].Skills,BaseAtk: global.Troop[i].BaseAtk,Anims: global.Troop[i].Anims,Snds: global.Troop[i].Snds,Icon: global.Troop[i].Icon,DmgColor: global.Troop[i].DmgColor,Name: global.Troop[i].NameShort,Teamside: -1,Res: global.Troop[i].Res}));
 var AI = instance_create_depth(global.Enemies[i].x,global.Enemies[i].y,global.Enemies[i].depth,global.Troop[i].EnemyAI)
 AI.Parent = global.Enemies[i].id
 global.Enemies[i].depth = global.Enemies[i].depth-((i+1)*10)
@@ -97,7 +99,7 @@ for (var i = 0; i < array_length(global.Players); ++i) {
 	with global.Players[i]
 		{	
 			PlayerID = i
-			array_push(global.LivingPlayers, [PlayerID,global.Players[i]])
+			array_push(global.LivingPlayers,self)
 		}
 	with global.PlayerIcons[i]
 		{	
@@ -125,13 +127,13 @@ function RefilTurns()
 	if global.Phase = 1 && array_length(global.TurnCount) != global.TurnCountMax
 	{
 		for (var i = 0; i < global.TurnCountMax; ++i) {
-			global.TurnCount[i] = instance_create_depth((view_get_hport(0)/2)+(i*100),100,depth-9999,obj_Turn)
+			global.TurnCount[i] = instance_create_depth((view_get_wport(0)/2)-(i*100),70,depth-9999,obj_Turn)
 		}
 	}
-	else if array_length(global.TurnCount) != global.ENTurnCountMax
+	if global.Phase = -1 && array_length(global.TurnCount) != global.ENTurnCountMax
 	{
 		for (var i = 0; i < global.ENTurnCountMax; ++i) {
-			global.TurnCount[i] = instance_create_depth((view_get_hport(0))-(i*100),100,depth-9999,obj_Turn)
+			global.TurnCount[i] = instance_create_depth((view_get_wport(0)/2)+(i*100),70,depth-9999,obj_Turn)
 		}
 	}
 }
@@ -163,7 +165,7 @@ cam = instance_create_layer(x,y,"CameraWork",obj_Camera)
 
 function create_menu(x,y)
 	{
-		if global.Players[CurrentPlayer].DOWN != 1
+		if global.LivingPlayers[CurrentPlayer].DOWN != 1
 			{
 		instance_create_depth(x,y,-100,UI);
 			}
@@ -181,21 +183,13 @@ function endphase()
 	instance_create_layer(0,0,"UI2",obj_Turnchange)
 
 	CurrentPlayer = 0;
-	if global.Phase == 1
-		{
-			
-			global.TurnCount = global.ENTurnCountMax
-		}
-	if global.Phase == -1
-		{
-			global.TurnCount = global.TurnCountMax
-		}
 	global.Phase = global.Phase*-1
+	RefilTurns()
 }
 
 function MagicMenu()
 {
-	for (var i = 0; i < global.Players[CurrentPlayer].MagicOptions; ++i)
+	for (var i = 0; i < global.LivingPlayers[CurrentPlayer].MagicOptions; ++i)
 		{
 
 		array_push(global.Options, instance_create_depth(view_get_hport(0)+250-(i*40),200+(i*65),depth-(10*(i+1)),obj_skButton));
@@ -209,7 +203,7 @@ function ChooseTargetBasic()
 {
 
 	CurrentOption = 0;
-	instance_create_depth(global.Players[CurrentPlayer].x,global.Players[CurrentPlayer].y,-200,Selector)
+	instance_create_depth(global.LivingPlayers[CurrentPlayer].x,global.LivingPlayers[CurrentPlayer].y,-200,Selector)
 	instance_create_depth(x,y,-200,obj_EnStatus)
 	instance_destroy(UI)
 	Targetting = 1;
@@ -224,7 +218,7 @@ function ExitBasicTarget()
 	instance_destroy(obj_EnStatus)
 	if array_length(global.TurnCount) > 0 && global.SkillActive == 0
 		{
-	create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
+	create_menu(global.LivingPlayers[CurrentPlayer].x+global.LivingPlayers[CurrentPlayer].MenuOffsetX,global.LivingPlayers[CurrentPlayer].y+global.LivingPlayers[CurrentPlayer].MenuOffsetY)
 		}
 	Movetype = -1
 }
@@ -235,7 +229,7 @@ function CloseMagicMenu()
 	CurrentOption = 0;
 	instance_destroy(SelectorMenu)
 	instance_destroy(obj_skButton)
-	create_menu(global.Players[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.Players[CurrentPlayer].y+global.Players[CurrentPlayer].MenuOffsetY)
+	create_menu(global.LivingPlayers[CurrentPlayer].x+global.Players[CurrentPlayer].MenuOffsetX,global.LivingPlayers[CurrentPlayer].y+global.LivingPlayers[CurrentPlayer].MenuOffsetY)
 	
 	global.Options = [];
 }

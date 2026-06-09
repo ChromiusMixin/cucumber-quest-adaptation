@@ -3,7 +3,7 @@
 
 if instance_number(obj_skButton) > 0 || Targetting = 1
 	{
-		audio_play_sound(CurTickFV,0,0)
+		audio_play_sound(snd_CurTickFV,0,0)
 	}
 
 if Targetting != 1  && global.Phase == 1

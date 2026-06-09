@@ -1,4 +1,4 @@
-global.bgm = mshil
+global.bgm = mus_mshil
 if !audio_is_playing(global.bgm)
 	{
 	audio_stop_all()

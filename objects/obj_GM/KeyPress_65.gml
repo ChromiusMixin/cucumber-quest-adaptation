@@ -5,7 +5,7 @@ if MenuActive != 1 && Targetting != 1 && global.Phase > 0 && instance_number(UI)
 	{
 		//NormalAttack();
 		
-			audio_play_sound(ConfirmFV,0,0)
+			audio_play_sound(snd_ConfirmFV,0,0)
 			ChooseTargetBasic()
 			with global.Players[CurrentPlayer]
 				{

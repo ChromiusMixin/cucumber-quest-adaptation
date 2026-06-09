@@ -3,14 +3,20 @@
 
 
 
-if obj_GM.CurrentPlayer == PlayerID && global.Phase == 1
+if obj_GM.CurrentPlayer == PlayerID && global.Phase == 1 && obj_GM.Fighting = 1
 	{
-y = lerp(y,ystart-50,0.1)
+		y = lerp(y,ystart-50,0.1)
 	}
 	else
 	{
-y = lerp(y,ystart-25,0.1)
+		y = lerp(y,ystart-25,0.1)
 	}
+
+if obj_GM.Fighting = 0 && global.SkillActive = 0
+	{
+		y = lerp(y,ystart+250,0.1)
+	}
+	
 HPCreep = lerp(HPCreep,MHP,0.1)
 MPCreep = lerp(MPCreep,MMP,0.1)
 

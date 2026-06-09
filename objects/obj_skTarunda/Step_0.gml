@@ -8,7 +8,7 @@ if Hittime = 0
 			{
 			Target.TRKJ = clamp(Target.TRKJ-1,-3,3)
 			SpawnFX(TarundaFXO,Target.x,Target.y)
-			audio_play_sound(StatDown,0,0)
+			audio_play_sound(snd_StatDown,0,0)
 			global.SkillActive = 0
 			Attacking = 0
 			Hittime = 25

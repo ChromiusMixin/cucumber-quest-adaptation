@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-/// @description Insert description here
-// You can write your code in this editor
 
+soulgrz.x = x
+soulgrz.y = y 
 image_blend = c_red
+
+if IFT > 0
+{
+	IFT -= 1	
+}
 
 var hm = 0
 var vm = 0
@@ -47,3 +52,8 @@ if up { y-= spd }
 if down { y += spd }
 if right { x += spd }
 if left { x -= spd }
+
+if place_meeting(x,y,obj_Bullet)
+{
+	hurtplayer(other.dmg)
+}

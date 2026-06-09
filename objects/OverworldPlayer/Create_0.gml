@@ -22,7 +22,7 @@ Rooming = 0
 Anim = sprite_index
 
 //Set Pausemenu
-PauseMenu = instance_create_depth(x,y,-999,MenuUI)
+PauseMenu = instance_create_depth(x,y,-999,obj_MenuUI)
 PauseMenu.Owner = self
 
 Foe = -1

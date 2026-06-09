@@ -3,7 +3,7 @@
 
 if Encountering != 1
 	{
-		audio_play_sound(Encnt,0,0,1)
+		audio_play_sound(snd_Encnt,0,0,1)
 		global.Troop = other.Enelist
 		Encountering = 1
 		Foe = other

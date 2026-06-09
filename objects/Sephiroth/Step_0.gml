@@ -58,14 +58,14 @@ if TurnRemoveTimer == 0
 		if Move == 0
 			{
 		ChangeAnim(SephirothTPOut) //Basic Attack
-		audio_play_sound(TP,0,0,2)
+		audio_play_sound(snd_TP,0,0,2)
 		depth = Target.depth-1
 			}
 
 		if Move == 1
 			{
 		audio_play_sound(Banter,0,0)
-		audio_play_sound(SpellCast,0,0,3)
+		audio_play_sound(snd_SpellCast,0,0,3)
 		ChangeAnim(SephirothCast)
 			}		
 		}

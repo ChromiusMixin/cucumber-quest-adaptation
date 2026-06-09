@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_CQBatt",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":41.16898,
+  "exportDir":"",
+  "name":"mus_CQBatt",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_CQBatt.ogg",
+  "volume":0.65,
+}

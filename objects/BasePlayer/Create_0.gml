@@ -20,8 +20,8 @@ PlayerID = 0
 NormalAtk = IbAtk;
 Idle = IbIdle;
 Hurt = IbHurt;
-AttackSound = UndertaleSwing;
-HitSound = UndertaleDMG
+AttackSound = snd_UndertaleSwing;
+HitSound = snd_UndertaleDMG
 
 InitStatusEffects()
 

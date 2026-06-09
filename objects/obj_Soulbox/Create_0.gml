@@ -6,3 +6,4 @@ player.Parent = self
 image_angle = 360
 BoxW = 4
 BoxH = 4
+Close = 0

@@ -22,8 +22,8 @@ NormalAtk = JOHN_ATTACK;
 Idle = JOHN_IDLE;
 Hurt = IbHurt;
 
-AttackSound = UndertaleSwing;
-HitSound = UndertaleDMG;
+AttackSound = snd_UndertaleSwing;
+HitSound = snd_UndertaleDMG;
 
 function PlayAttackSound()
 {

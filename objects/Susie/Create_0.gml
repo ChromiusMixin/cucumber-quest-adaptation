@@ -56,8 +56,8 @@ Hurt = SusieHurt;
 DeathSpr = SusieDown
 GuardStart = SusieGuardStart;
 Guard = SusieGuard;
-AttackSound = UndertaleSwing;
-HitSound = UndertaleDMG;
+AttackSound = snd_UndertaleSwing;
+HitSound = snd_UndertaleDMG;
 HurtSnd = UTHurt;
 
 InitStatusEffects()

@@ -25,20 +25,20 @@ if event_data[? "event_type"] == "sprite event" // or you can check "sprite even
 				{
 					Target.TRKJ = clamp(Target.TRKJ-1,-3,3)
 					SpawnFX(TarundaFXO,Target.x,Target.y)
-					audio_play_sound(StatDown,0,0)
+					audio_play_sound(snd_StatDown,0,0)
 				}
 			if Spell == 1
 				{
 					Target.RKJA = clamp(Target.RKJA-1,-3,3)
 					SpawnFX(RakundaFXO,Target.x,Target.y)
-					audio_play_sound(StatDown,0,0)
+					audio_play_sound(snd_StatDown,0,0)
 				}
 
 			if Spell == 2
 				{
 					TRKJ = clamp(TRKJ+1,-3,3)
 					SpawnFX(TarukajaFXO,x,y)
-					audio_play_sound(StatUp,0,0)
+					audio_play_sound(snd_StatUp,0,0)
 				}
 			if Spell == 3
 				{
@@ -46,13 +46,13 @@ if event_data[? "event_type"] == "sprite event" // or you can check "sprite even
 						{
 							TRKJ = clamp(TRKJ+1,-3,3)
 							SpawnFX(TarukajaFXO,x,y)
-							audio_play_sound(StatUp,0,0)
+							audio_play_sound(snd_StatUp,0,0)
 						}
 						else
 						{
 						CHG = 1
 						SpawnFX(ChargeFXO,x,y)
-						audio_play_sound(StatUp,0,0)
+						audio_play_sound(snd_StatUp,0,0)
 						}
 				}
         break;
@@ -68,7 +68,7 @@ if event_data[? "event_type"] == "sprite event" // or you can check "sprite even
 			x = xstart
 			y = ystart
 			ChangeAnim(SephirothTPIn)
-			audio_play_sound(TP,0,0,1)
+			audio_play_sound(snd_TP,0,0,1)
 			global.TurnCount -= 1
 			TurnRemoveTimer = 35
         break;

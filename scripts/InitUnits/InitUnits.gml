@@ -13,6 +13,7 @@ global.Units =
 			DmgColor: #85e9ff,
 			BHP: 228,
 			BMP: 347,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			BaseAtk: {
 						obj : obj_skBasicAtk,
 						targettype : 1,
@@ -34,8 +35,8 @@ global.Units =
 					XSlash: KrisXSlash,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -98,6 +99,7 @@ global.Units =
 			DmgColor: #f797ed,
 			BHP: 450,
 			BMP: 175,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			IdleTxt: {
 						a: "...",
 						b: "...?",
@@ -115,8 +117,8 @@ global.Units =
 					RdeBst: SusieRudeBuster,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -172,6 +174,7 @@ global.Units =
 					},		
 			BHP: 228,
 			BMP: 347,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			IdleTxt: {
 						a: "Ah..this isn't quite a dark world but...I'll be your guide all the same!",
 						b: "After this is all wrapped up, we should have a tea party!",
@@ -195,8 +198,8 @@ global.Units =
 					Guard: RalseiGuard,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -256,6 +259,7 @@ global.Mobs =
 			DmgColor: #85e9ff,
 			BHP: 4500,
 			BMP: 347,	
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			Anims: {
 					NormalAtk: KrisPreAtk,
 					NormalEnd: KrisAtk,
@@ -268,8 +272,8 @@ global.Mobs =
 					XSlash: KrisXSlash,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -330,7 +334,8 @@ global.Mobs =
 			Icon: Ralseicon,
 			DmgColor: #b0ffd5,
 			BHP: 4000,
-			BMP: 347,	
+			BMP: 347,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			Anims: {
 					NormalAtk: RalseiPreAtk,
 					NormalEnd: RalseiAtk,
@@ -342,8 +347,8 @@ global.Mobs =
 					Guard: RalseiGuard,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -400,6 +405,7 @@ global.Mobs =
 			DmgColor: #f797ed,
 			BHP: 5000,
 			BMP: 175,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			Anims: {
 					NormalAtk: SusiePreAtk,
 					NormalEnd: SusieAtk,
@@ -412,8 +418,8 @@ global.Mobs =
 					RdeBst: SusieRudeBuster,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: UTHurt,
 				
 				},
@@ -470,6 +476,7 @@ global.Mobs =
 			DmgColor: c_white,
 			BHP: 70000,
 			BMP: 999999,	
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
 			Anims: {
 					NormalAtk: KrisPreAtk,
 					NormalEnd: KrisAtk,
@@ -483,8 +490,8 @@ global.Mobs =
 					SwdDrop: KnightDropSword,
 				},
 			Snds: {
-					AttackSound: UndertaleSwing,
-					HitSound: UndertaleDMG,
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
 					HurtSnd: KnightDmg1,
 				
 				},
@@ -511,4 +518,8 @@ global.Mobs =
 }
 
 global.Party = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
+for (var i = 0; i < array_length(global.Party); ++i) {
+    global.Party[i].CurrentHP = global.Party[i].BHP
+	global.Party[i].CurrentMP = global.Party[i].BMP
+}
 global.Troop = [global.Units[0]]

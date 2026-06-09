@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 Anim = sprite_index
-
+depth = -y
 if Fighting != 1 && Talk != 1
 {
 	camera_set_view_target(view_camera[0], id);
@@ -57,7 +57,7 @@ if Talk == 0  && Encountering != 1 && Rooming != 1
 			if Pse == 1 
 				{
 				Menu = Menu*-1 
-				audio_play_sound(CurTickFV,0,0)
+				audio_play_sound(snd_CurTickFV,0,0)
 				}
 	}
 

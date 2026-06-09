@@ -13,7 +13,7 @@ if Hittime = 0
 					SpawnFX(TarundaFXO,x,y)
 					}
 				}
-				audio_play_sound(StatDown,0,0)
+				audio_play_sound(snd_StatDown,0,0)
 				SkillID = 0
 				Attacking = 0
 				global.SkillActive = 0

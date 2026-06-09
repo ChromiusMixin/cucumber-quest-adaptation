@@ -10,7 +10,7 @@
 //		instance_destroy()
 //	}
 
-audio_play_sound(MenuRaiseFV,0,0)
+audio_play_sound(snd_MenuRaiseFV,0,0)
 
 vel = 4
 timer = 0

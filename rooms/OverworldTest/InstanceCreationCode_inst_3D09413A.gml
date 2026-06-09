@@ -5,5 +5,5 @@ Enelist[2].BHP = 4000
 //Enelist[0].BHP = 5
 //Enelist[1].BHP = 5
 //Enelist[2].BHP = 5
-Song = AYFGO
+Song = mus_m2kBattle3
 BG = global.BattleBacks.Marx
