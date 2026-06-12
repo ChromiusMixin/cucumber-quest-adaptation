@@ -42,6 +42,7 @@ if TransX >= 0
 			draw_sprite_ext(global.Party[CurMember].Anims.Idle,image_index,200,view_get_hport(0)/2,2,2,0,c_white,1)
 			sprite_index = global.Party[CurMember].Anims.Idle
 			draw_set_color(c_white)
+			scribble("[8b0][scale,2][fa_left]"+string(global.Party[CurMember].Name)).shadow(c_black,1).draw(NameoffsX,NameoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)))
 			draw_circle(Cir4X+20,(view_get_hport(0)/2)-90,600,1)
 			draw_circle(Cir4X+40,(view_get_hport(0)/2)-90,600,1)
 			draw_circle(Cir4X+60,(view_get_hport(0)/2)-90,600,1)

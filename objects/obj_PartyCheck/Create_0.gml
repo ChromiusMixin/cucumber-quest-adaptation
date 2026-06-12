@@ -15,3 +15,5 @@ CurItem = 0
 AddX = 0
 ItemoffsX = 200
 ItemoffsY = 500
+NameoffsX = 200
+NameoffsY = 400

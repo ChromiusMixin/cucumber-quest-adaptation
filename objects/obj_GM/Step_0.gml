@@ -102,10 +102,7 @@ if global.Phase == -1 && Fighting = 1
 		{
 		with global.Enemies[CurrentPlayer]
 			{
-			var keys = variable_struct_get_names(Skills)
-			var ID = irandom(array_length(keys)-1)
-			var SkillKey = keys[ID]
-			var Skill = Skills[$ SkillKey]	
+			var Skill = Skills[irandom(array_length(Skills)-1)]	
 				if DOWN != 1
 				{
 					if Skill.TargetType = -1

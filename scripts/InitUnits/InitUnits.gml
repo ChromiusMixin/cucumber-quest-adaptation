@@ -11,6 +11,7 @@ global.Units =
 			EnemyAI: KrisAI,
 			Icon: Kriscon,
 			DmgColor: #85e9ff,
+			LV: 1,
 			BHP: 228,
 			BMP: 347,
 			BSTR: 2,
@@ -84,8 +85,7 @@ global.Units =
 					HurtSnd: UTHurt,
 				
 				},
-			Skills:	{
-						XSlash:
+			Skills:	[
 							{
 								Name: "X Slash",
 								Desc: "Slash twice with a higher average.",
@@ -94,7 +94,6 @@ global.Units =
 								TargetType: -1, //-1 = Target Enemy, 0 = Target Self, 1 = Target Allies, 2 = Target Allies (Dead)
 								SkillObj: obj_skBasicXSlash,
 							},
-						Hasstou:
 							{
 								Name: "Hassotobi",
 								Desc: "Slash with everything you've got.",
@@ -103,7 +102,6 @@ global.Units =
 								TargetType: -1,
 								SkillObj: obj_skBasicHasso,
 							},
-						Raku:
 							{
 								Name: "Rakukaja",
 								Desc: "Increase an Ally's Defense by 1 Stage.",
@@ -112,7 +110,6 @@ global.Units =
 								TargetType: 1, // Target Allies
 								SkillObj: obj_skRakukaja,
 							},
-						Maraku:
 							{
 								Name: "Marakukaja",
 								Desc: "Increase The Party's Defense by 1 Stage.",
@@ -122,7 +119,7 @@ global.Units =
 								SkillObj: obj_skMarakukaja,
 							},
 									
-					},
+					],
 		},
 		{
 			NameShort: "Susie",
@@ -141,6 +138,7 @@ global.Units =
 					},
 			Icon: SusieCon,
 			DmgColor: #f797ed,
+			LV: 1,
 			BHP: 450,
 			BMP: 175,
 			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
@@ -166,8 +164,7 @@ global.Units =
 					HurtSnd: UTHurt,
 				
 				},
-			Skills:	{
-						Taruka:
+			Skills:	[
 							{
 								Name: "Tarukaja",
 								Desc: "Raise an Ally's attack power by one stage.",
@@ -176,7 +173,6 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skTarukaja,
 							},
-						Mataruka:
 							{
 								Name: "Matarukaja",
 								Desc: "Raise entire Party's attack power by one stage.",
@@ -185,7 +181,6 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skMatarukaja,
 							},
-						PowChg:
 							{
 								Name: "Power Charge",
 								Desc: "Your next attack will do 2.5x damage.",
@@ -194,7 +189,6 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skCharge,
 							},
-						RudeBust:
 							{
 								Name: "Rude Buster",
 								Desc: "Susie's Signature Technique.\nDoes massive Slashing Damage.",
@@ -204,7 +198,7 @@ global.Units =
 								SkillObj: obj_skRudeBuster,
 							},
 									
-					},
+					],
 		},
 		{
 			NameShort: "Ralsei",
@@ -216,6 +210,7 @@ global.Units =
 						obj : obj_skBasicAtk,
 						TargetType : -1,
 					},		
+			LV: 1,
 			BHP: 228,
 			BMP: 347,
 			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
@@ -247,8 +242,7 @@ global.Units =
 					HurtSnd: UTHurt,
 				
 				},
-			Skills:	{
-						HealPray:
+			Skills:	[
 							{
 								Name: "Heal Prayer",
 								Desc: "Heal a target for 53% of their HP",
@@ -257,7 +251,6 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skHealPrayer,
 							},
-						QuadHeal:
 							{
 								Name: "Quad Heal",
 								Desc: "Heal the entire party for 40% of their HP",
@@ -266,7 +259,6 @@ global.Units =
 								TargetType: 1,
 								SkillObj: obj_skQuadHeal,
 							},
-						Tarun:
 							{
 								Name: "Tarunda",
 								Desc: "Reduce an enemy's attack power by 1 stage.",
@@ -275,7 +267,6 @@ global.Units =
 								TargetType: -1,
 								SkillObj: obj_skTarunda,
 							},
-						Matarun:
 							{
 								Name: "Matarunda",
 								Desc: "Reduce the enemy party's attack power by 1 stage.",
@@ -285,7 +276,7 @@ global.Units =
 								SkillObj: obj_skMatarunda,
 							},
 									
-					},
+					],
 		},
 ]
 
@@ -325,8 +316,7 @@ global.Mobs =
 						obj : obj_skBasicAtk,
 						TargetType : -1,
 					},		
-			Skills:	{
-						XSlash:
+			Skills:	[
 							{
 								Name: "X Slash",
 								Desc: "Slash twice with a higher average.",
@@ -335,7 +325,6 @@ global.Mobs =
 								TargetType: -1, //Target Enemy
 								SkillObj: obj_skBasicXSlash,
 							},
-						Hasstou:
 							{
 								Name: "Hassotobi",
 								Desc: "Slash with everything you've got.",
@@ -344,7 +333,6 @@ global.Mobs =
 								TargetType: -1,
 								SkillObj: obj_skBasicHasso,
 							},
-						Raku:
 							{
 								Name: "Rakukaja",
 								Desc: "Increase an Ally's Defense by 1 Stage.",
@@ -353,7 +341,6 @@ global.Mobs =
 								TargetType: 1, // Target Allies
 								SkillObj: obj_skRakukaja,
 							},
-						Maraku:
 							{
 								Name: "Marakukaja",
 								Desc: "Increase The Party's Defense by 1 Stage.",
@@ -363,7 +350,7 @@ global.Mobs =
 								SkillObj: obj_skMarakukaja,
 							},
 									
-					},
+					],
 		}, 
 		// End of Enemy
 
@@ -396,8 +383,7 @@ global.Mobs =
 					HurtSnd: UTHurt,
 				
 				},
-			Skills:	{
-						HealPray:
+			Skills:	[
 							{
 								Name: "Heal Prayer",
 								Desc: "Heal a target for 53% of their HP",
@@ -406,7 +392,6 @@ global.Mobs =
 								TargetType: 1,
 								SkillObj: obj_skHealPrayer,
 							},
-						QuadHeal:
 							{
 								Name: "Quad Heal",
 								Desc: "Heal the entire party for 40% of their HP",
@@ -415,7 +400,6 @@ global.Mobs =
 								TargetType: 1,
 								SkillObj: obj_skQuadHeal,
 							},
-						Tarun:
 							{
 								Name: "Tarunda",
 								Desc: "Reduce an enemy's attack power by 1 stage.",
@@ -424,7 +408,6 @@ global.Mobs =
 								TargetType: -1,
 								SkillObj: obj_skTarunda,
 							},
-						Matarun:
 							{
 								Name: "Matarunda",
 								Desc: "Reduce the enemy party's attack power by 1 stage.",
@@ -433,7 +416,7 @@ global.Mobs =
 								TargetType: -1,
 								SkillObj: obj_skMatarunda,
 							},
-					},
+					],
 	},
 		// End of Enemy
 
@@ -467,8 +450,7 @@ global.Mobs =
 					HurtSnd: UTHurt,
 				
 				},
-			Skills:	{
-						Taruka:
+			Skills:	[
 							{
 								Name: "Tarukaja",
 								Desc: "Raise an Ally's attack power by one stage.",
@@ -477,7 +459,6 @@ global.Mobs =
 								TargetType: 1,
 								SkillObj: obj_skTarukaja,
 							},
-						Mataruka:
 							{
 								Name: "Matarukaja",
 								Desc: "Raise entire Party's attack power by one stage.",
@@ -486,7 +467,6 @@ global.Mobs =
 								TargetType: 1,
 								SkillObj: obj_skMatarukaja,
 							},
-						PowChg:
 							{
 								Name: "Power Charge",
 								Desc: "Your next attack will do 2.5x damage.",
@@ -495,7 +475,6 @@ global.Mobs =
 								TargetType: 1,
 								SkillObj: obj_skCharge,
 							},
-						RudeBust:
 							{
 								Name: "Rude Buster",
 								Desc: "Susie's Signature Technique.\nDoes massive Slashing Damage.",
@@ -505,7 +484,7 @@ global.Mobs =
 								SkillObj: obj_skRudeBuster,
 							},
 									
-					},
+					],
 		}, 
 		// End of Enemy
 		
@@ -543,8 +522,7 @@ global.Mobs =
 						obj : obj_skBasicAtk,
 						TargetType : -1,
 					},		
-			Skills:	{
-						XSlash:
+			Skills:	[
 							{
 								Name: "X Slash",
 								Desc: "Slash twice with a higher average.",
@@ -554,7 +532,7 @@ global.Mobs =
 								SkillObj: obj_skSnowFall,
 							},
 									
-					},
+					],
 		}, 
 		// End of Enemy
 

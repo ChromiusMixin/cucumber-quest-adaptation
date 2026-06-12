@@ -564,6 +564,8 @@
     {"id":{"name":"spr_FullTurnStar","path":"sprites/spr_FullTurnStar/spr_FullTurnStar.yy",},},
     {"id":{"name":"spr_HalfTurnStar","path":"sprites/spr_HalfTurnStar/spr_HalfTurnStar.yy",},},
     {"id":{"name":"spr_ItemDesc","path":"sprites/spr_ItemDesc/spr_ItemDesc.yy",},},
+    {"id":{"name":"spr_MenuBar","path":"sprites/spr_MenuBar/spr_MenuBar.yy",},},
+    {"id":{"name":"spr_MenuGauge","path":"sprites/spr_MenuGauge/spr_MenuGauge.yy",},},
     {"id":{"name":"spr_NewMenButton","path":"sprites/spr_NewMenButton/spr_NewMenButton.yy",},},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
     {"id":{"name":"Sprite102","path":"sprites/Sprite102/Sprite102.yy",},},

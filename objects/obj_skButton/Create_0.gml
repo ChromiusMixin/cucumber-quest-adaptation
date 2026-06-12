@@ -1,11 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-keys = variable_struct_get_names(global.LivingPlayers[obj_GM.CurrentPlayer].Skills)
+
 ID = instance_number(obj_skButton)-1
 xtween = 300
-SkillKey = keys[ID]
-Skill = global.LivingPlayers[obj_GM.CurrentPlayer].Skills[$ SkillKey]
+Skill = global.LivingPlayers[obj_GM.CurrentPlayer].Skills[ID]
 x = x+200
 
 Spell = Skill.Name
