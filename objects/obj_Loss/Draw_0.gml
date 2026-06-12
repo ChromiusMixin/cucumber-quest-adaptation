@@ -1,0 +1,1 @@
+scribble("[8b0][scale,2][fa_center]"+string(GOText)).draw(view_get_wport(0)/2,view_get_hport/2)

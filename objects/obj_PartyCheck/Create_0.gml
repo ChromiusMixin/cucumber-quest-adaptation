@@ -1,0 +1,17 @@
+TransX = -1280
+CirScale = 0
+Cir2Scale = 0
+Cir3Scale = 0
+Cir4X = -300
+CirTime = 0
+IbX = 0
+IbY = -200
+IncomY = 90
+IncomX = 300
+GradY = 500
+MenuCol = #71609e //#87e9ff
+CurMember = 0
+CurItem = 0
+AddX = 0
+ItemoffsX = 200
+ItemoffsY = 500

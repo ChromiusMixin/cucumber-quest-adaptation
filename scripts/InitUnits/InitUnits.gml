@@ -13,7 +13,51 @@ global.Units =
 			DmgColor: #85e9ff,
 			BHP: 228,
 			BMP: 347,
+			BSTR: 2,
 			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
+			Gear: [
+					{ //Head
+						Name:"Knight's Cowl",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Silken thread that protects the soul.",
+						Stats: {
+								STR: 0,
+								DEF: 2,
+								}	
+						}, // End of Accessory
+						
+					{ //Weapon
+						Name:"Hero's Sword",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Blade against protection.",
+						Stats: {
+								STR: 3,
+								DEF: 0,
+								}	
+						}, // End of Accessory
+					
+					{ //Body
+						Name:"Squire's Chestplate",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Protection against blades.",
+						Stats: {
+								STR: 0,
+								DEF: 4,
+								}	
+						}, // End of Accessory
+					
+					{ //Legs
+						Name:"Traveler's Greaves",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"",
+						Stats: {
+								STR: 0,
+								DEF: 3,
+								}	
+						}, // End of Accessory
+					
+
+				],	
 			BaseAtk: {
 						obj : obj_skBasicAtk,
 						targettype : 1,
@@ -47,7 +91,7 @@ global.Units =
 								Desc: "Slash twice with a higher average.",
 								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
 								Cost: 36,
-								TargetType: -1, //Target Enemy
+								TargetType: -1, //-1 = Target Enemy, 0 = Target Self, 1 = Target Allies, 2 = Target Allies (Dead)
 								SkillObj: obj_skBasicXSlash,
 							},
 						Hasstou:

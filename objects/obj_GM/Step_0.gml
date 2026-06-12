@@ -5,14 +5,16 @@ global.TurnCountMax = array_length(global.LivingPlayers)
 
 if array_length(global.Enemies) == 0 && array_length(global.LivingPlayers) > 0 && Fighting = 1
 	{
-		Fighting = 0
 		Won = 1
+		Fighting = 0
+
 	}
 	
 if array_length(global.LivingPlayers) == 0 && Fighting = 1
 	{
-		Fighting = 0
 		Loss = 1
+		Fighting = 0
+
 	}
 
 if Fighting = 0
@@ -29,9 +31,13 @@ if Fighting = 0
 		audio_sound_gain(BGM,0,1025)
 		if audio_sound_get_gain(BGM) <= 0.5
 			{
-				if !instance_exists(obj_Victory)
+				if !instance_exists(obj_Victory) && Won = 1
 					{
 						instance_create_depth(x,y,-10000,obj_Victory)
+					}
+				if !instance_exists(obj_Loss) && Loss = 1
+					{
+						instance_create_depth(x,y,-10000,obj_Loss)
 					}
 			}
 	}

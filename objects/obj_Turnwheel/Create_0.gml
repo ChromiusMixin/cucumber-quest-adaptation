@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+y += 75
 rotation = 0
 global.TurnCountMax = 0
 global.TurnCount = 0

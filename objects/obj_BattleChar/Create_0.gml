@@ -16,11 +16,10 @@ self[$ "Res"] ??= "global.Units[0].Res"
 ID = 0
 //Name = global.Party[ID].NameShort
 LV = 5
-//MHP = 228+(LV*12);
-//MMP = 347+(LV*3);
 HP = MHP;
 MP = MMP;
 STR = 6+(LV*4)
+DEF = 3+(LV*4)
 AC = 0; //Not active
 Menu1 = 0; //1 = Attack, 2 = Magic, 3 = Guard, 4 = Synergy
 Target = self

@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "channelFormat":0,
-  "compression":3,
+  "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
   "duration":366.56,
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mus_YYp4.mp3",
-  "volume":0.4,
+  "volume":0.27,
 }

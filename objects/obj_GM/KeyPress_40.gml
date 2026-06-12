@@ -8,7 +8,7 @@ if instance_number(obj_skButton) > 0 || Targetting = 1
 
 if Targetting != 1  && global.Phase == 1
 	{
-		if CurrentOption = global.Players[CurrentPlayer].MagicOptions-1
+		if CurrentOption = global.LivingPlayers[CurrentPlayer].MagicOptions-1
 			{
 			CurrentOption = 0
 			}

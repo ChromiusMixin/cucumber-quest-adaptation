@@ -18,4 +18,15 @@ function UseFunc(){
 	{
 
 	}
+	if Choice = 3
+	{
+				audio_play_sound(snd_ConfirmFV,0,0)
+				PartyUI = instance_create_depth(x,y,depth-2,obj_PartyCheck)
+				OtherMenuActive = 1	
+	}
+}
+
+function ResetMenu(){
+	instance_destroy(obj_PartyCheck)
+	OtherMenuActive = 0
 }

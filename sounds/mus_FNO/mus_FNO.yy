@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":115.95755,
+  "duration":0.0,
   "exportDir":"",
   "name":"mus_FNO",
   "parent":{
