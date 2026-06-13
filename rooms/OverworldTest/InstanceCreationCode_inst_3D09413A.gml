@@ -1,9 +1,9 @@
 Enelist = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
-Enelist[0].BHP = 4500
-Enelist[1].BHP = 5500
-Enelist[2].BHP = 4000
-//Enelist[0].BHP = 5
-//Enelist[1].BHP = 5
-//Enelist[2].BHP = 5
+//Enelist[0].BHP = 4500
+//Enelist[1].BHP = 5500
+//Enelist[2].BHP = 4000
+Enelist[0].BHP = 5
+Enelist[1].BHP = 5
+Enelist[2].BHP = 5
 Song = mus_m2kBattle3
 BG = global.BattleBacks.Marx

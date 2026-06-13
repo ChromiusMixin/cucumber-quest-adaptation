@@ -54,7 +54,7 @@ function DamageEnemy(Target, Amount, HitSound = UndertaleDMG,Hitspark = Basespar
 
 						with Target
 							{
-								if DFND == 0
+								if DFND == 0 && DOWN == 0
 									{
 								sprite_index = Hurt
 								image_index = 0

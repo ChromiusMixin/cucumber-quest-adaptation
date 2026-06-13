@@ -130,7 +130,7 @@
   "regenerateBitmap":false,
   "resourceType":"GMFont",
   "resourceVersion":"2.0",
-  "sampleText":"Swoon..",
+  "sampleText":"",
   "sdfSpread":8,
   "size":14.0,
   "styleName":"Regular",

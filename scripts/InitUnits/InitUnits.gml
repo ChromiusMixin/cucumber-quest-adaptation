@@ -550,9 +550,13 @@ global.Mobs =
 		
 }
 
-global.Party = [variable_clone(global.Units[3]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
+global.Party = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
 for (var i = 0; i < array_length(global.Party); ++i) {
     global.Party[i].CurrentHP = global.Party[i].BHP
 	global.Party[i].CurrentMP = global.Party[i].BMP
+	global.Party[i].EXP = 0
+	global.Party[i].NEXTEXP = global.Party[i].LV*100*1.25
+	global.Party[i].SP = 0
+	
 }
 global.Troop = [global.Units[0]]
