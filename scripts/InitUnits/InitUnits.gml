@@ -372,6 +372,126 @@ global.Units =
 									
 					],
 		},
+	{
+			NameShort: "Cucumber",
+			Name: "Cucumber (CCQ)",
+			DisplaySpr: Cucoport,
+			BattleObj: obj_BattleChar,
+			EnemyAI: KrisAI,
+			Icon: Kriscon,
+			DmgColor: #a2d973,
+			LV: 1,
+			BHP: 228,
+			BMP: 347,
+			STR: 2,
+			DEF: 3,
+			MAG: 1,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
+			Gear: [
+					{ //Head
+						Name:"Carrot Earring",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Pretty cool lookin'.",
+						Stats: {
+								STR: 0,
+								DEF: 2,
+								}	
+						}, // End of Accessory
+						
+					{ //Weapon
+						Name:"Novice Wand",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Allows for the casting of most basic spells.",
+						Stats: {
+								STR: 3,
+								DEF: 0,
+								}	
+						}, // End of Accessory
+					
+					{ //Body
+						Name:"Explorer's Tunic",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"The clothes you left home with.",
+						Stats: {
+								STR: 0,
+								DEF: 4,
+								}	
+						}, // End of Accessory
+					
+					{ //Legs
+						Name:"Traveler's Pants",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Also part of the clothes you left home with.",
+						Stats: {
+								STR: 0,
+								DEF: 3,
+								}	
+						}, // End of Accessory
+					
+
+				],	
+			BaseAtk: {
+						obj : obj_skBasicAtk,
+						targettype : 1,
+					},		
+			IdleTxt: {
+						a: "...",
+						b: "...?",
+						c: "Hm.",
+					 },
+			Anims: {
+					NormalAtk: KrisPreAtk,
+					NormalEnd: KrisAtk,
+					Cast: KrisSkill,
+					Idle: spr_Cucidle,
+					Hurt: KrisHurt,
+					DeathSpr: KrisDown,
+					GuardStart: KrisGuardStart,
+					Guard: KrisGuard,
+					XSlash: KrisXSlash,
+				},
+			Snds: {
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
+					HurtSnd: UTHurt,
+				
+				},
+			Skills:	[
+							{
+								Name: "X Slash",
+								Desc: "Slash twice with a higher average.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
+								Cost: 36,
+								TargetType: -1, //-1 = Target Enemy, 0 = Target Self, 1 = Target Allies, 2 = Target Allies (Dead)
+								SkillObj: obj_skBasicXSlash,
+							},
+							{
+								Name: "Hassotobi",
+								Desc: "Slash with everything you've got.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 42,
+								TargetType: -1,
+								SkillObj: obj_skBasicHasso,
+							},
+							{
+								Name: "Rakukaja",
+								Desc: "Increase an Ally's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP 
+								Cost: 16,
+								TargetType: 1, // Target Allies
+								SkillObj: obj_skRakukaja,
+							},
+							{
+								Name: "Marakukaja",
+								Desc: "Increase The Party's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 24,
+								TargetType: 1,
+								SkillObj: obj_skMarakukaja,
+							},
+									
+					],
+		},
 ]
 
 global.Mobs =
@@ -430,7 +550,7 @@ global.Mobs =
 		
 }
 
-global.Party = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
+global.Party = [variable_clone(global.Units[3]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
 for (var i = 0; i < array_length(global.Party); ++i) {
     global.Party[i].CurrentHP = global.Party[i].BHP
 	global.Party[i].CurrentMP = global.Party[i].BMP
