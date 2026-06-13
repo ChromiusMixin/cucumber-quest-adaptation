@@ -4,6 +4,9 @@ self[$ "Teamside"] ??= "1" // 1 = Player Side, -1 = Enemy Side
 self[$ "Name"] ??= "Empty"
 self[$ "MHP"] ??= "100"
 self[$ "MMP"] ??= "250"
+self[$ "STR"] ??= "6"
+self[$ "DEF"] ??= "3"
+self[$ "MAG"] ??= "3"
 self[$ "Anims"] ??= "global.Units[0].Anims"
 self[$ "Snds"] ??= "global.Units[0].Snds"
 self[$ "Skills"] ??= "global.Units[0].Skills"
@@ -18,8 +21,6 @@ ID = 0
 LV = 5
 HP = MHP;
 MP = MMP;
-STR = 6+(LV*4)
-DEF = 3+(LV*4)
 AC = 0; //Not active
 Menu1 = 0; //1 = Attack, 2 = Magic, 3 = Guard, 4 = Synergy
 Target = self

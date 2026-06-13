@@ -7,6 +7,14 @@ if ReadyingNormal == 0
 		Hittime -= 1
 	}
 
+if instance_exists(QTE)
+	{
+		with QTE
+		{
+			image_blend = other.User.DmgColor
+		}
+	}
+
 if Hittime = 0 && global.Phase = 1
 	{
 		with User DmgSet(150-other.DmgRdc)

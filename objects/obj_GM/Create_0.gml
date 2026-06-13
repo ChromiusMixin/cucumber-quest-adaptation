@@ -39,7 +39,24 @@ var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Party)-1
 global.TurnCountMax+= 1
-array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj,{MHP: global.Party[i].BHP,MMP: global.Party[i].BMP,Skills: global.Party[i].Skills,BaseAtk: global.Party[i].BaseAtk,Anims: global.Party[i].Anims,Snds: global.Party[i].Snds,Icon: global.Party[i].Icon,DmgColor: global.Party[i].DmgColor,Name: global.Party[i].NameShort,Teamside: 1,Res: global.Party[i].Res}));
+array_push(global.Players, instance_create_depth(vx+275-(i*20),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Party[i].BattleObj,
+{
+	MHP: global.Party[i].BHP,
+	MMP: global.Party[i].BMP,
+	DEF: global.Party[i].DEF,
+	STR: global.Party[i].STR,
+	MAG: global.Party[i].MAG,
+	Skills: global.Party[i].Skills,
+	BaseAtk: global.Party[i].BaseAtk,
+	Anims: global.Party[i].Anims,
+	Snds: global.Party[i].Snds,
+	Icon: global.Party[i].Icon,
+	DmgColor: global.Party[i].DmgColor,
+	Name: global.Party[i].NameShort,
+	Teamside: 1,
+	Res: global.Party[i].Res
+	
+}));
 global.Players[i].depth = global.Players[i].depth-((i+1)*10)
 global.Players[i].y += OffsetY
 global.Players[i].ystart += OffsetY
@@ -55,7 +72,23 @@ global.ENTurnCountMax+= 1
 var vx = camera_get_view_x(view_camera[0])
 var vy = camera_get_view_y(view_camera[0])
 var ts = array_length(global.Troop)-1
-array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Troop[i].BattleObj,{MHP: global.Troop[i].BHP,MMP: global.Troop[i].BMP,Skills: global.Troop[i].Skills,BaseAtk: global.Troop[i].BaseAtk,Anims: global.Troop[i].Anims,Snds: global.Troop[i].Snds,Icon: global.Troop[i].Icon,DmgColor: global.Troop[i].DmgColor,Name: global.Troop[i].NameShort,Teamside: -1,Res: global.Troop[i].Res}));
+array_push(global.Enemies, instance_create_depth(vx+view_get_wport(0)-275+(i*10),vy-(ts*30)+view_get_hport(0)/2+(i*50),1,global.Troop[i].BattleObj,
+{
+	MHP: global.Troop[i].BHP,
+	MMP: global.Troop[i].BMP,
+	DEF: global.Troop[i].DEF,
+	STR: global.Troop[i].STR,
+	MAG: global.Troop[i].MAG,
+	Skills: global.Troop[i].Skills,
+	BaseAtk: global.Troop[i].BaseAtk,
+	Anims: global.Troop[i].Anims,
+	Snds: global.Troop[i].Snds,
+	Icon: global.Troop[i].Icon,
+	DmgColor: global.Troop[i].DmgColor,
+	Name: global.Troop[i].NameShort,
+	Teamside: -1,
+	Res: global.Troop[i].Res
+}));
 var AI = instance_create_depth(global.Enemies[i].x,global.Enemies[i].y,global.Enemies[i].depth,global.Troop[i].EnemyAI)
 AI.Parent = global.Enemies[i].id
 global.Enemies[i].depth = global.Enemies[i].depth-((i+1)*10)

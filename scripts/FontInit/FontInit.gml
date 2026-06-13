@@ -3,4 +3,5 @@
 
 scribble_font_bake_outline_and_shadow("Undertale","8b0",1,1,2,0,false,)
 scribble_font_bake_outline_and_shadow("DTR","DTRF",0,0,3,1,false,)
-
+scribble_font_bake_outline_and_shadow("PmF","HG",0,0,0,1,true,)
+scribble_font_bake_outline_and_shadow("PmF","HGo",0,0,2,1,true,)

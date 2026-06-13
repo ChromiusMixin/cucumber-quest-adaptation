@@ -17,3 +17,4 @@ ItemoffsX = 200
 ItemoffsY = 500
 NameoffsX = 200
 NameoffsY = 400
+audio_play_sound(snd_slidesheet,0,0,,,2)

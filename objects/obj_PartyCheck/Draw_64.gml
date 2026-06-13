@@ -27,9 +27,9 @@ if TransX >= 0
 	if CirTime >= 30
 		{
 			IncomX = lerp(IncomX,0,0.15)
-			AddX = lerp(AddX,0,0.5)
-			draw_set_color(c_black)
-			draw_set_circle_precision(24)
+			AddX = lerp(AddX,0,0.2)
+			draw_set_color(c_black) //Left Side Circle
+			draw_set_circle_precision(24) 
 			draw_set_alpha(0.5)
 			Cir4X = lerp(Cir4X,125,0.25)
 			GradY = lerp(GradY,0,0.25)
@@ -37,12 +37,13 @@ if TransX >= 0
 			Cir2Scale = lerp(Cir2Scale,1000,0.25)
 			draw_set_alpha(1)
 			gpu_set_fog(true,global.Party[CurMember].DmgColor,0,0)
-			draw_sprite_ext(global.Party[CurMember].Anims.Idle,image_index,200-10,view_get_hport(0)/2,2,2,0,global.Party[CurMember].DmgColor,1)
+			draw_sprite_ext(global.Party[CurMember].Anims.Idle,image_index,200-10+AddX,view_get_hport(0)/2,2,2,0,global.Party[CurMember].DmgColor,1)
 			gpu_set_fog(false,c_black,0,0)
-			draw_sprite_ext(global.Party[CurMember].Anims.Idle,image_index,200,view_get_hport(0)/2,2,2,0,c_white,1)
+			draw_sprite_ext(global.Party[CurMember].Anims.Idle,image_index,200+AddX,view_get_hport(0)/2,2,2,0,c_white,1)
 			sprite_index = global.Party[CurMember].Anims.Idle
 			draw_set_color(c_white)
 			scribble("[8b0][scale,2][fa_left]"+string(global.Party[CurMember].Name)).shadow(c_black,1).draw(NameoffsX,NameoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)))
+			scribble("[8b0][scale,2][fa_left]LV. "+string(global.Party[CurMember].LV)).shadow(c_black,1).draw(NameoffsX-100,NameoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)))
 			draw_circle(Cir4X+20,(view_get_hport(0)/2)-90,600,1)
 			draw_circle(Cir4X+40,(view_get_hport(0)/2)-90,600,1)
 			draw_circle(Cir4X+60,(view_get_hport(0)/2)-90,600,1)
@@ -59,10 +60,10 @@ if TransX >= 0
 						draw_sprite_ext(spr_ArmorSlot,0,ItemoffsX,ItemoffsY+((sprite_get_height(spr_ArmorSlot)-1)*i),1,1,0,c_white,0.25)
 						gpu_set_fog(false,c_black,0,0)
 					draw_sprite_ext(spr_ItemDesc,0,ItemoffsX+sprite_get_width(spr_ArmorSlot),ItemoffsY,1,1,0,c_white,1)
-			scribble("[8b0][scale,1][fa_left]"+string(global.Party[CurMember].Gear[i].Desc)).shadow(c_black,1).fit_to_box(sprite_get_width(spr_ItemDesc),sprite_get_height(spr_ItemDesc)).draw(ItemoffsX+10+sprite_get_width(spr_ArmorSlot),ItemoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)*i))
+			scribble("[HG][scale,2][fa_left][c_black]"+string(global.Party[CurMember].Gear[i].Desc)).outline(#313131).shadow(c_black,0).fit_to_box(sprite_get_width(spr_ItemDesc)-25,sprite_get_height(spr_ItemDesc)).draw(ItemoffsX+10+sprite_get_width(spr_ArmorSlot),ItemoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)*0))
 					
 					}
-						scribble("[8b0][scale,1][fa_left]"+string(global.Party[CurMember].Gear[i].Name)).shadow(c_black,1).draw(ItemoffsX+35,ItemoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)*i))
+						scribble("[HGo][scale,1.75][fa_left][#d6d6d6]"+string(global.Party[CurMember].Gear[i].Name)).outline(#313131).shadow(c_black,1).draw(ItemoffsX+10,ItemoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)*i))
 						
 			}
 			
