@@ -58,7 +58,9 @@ Guard = Anims.Guard
 AttackSound = Snds.AttackSound
 HitSound = Snds.HitSound
 HurtSnd = Snds.HurtSnd
-
+//System Shit for animations
+AnimFrame = floor(image_index)
+AnimTick = 0
 
 InitStatusEffects()
 
@@ -95,7 +97,7 @@ function NormalAttack(user = self, targ = Target)
 function UseSkill(user = self, skill = SkQueue, targ = Target)
 {
 	global.SkillActive = 1
-	instance_create_depth(x,y,depth,skill,{User: user, Target: targ})
+	instance_create_depth(x,y,depth,skill,{User: user, target: targ})
 }
 
 

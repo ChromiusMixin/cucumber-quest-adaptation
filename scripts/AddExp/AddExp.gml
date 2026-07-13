@@ -15,6 +15,7 @@ if global.Party[Member].EXP >= global.Party[Member].NEXTEXP
 				audio_play_sound(snd_LvUp,0,0)
 			}
 		global.Party[Member].LV += 1
+		global.Party[Member].SP += 3
 		global.Party[Member].EXP -=	global.Party[Member].NEXTEXP
 		global.Party[Member].NEXTEXP = global.Party[Member].LV*100*1.25
 

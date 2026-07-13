@@ -492,6 +492,127 @@ global.Units =
 									
 					],
 		},
+{
+			NameShort: "Mario",
+			Name: "Mario (Paper Mario 64)",
+			DisplaySpr: pmport,
+			BattleObj: obj_BattleChar,
+			EnemyAI: KrisAI,
+			Icon: Maricon,
+			DmgColor: #e6531e,
+			LV: 1,
+			BHP: 228,
+			BMP: 347,
+			STR: 2,
+			DEF: 3,
+			MAG: 1,
+			Res: [1,0,0,0,0,0,0,0,0], //-3 = Repel -2 = Null, -1 = Resist, 0 = Neutral, 1 = VUlnerable
+			Gear: [
+					{ //Head
+						Name:"Plumber's Cap",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"It's got an iconic 'M' symbol at the front of it.",
+						Stats: {
+								STR: 0,
+								DEF: 2,
+								}	
+						}, // End of Accessory
+						
+					{ //Weapon
+						Name:"Wooden Hammer",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Good for hitting nails, or enemies that block your path.",
+						Stats: {
+								STR: 3,
+								DEF: 0,
+								}	
+						}, // End of Accessory
+					
+					{ //Body
+						Name:"Standard Trousers",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Never leave home without 'em.",
+						Stats: {
+								STR: 0,
+								DEF: 4,
+								}	
+						}, // End of Accessory
+					
+					{ //Legs
+						Name:"Work boots",
+						Type:0, // 0 = Head, 1 = Body
+						Desc:"Non-slip, and good for stompin'.",
+						Stats: {
+								STR: 0,
+								DEF: 3,
+								}	
+						}, // End of Accessory
+					
+
+				],	
+			BaseAtk: {
+						obj : obj_skBasicHamr,
+						targettype : 1,
+					},		
+			IdleTxt: {
+						a: "...",
+						b: "...?",
+						c: "Hm.",
+					 },
+			Anims: {
+					NormalAtk: KrisPreAtk,
+					NormalEnd: KrisAtk,
+					Cast: MarioCast,
+					Idle: MarioIdle,
+					Walk: MarioWalk,
+					Hurt: KrisHurt,
+					DeathSpr: KrisDown,
+					GuardStart: KrisGuardStart,
+					Guard: KrisGuard,
+					XSlash: KrisXSlash,
+				},
+			Snds: {
+					AttackSound: snd_UndertaleSwing,
+					HitSound: snd_UndertaleDMG,
+					HurtSnd: UTHurt,
+				
+				},
+			Skills:	[
+							{
+								Name: "X Slash",
+								Desc: "Slash twice with a higher average.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP //CURRENTLY UNUSED, Text is a holdover from felbound.
+								Cost: 36,
+								TargetType: -1, //-1 = Target Enemy, 0 = Target Self, 1 = Target Allies, 2 = Target Allies (Dead)
+								SkillObj: obj_skBasicXSlash,
+							},
+							{
+								Name: "Hassotobi",
+								Desc: "Slash with everything you've got.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 42,
+								TargetType: -1,
+								SkillObj: obj_skBasicHasso,
+							},
+							{
+								Name: "Rakukaja",
+								Desc: "Increase an Ally's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP 
+								Cost: 16,
+								TargetType: 1, // Target Allies
+								SkillObj: obj_skRakukaja,
+							},
+							{
+								Name: "Marakukaja",
+								Desc: "Increase The Party's Defense by 1 Stage.",
+								CostType: 0, // 0 = MP 1 = HP 2 = EP
+								Cost: 24,
+								TargetType: 1,
+								SkillObj: obj_skMarakukaja,
+							},
+									
+					],
+		},
 ]
 
 global.Mobs =

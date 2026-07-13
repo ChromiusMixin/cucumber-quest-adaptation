@@ -6,16 +6,16 @@ if Hittime = 0
 	{
 				if User.Teamside = 1
 				{
-					DamageEnemy(Target,-Target.MHP*0.53,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+					DamageEnemy(target,-target.MHP*0.53,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
 				}
 				else
 				{
-					DamageEnemy(Target,-Target.MHP*0.05,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
+					DamageEnemy(target,-target.MHP*0.05,UTHeal,HealFxDT,,0,c_lime,"DTRF",,c_green,,0)
 				}
 				
-				if variable_instance_exists(Target,"Flash")
+				if variable_instance_exists(target,"Flash")
 					{
-						Target.Flash = 1
+						target.Flash = 1
 					}
 				Attacking = 0
 				global.SkillActive = 0

@@ -1,0 +1,58 @@
+/// @description Insert description here
+// You can write your code in this editor
+self[$ "User"] ??= "noone"
+self[$ "target"] ??= "noone"
+Name = "Pm Style Basic Attack (Mario)"
+
+Hittime = 25
+ReadyingNormal = 1
+DmgColor = User.DmgColor
+Dmg = 0
+DmgRdc = 0
+MaxDist = 65
+phase = 1
+
+with User 
+{
+	holdanim = 1
+	ChangeAnim(Anims.Walk)
+}
+function SpawnQTE()
+	{
+		QTE = instance_create_depth(x+200,y-125,User.depth-2,DakoTiming)
+		QTE.Parent = self
+	}
+
+function NormalAttack()
+	{
+
+		Hittime = 25
+		User.holdanim = 1
+		if global.Phase = 1
+		{
+		ReadyingNormal = 1
+		SpawnQTE()
+		QTE.State = QTE.StateOpen
+		with User ChangeAnim(NormalAtk)
+		}
+		else
+		{
+			TrueAtk()
+		}
+			show_debug_message("Readying Swing")
+	}
+
+function TrueAtk()
+	{
+		with User PlayAttackSound()
+		if variable_instance_exists(self,"QTE")
+		{
+		QTE.State = QTE.StateClose
+		}
+		Attacking = 1
+		with User
+			{
+				holdanim = 0
+				ChangeAnim(NormalEnd)
+			}
+	}

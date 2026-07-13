@@ -4,10 +4,13 @@
 Flash = lerp(Flash,0,0.2)
 
 ///Initialize Animation System
-var Frame = image_index
-var AnimEnd = image_number -1
-var Anim = sprite_index
-var StateTime = 0
+AnimTick += 1
+if AnimFrame != floor(image_index)
+	{
+		AnimTick = 0
+		AnimFrame = floor(image_index)
+	}
+	
 
 HP = clamp(HP,0,MHP)
 

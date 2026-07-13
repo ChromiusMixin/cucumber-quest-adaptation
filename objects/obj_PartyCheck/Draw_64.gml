@@ -48,7 +48,7 @@ if TransX >= 0
 			draw_circle(Cir4X+40,(view_get_hport(0)/2)-90,600,1)
 			draw_circle(Cir4X+60,(view_get_hport(0)/2)-90,600,1)
 			gpu_set_blendmode(bm_subtract)
-			draw_rectangle_colour(0,view_get_hport(0)/2+200+GradY,view_get_wport(0),view_get_hport(0),c_black,c_black,c_gray,c_gray,0)
+			draw_rectangle_colour(0,view_get_hport(0)/2+200+GradY,view_get_wport(0),view_get_hport(0),c_black,c_black,c_white,c_white,0)
 			gpu_set_blendmode(bm_normal)
 			draw_set_color(c_white)
 			draw_sprite_ext(P3SIB,1,view_get_wport(0)-250+IncomX,300-IncomX+(sin(0.05*CirTime)*6),1,1,0+IncomX*0.10+(sin(0.10*CirTime)*3),c_white,1)
@@ -66,7 +66,24 @@ if TransX >= 0
 						scribble("[HGo][scale,1.75][fa_left][#d6d6d6]"+string(global.Party[CurMember].Gear[i].Name)).outline(#313131).shadow(c_black,1).draw(ItemoffsX+10,ItemoffsY+10+((sprite_get_height(spr_ArmorSlot)-1)*i))
 						
 			}
+			//gpu_set_blendmode_ext(bm_dest_colour, bm_zero);
+			//draw_set_color(MenuCol)
+			//draw_circle(Cir4X+40,(view_get_hport(0)/2)-90,600,0)
+			//gpu_set_blendmode(bm_normal)
+			//draw_set_color(c_white)
+			//gpu_set_blendmode_ext(bm_zero, bm_inv_src_alpha);
 			
+	
+			//draw_set_colour(c_white)
+			//draw_rectangle(0,0,view_get_wport(0),view_get_hport(0),0)
+			//draw_set_color(c_black)
+			//draw_circle(view_get_wport(0)/2,view_get_hport(0)/2,360,0)
+			//gpu_set_blendmode(bm_normal)
+			//draw_set_color(c_white)
+			
+			
+			//draw_sprite(Penis_Penis_Penis,0,0,0)
+			//gpu_set_blendmode(bm_normal)
 		}
 			
 }

@@ -50,6 +50,7 @@ var Lmv = keyboard_check(vk_left)
 var Umv = keyboard_check(vk_up)
 var Dmv = keyboard_check(vk_down)
 var Pse = keyboard_check_pressed(ord("C"))
+var Int = keyboard_check_pressed(ord("Z"))
 var xmv = Rmv - Lmv
 var ymv = Umv - Dmv
 
@@ -74,10 +75,15 @@ if Talk == 0 && Menu = -1 && Encountering != 1
 	move_and_collide(xmv*Hspd,ymv*-Vspd,WallObj,,,,Hspd,Vspd)
 
 	
+	//if Hspd*xmv > 0  && Anim != RightSpr && Dmv != 1 && Umv != 1  ChangeAnim(RightSpr)
+	//if Hspd*xmv < 0  && Anim != LeftSpr && Dmv != 1 && Umv != 1  ChangeAnim(LeftSpr) 
+	//if Vspd*ymv > 0  && Anim != UpSpr  ChangeAnim(UpSpr)
+	//if Vspd*ymv < 0  && Anim != DownSpr ChangeAnim(DownSpr)	
+	
 	if Hspd*xmv > 0  && Anim != RightSpr && Dmv != 1 && Umv != 1  ChangeAnim(RightSpr)
 	if Hspd*xmv < 0  && Anim != LeftSpr && Dmv != 1 && Umv != 1  ChangeAnim(LeftSpr) 
-	if Vspd*ymv > 0  && Anim != UpSpr && Lmv != 1 && Rmv != 1 ChangeAnim(UpSpr)
-	if Vspd*ymv < 0  && Anim != DownSpr && Lmv != 1 && Rmv != 1 ChangeAnim(DownSpr)	
+	if Vspd*ymv > 0  && Anim != UpSpr  ChangeAnim(UpSpr)
+	if Vspd*ymv < 0  && Anim != DownSpr ChangeAnim(DownSpr)	
 	
 	}
 

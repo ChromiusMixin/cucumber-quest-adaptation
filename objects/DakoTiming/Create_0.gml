@@ -9,7 +9,7 @@ Timer = 0
 
 function Charge()
 	{
-		instance_create_layer(x+Count*40,y-5,"UI2",DakoGem)
+		instance_create_depth(x+Count*40,y-5,depth-2,DakoGem)
 		Count += 1
 	}
 
