@@ -443,7 +443,7 @@ global.Units =
 					NormalAtk: KrisPreAtk,
 					NormalEnd: KrisAtk,
 					Cast: KrisSkill,
-					Idle: spr_Cucidle,
+					Idle: spr_Cuco_idle_battle,
 					Hurt: KrisHurt,
 					DeathSpr: KrisDown,
 					GuardStart: KrisGuardStart,
