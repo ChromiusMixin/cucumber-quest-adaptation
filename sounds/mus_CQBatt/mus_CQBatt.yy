@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":41.266552,
   "exportDir":"",
   "name":"mus_CQBatt",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mus_CQBatt.ogg",
-  "volume":0.65,
+  "volume":1.0,
 }

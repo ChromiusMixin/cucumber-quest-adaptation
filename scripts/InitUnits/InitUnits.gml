@@ -441,7 +441,7 @@ global.Units =
 					 },
 			Anims: {
 					NormalAtk: KrisPreAtk,
-					NormalEnd: KrisAtk,
+					NormalEnd: spr_Cuco_attack_battle,
 					Cast: KrisSkill,
 					Idle: spr_Cuco_idle_battle,
 					Hurt: KrisHurt,
