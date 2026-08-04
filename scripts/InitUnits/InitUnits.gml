@@ -444,10 +444,10 @@ global.Units =
 					NormalEnd: spr_Cuco_attack_battle,
 					Cast: KrisSkill,
 					Idle: spr_Cuco_idle_battle,
-					Hurt: KrisHurt,
+					Hurt: spr_Cuco_hurt_battle,
 					DeathSpr: KrisDown,
-					GuardStart: KrisGuardStart,
-					Guard: KrisGuard,
+					GuardStart: spr_Cuco_defendstart_battle,
+					Guard: spr_Cuco_defend_battle,
 					XSlash: KrisXSlash,
 				},
 			Snds: {
