@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Interactable",
+  "%Name":"IntCheck",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Interactable","path":"objects/Interactable/Interactable.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Interactable",
+  "name":"IntCheck",
   "overriddenProperties":[],
   "parent":{
     "name":"OverworldCharacters",
     "path":"folders/Objects/OverworldCharacters.yy",
   },
-  "parentObjectId":{
-    "name":"WallObj",
-    "path":"objects/WallObj/WallObj.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite113_1",
-    "path":"sprites/Sprite113_1/Sprite113_1.yy",
+    "name":"Sprite102",
+    "path":"sprites/Sprite102/Sprite102.yy",
   },
   "spriteMaskId":null,
   "visible":true,

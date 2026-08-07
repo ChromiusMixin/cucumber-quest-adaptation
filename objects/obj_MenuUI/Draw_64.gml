@@ -17,9 +17,8 @@ draw_sprite_ext(BlackBar,0,-200,BB2y,20,-bbscale,BB2r1,c_white,1)
 
 if Owner.Encountering != 1
 {
-	if Owner.Menu > 0
+	if Owner.Menu > 0 
 		{
-			bbscale = lerp(bbscale,2,0.2)
 			BB1r2 = -1 + (Menu1.Choice*1)
 			BB2r2 = BB1r2
 			Menu1.x = lerp(Menu1.x,(scr_w-scr_w),0.2)
@@ -27,9 +26,8 @@ if Owner.Encountering != 1
 			PartyDisplay.x = lerp(PartyDisplay.x,scr_w-500,0.2)
 			Fade.state = Fade.stateFadeIn
 		}
-		else
+		else 
 		{
-			bbscale = lerp(bbscale,0,0.2)
 			BB1r2 = 0
 			BB2r2 = -BB1r2
 			Menu1.x = lerp(Menu1.x,(scr_w*-1),0.2)
@@ -37,4 +35,13 @@ if Owner.Encountering != 1
 			PartyDisplay.x = lerp(PartyDisplay.x,scr_w,0.2)
 			Fade.state = Fade.stateFadeOut
 		}
+	
+	if Owner.Menu > 0 || Owner.Talk > 0
+	{
+	bbscale = lerp(bbscale,2,0.2)
+	}
+	else
+	{
+	bbscale = lerp(bbscale,0,0.2)	
+	}
 }

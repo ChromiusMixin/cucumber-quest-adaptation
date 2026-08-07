@@ -59,12 +59,35 @@ if Talk == 0  && Encountering != 1 && Rooming != 1
 	{
 			if Pse == 1 
 				{
-				Menu = Menu*-1 
-				audio_play_sound(snd_CurTickFV,0,0)
+					Menu = Menu*-1 
+					audio_play_sound(snd_CurTickFV,0,0)
+				}
+			if Int == 1
+				{
+					var yadd = 0
+					var xadd = 0
+					if sprite_index = UpSpr
+						{
+							yadd = -20
+						}
+					if sprite_index = DownSpr
+						{
+							yadd = +20	
+						}
+					if sprite_index = LeftSpr
+						{
+							xadd = -10	
+						}
+					if sprite_index = RightSpr
+						{
+							xadd = +10
+						}
+					var ColCheck = instance_create_depth(x-sprite_get_xoffset(sprite_index)+xadd,y+sprite_get_yoffset(sprite_index)-sprite_height+yadd,depth-1,IntCheck)
+					
 				}
 	}
 
-	if Hspd*xmv == 0 && Vspd*ymv == 0 || Menu = 1 || Encountering == 1
+	if Hspd*xmv == 0 && Vspd*ymv == 0 || Menu = 1 || Encountering == 1 || Talk == 1
 	{
 		image_index = 0
 	}
