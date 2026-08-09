@@ -590,6 +590,7 @@
     {"id":{"name":"spr_Cuco_defendstart_battle","path":"sprites/spr_Cuco_defendstart_battle/spr_Cuco_defendstart_battle.yy",},},
     {"id":{"name":"spr_Cuco_hurt_battle","path":"sprites/spr_Cuco_hurt_battle/spr_Cuco_hurt_battle.yy",},},
     {"id":{"name":"spr_Cuco_idle_battle","path":"sprites/spr_Cuco_idle_battle/spr_Cuco_idle_battle.yy",},},
+    {"id":{"name":"spr_Cuco_preattack_battle","path":"sprites/spr_Cuco_preattack_battle/spr_Cuco_preattack_battle.yy",},},
     {"id":{"name":"spr_FullTurnStar","path":"sprites/spr_FullTurnStar/spr_FullTurnStar.yy",},},
     {"id":{"name":"spr_HalfTurnStar","path":"sprites/spr_HalfTurnStar/spr_HalfTurnStar.yy",},},
     {"id":{"name":"spr_ItemDesc","path":"sprites/spr_ItemDesc/spr_ItemDesc.yy",},},

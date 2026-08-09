@@ -440,7 +440,7 @@ global.Units =
 						c: "Hm.",
 					 },
 			Anims: {
-					NormalAtk: KrisPreAtk,
+					NormalAtk: spr_Cuco_preattack_battle,
 					NormalEnd: spr_Cuco_attack_battle,
 					Cast: KrisSkill,
 					Idle: spr_Cuco_idle_battle,
@@ -671,7 +671,7 @@ global.Mobs =
 		
 }
 
-global.Party = [variable_clone(global.Units[0]),variable_clone(global.Units[1]),variable_clone(global.Units[2])]
+global.Party = [variable_clone(global.Units[3])]
 for (var i = 0; i < array_length(global.Party); ++i) {
     global.Party[i].CurrentHP = global.Party[i].BHP
 	global.Party[i].CurrentMP = global.Party[i].BMP
