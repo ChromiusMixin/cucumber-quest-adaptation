@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Cuco_attack_battle",
   "bboxMode":0,
-  "bbox_bottom":47,
+  "bbox_bottom":95,
   "bbox_left":0,
-  "bbox_right":51,
+  "bbox_right":103,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,7 +12,6 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"bf70ea2c-6c41-498b-8cbd-9152f247d441","name":"bf70ea2c-6c41-498b-8cbd-9152f247d441","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"474df13c-f5c5-43ba-bf52-e6a0d122c7ea","name":"474df13c-f5c5-43ba-bf52-e6a0d122c7ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"2bff4153-8ca5-482d-a969-0aebecc17d03","name":"2bff4153-8ca5-482d-a969-0aebecc17d03","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"0f429867-b380-45c3-9c10-fcb200c57886","name":"0f429867-b380-45c3-9c10-fcb200c57886","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -26,14 +25,14 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":48,
+  "height":96,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"906ce086-3cdd-44fc-894c-663260963157","blendMode":0,"displayName":"default","isLocked":false,"name":"906ce086-3cdd-44fc-894c-663260963157","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Cuco_attack_battle",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Cucumber",
     "path":"folders/Sprites/PlayerSprites/Cucumber.yy",
@@ -59,7 +58,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":11.0,
+    "length":10.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,44 +78,41 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bf70ea2c-6c41-498b-8cbd-9152f247d441","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b9f68776-bc4b-4602-abdc-bb8b9e7ea0ff","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"474df13c-f5c5-43ba-bf52-e6a0d122c7ea","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ed7597f4-f71d-411e-887e-39524c554ecf","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"ed7597f4-f71d-411e-887e-39524c554ecf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2bff4153-8ca5-482d-a969-0aebecc17d03","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b6dda38c-1c61-4431-8dac-146d3163fb4b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"b6dda38c-1c61-4431-8dac-146d3163fb4b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0f429867-b380-45c3-9c10-fcb200c57886","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1c5bf0a8-46f8-4244-a4bb-8e71f0dad3d9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"1c5bf0a8-46f8-4244-a4bb-8e71f0dad3d9","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"81b2d199-6c51-490e-a9dc-f95b084f990b","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"725e7f2f-18b0-4c72-a22c-10c643bb493a","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"725e7f2f-18b0-4c72-a22c-10c643bb493a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fec4e5b1-e402-4a41-bf04-37825814d4d3","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"17e7c0bc-02c3-4ca6-90d6-2ec9bd54fc71","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"17e7c0bc-02c3-4ca6-90d6-2ec9bd54fc71","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e23e770e-0849-4869-a932-aa19441eaa85","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2ba291a2-b0dc-4820-ba19-aff40ced524b","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"2ba291a2-b0dc-4820-ba19-aff40ced524b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d75173a0-07df-46f8-bbc7-2c60dfcade55","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ed0edc1d-9bf7-4749-b565-1ab4dc2769c5","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"ed0edc1d-9bf7-4749-b565-1ab4dc2769c5","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"35178ee2-366f-4643-94a3-69d9c97e32c8","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fa1482d8-a479-4131-ba00-2aca55f2c69e","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"fa1482d8-a479-4131-ba00-2aca55f2c69e","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d4a79db-ad6e-47aa-8e8a-74542a8a7ef4","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a5929715-f803-4804-bfe1-e3be6e4513d7","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"a5929715-f803-4804-bfe1-e3be6e4513d7","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a99a5546-fc6e-4a00-bf9d-20bbad58e5cd","path":"sprites/spr_Cuco_attack_battle/spr_Cuco_attack_battle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c1a9542a-7427-4d2e-8791-2def79b1c638","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"c1a9542a-7427-4d2e-8791-2def79b1c638","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":74,
+    "yorigin":96,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -126,5 +122,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":128,
 }
